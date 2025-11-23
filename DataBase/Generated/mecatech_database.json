@@ -1,0 +1,7328 @@
+{
+  "2012-SH4": {
+    "name": "COMPLETE SHORT CAR (WITH NEW BRAKE HUB, SILICON SHOCKS, BATTERY HOLDER SET, REAR AND FRONT TITANIUM ANTI-ROLL BAR)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 1883.0,
+    "consumer_price": 2670.0,
+    "total_in_usa": 2429.07,
+    "cost_in_usa_usd": 2793.43,
+    "final_cost_usa": 3072.77,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 3077.77,
+      "Ref_Price": 3070.5,
+      "Sell_price": 4001.1,
+      "Reference_percent": 30.31
+    }
+  },
+  "2012-04B": {
+    "name": "COMPLETE CAR (WITH NEW BRAKE HUB, SILICON SHOCKS, BATTERY HOLDER SET, REAR AND FRONT TITANIUM ANTI-ROLL BAR)",
+    "espanol": "auto full",
+    "qty_for_bag": 1,
+    "dealer_price": 1883.0,
+    "consumer_price": 2670.0,
+    "total_in_usa": 2429.07,
+    "cost_in_usa_usd": 2793.43,
+    "final_cost_usa": 3072.77,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 3077.77,
+      "Ref_Price": 3070.5,
+      "Sell_price": 4001.1,
+      "Reference_percent": 30.31
+    }
+  },
+  "2012-06": {
+    "name": "COMPLETE SET BUMPER",
+    "espanol": "bumper completo",
+    "qty_for_bag": 1,
+    "dealer_price": 18.15,
+    "consumer_price": 32.0,
+    "total_in_usa": 23.41,
+    "cost_in_usa_usd": 26.93,
+    "final_cost_usa": 29.62,
+    "ARG": {
+      "weight": 160.0,
+      "shipping_cost": 10.4,
+      "Costo_In_Arg": 40.02,
+      "Ref_Price": 36.8,
+      "Sell_price": 52.03,
+      "Reference_percent": 41.39
+    }
+  },
+  "2012-07": {
+    "name": "PLASTIC SUPPORT BUMPER",
+    "espanol": "plastico del bumper (solo)",
+    "qty_for_bag": 1,
+    "dealer_price": 10.5,
+    "consumer_price": 18.5,
+    "total_in_usa": 13.54,
+    "cost_in_usa_usd": 15.58,
+    "final_cost_usa": 17.13,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 20.38,
+      "Ref_Price": 21.27,
+      "Sell_price": 26.49,
+      "Reference_percent": 24.54
+    }
+  },
+  "2012-08": {
+    "name": "FRONT BODY MOUNT",
+    "espanol": "palito de bumper",
+    "qty_for_bag": 1,
+    "dealer_price": 2.75,
+    "consumer_price": 5.0,
+    "total_in_usa": 3.55,
+    "cost_in_usa_usd": 4.08,
+    "final_cost_usa": 4.49,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 5.46,
+      "Ref_Price": 5.75,
+      "Sell_price": 7.1,
+      "Reference_percent": 23.48
+    }
+  },
+  "2012-09": {
+    "name": "BUMPER FOAM",
+    "espanol": "goma del bumper",
+    "qty_for_bag": 1,
+    "dealer_price": 8.0,
+    "consumer_price": 15.0,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": 70.0,
+      "shipping_cost": 4.55,
+      "Costo_In_Arg": 17.6,
+      "Ref_Price": 17.25,
+      "Sell_price": 22.88,
+      "Reference_percent": 32.64
+    }
+  },
+  "2012-10": {
+    "name": "FASTENING STRIP FIXING BUMPER",
+    "espanol": "plasticos del bumper",
+    "qty_for_bag": 2,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 7.5,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.75,
+      "Reference_percent": 13.11
+    }
+  },
+  "2012-11": {
+    "name": "BODYSHELL CLIPS",
+    "espanol": "ganchitos",
+    "qty_for_bag": 10,
+    "dealer_price": 2.7,
+    "consumer_price": 5.0,
+    "total_in_usa": 3.48,
+    "cost_in_usa_usd": 4.01,
+    "final_cost_usa": 4.41,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 6.03,
+      "Ref_Price": 5.75,
+      "Sell_price": 7.84,
+      "Reference_percent": 36.35
+    }
+  },
+  "2012-12": {
+    "name": "M4 BOLT BUMPER FIXING SET",
+    "espanol": "tornillos del bumper",
+    "qty_for_bag": 9,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 3.99,
+      "Ref_Price": 4.37,
+      "Sell_price": 5.19,
+      "Reference_percent": 18.76
+    }
+  },
+  "2012-13": {
+    "name": "CARBON FIBER FRONT BODY SUPPORT",
+    "espanol": "carbono delantero de carroceria",
+    "qty_for_bag": 1,
+    "dealer_price": 12.7,
+    "consumer_price": 22.0,
+    "total_in_usa": 16.38,
+    "cost_in_usa_usd": 18.84,
+    "final_cost_usa": 20.72,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 22.34,
+      "Ref_Price": 25.3,
+      "Sell_price": 29.04,
+      "Reference_percent": 14.78
+    }
+  },
+  "2012-14": {
+    "name": "FRONT BODY MOUNT",
+    "espanol": "palitos de carroceria delantero",
+    "qty_for_bag": 1,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 9.46,
+      "Ref_Price": 10.58,
+      "Sell_price": 12.3,
+      "Reference_percent": 16.26
+    }
+  },
+  "2012-15": {
+    "name": "PAN-HEAD SCREWS M4X12",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-16": {
+    "name": "CARBON FIBER FRONT MOUNT PLATE",
+    "espanol": "carbono de union de cuadernas",
+    "qty_for_bag": 1,
+    "dealer_price": 15.0,
+    "consumer_price": 26.0,
+    "total_in_usa": 19.35,
+    "cost_in_usa_usd": 22.25,
+    "final_cost_usa": 24.48,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 26.43,
+      "Ref_Price": 29.9,
+      "Sell_price": 34.36,
+      "Reference_percent": 14.92
+    }
+  },
+  "2012-17": {
+    "name": "FRONT SHOCK SUPPORT",
+    "espanol": "Torreta de amoriguadore delantera vieja ",
+    "qty_for_bag": 1,
+    "dealer_price": 20.0,
+    "consumer_price": 35.0,
+    "total_in_usa": 25.8,
+    "cost_in_usa_usd": 29.67,
+    "final_cost_usa": 32.64,
+    "ARG": {
+      "weight": 45.0,
+      "shipping_cost": 2.92,
+      "Costo_In_Arg": 35.56,
+      "Ref_Price": 40.25,
+      "Sell_price": 46.23,
+      "Reference_percent": 14.86
+    }
+  },
+  "2012-18": {
+    "name": "FRONT UPPER WISHBONE SHAFT",
+    "espanol": "eje de parrilla superior",
+    "qty_for_bag": 2,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 10.76,
+      "Ref_Price": 10.58,
+      "Sell_price": 13.99,
+      "Reference_percent": 32.23
+    }
+  },
+  "2012-19": {
+    "name": "SPACER CAMBER ADJUSTMENT 0.5 mm",
+    "espanol": "chapita 0.5",
+    "qty_for_bag": 4,
+    "dealer_price": 4.5,
+    "consumer_price": 8.5,
+    "total_in_usa": 5.8,
+    "cost_in_usa_usd": 6.68,
+    "final_cost_usa": 7.34,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 8.31,
+      "Ref_Price": 9.77,
+      "Sell_price": 10.8,
+      "Reference_percent": 10.54
+    }
+  },
+  "2012-20": {
+    "name": "SPACER CAMBER ADJUSTMENT 1.0 mm",
+    "espanol": "chapita 1",
+    "qty_for_bag": 4,
+    "dealer_price": 4.5,
+    "consumer_price": 8.5,
+    "total_in_usa": 5.8,
+    "cost_in_usa_usd": 6.68,
+    "final_cost_usa": 7.34,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 8.31,
+      "Ref_Price": 9.77,
+      "Sell_price": 10.8,
+      "Reference_percent": 10.54
+    }
+  },
+  "2012-21": {
+    "name": "SPACER CAMBER ADJUSTMENT 2.0 mm",
+    "espanol": "chapita 2",
+    "qty_for_bag": 4,
+    "dealer_price": 4.5,
+    "consumer_price": 8.5,
+    "total_in_usa": 5.8,
+    "cost_in_usa_usd": 6.68,
+    "final_cost_usa": 7.34,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 8.31,
+      "Ref_Price": 9.77,
+      "Sell_price": 10.8,
+      "Reference_percent": 10.54
+    }
+  },
+  "2012-22": {
+    "name": "UPPER FRONT WISHBONE",
+    "espanol": "parrilla superior delantera",
+    "qty_for_bag": 1,
+    "dealer_price": 27.5,
+    "consumer_price": 48.0,
+    "total_in_usa": 35.48,
+    "cost_in_usa_usd": 40.8,
+    "final_cost_usa": 44.88,
+    "ARG": {
+      "weight": 70.0,
+      "shipping_cost": 4.55,
+      "Costo_In_Arg": 49.43,
+      "Ref_Price": 55.2,
+      "Sell_price": 64.26,
+      "Reference_percent": 16.41
+    }
+  },
+  "2012-23": {
+    "name": "HEADLESS SCREW M4X4",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 4.96,
+      "Ref_Price": 4.37,
+      "Sell_price": 6.45,
+      "Reference_percent": 47.6
+    }
+  },
+  "2012-24": {
+    "name": "PIVOT END WISHBONE",
+    "espanol": "rotula aluminio sin bola",
+    "qty_for_bag": 1,
+    "dealer_price": 13.0,
+    "consumer_price": 22.5,
+    "total_in_usa": 16.77,
+    "cost_in_usa_usd": 19.29,
+    "final_cost_usa": 21.21,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 23.16,
+      "Ref_Price": 25.87,
+      "Sell_price": 30.11,
+      "Reference_percent": 16.39
+    }
+  },
+  "2012-25": {
+    "name": "PAN-HEAD SCREW M6X25 AND WASHER",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 2.0,
+    "consumer_price": 3.7,
+    "total_in_usa": 2.58,
+    "cost_in_usa_usd": 2.97,
+    "final_cost_usa": 3.26,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.26,
+      "Ref_Price": 4.25,
+      "Sell_price": 10.74,
+      "Reference_percent": 152.71
+    }
+  },
+  "2012-26": {
+    "name": "SPACER CASTER ADJUSTMENT",
+    "espanol": "chapitas de avance- caster",
+    "qty_for_bag": 10,
+    "dealer_price": 5.6,
+    "consumer_price": 10.5,
+    "total_in_usa": 7.22,
+    "cost_in_usa_usd": 8.31,
+    "final_cost_usa": 9.14,
+    "ARG": {
+      "weight": 12.0,
+      "shipping_cost": 0.78,
+      "Costo_In_Arg": 9.92,
+      "Ref_Price": 12.07,
+      "Sell_price": 12.9,
+      "Reference_percent": 6.88
+    }
+  },
+  "2012-27": {
+    "name": "FIXING UPRIGHT SPECIAL SCREW",
+    "espanol": "tornillo de masa",
+    "qty_for_bag": 2,
+    "dealer_price": 3.5,
+    "consumer_price": 6.5,
+    "total_in_usa": 4.52,
+    "cost_in_usa_usd": 5.19,
+    "final_cost_usa": 5.71,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 10.71,
+      "Ref_Price": 7.47,
+      "Sell_price": 13.92,
+      "Reference_percent": 86.35
+    }
+  },
+  "2012-28": {
+    "name": "STANDARD FRONT UPRIGHT",
+    "espanol": "masa VIEJA . parece la nueva pero no",
+    "qty_for_bag": 1,
+    "dealer_price": 32.5,
+    "consumer_price": 56.5,
+    "total_in_usa": 41.93,
+    "cost_in_usa_usd": 48.21,
+    "final_cost_usa": 53.04,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 55.64,
+      "Ref_Price": 64.97,
+      "Sell_price": 72.33,
+      "Reference_percent": 11.33
+    }
+  },
+  "2012-29": {
+    "name": "STEERING LEVER LH",
+    "espanol": "brazo de direccion izquierdo (ackermann)",
+    "qty_for_bag": 1,
+    "dealer_price": 16.5,
+    "consumer_price": 29.0,
+    "total_in_usa": 21.29,
+    "cost_in_usa_usd": 24.48,
+    "final_cost_usa": 26.93,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 28.88,
+      "Ref_Price": 33.35,
+      "Sell_price": 37.54,
+      "Reference_percent": 12.56
+    }
+  },
+  "2012-30": {
+    "name": "STEERING LEVER RH",
+    "espanol": "brazo de direccion derecho (ackermann)",
+    "qty_for_bag": 1,
+    "dealer_price": 16.5,
+    "consumer_price": 29.0,
+    "total_in_usa": 21.29,
+    "cost_in_usa_usd": 24.48,
+    "final_cost_usa": 26.93,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 28.88,
+      "Ref_Price": 33.35,
+      "Sell_price": 37.54,
+      "Reference_percent": 12.56
+    }
+  },
+  "2012-31": {
+    "name": "SOCKET HEAD SCREWS M4X16",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-32": {
+    "name": "BEARING 8X19X6",
+    "espanol": "rodamiento ",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 7.18,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.33,
+      "Reference_percent": 8.24
+    }
+  },
+  "2012-34": {
+    "name": "FRONT AXEL WHEELS",
+    "espanol": "eje de rueda",
+    "qty_for_bag": 1,
+    "dealer_price": 6.0,
+    "consumer_price": 11.0,
+    "total_in_usa": 7.74,
+    "cost_in_usa_usd": 8.9,
+    "final_cost_usa": 9.79,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 11.74,
+      "Ref_Price": 12.65,
+      "Sell_price": 15.26,
+      "Reference_percent": 20.63
+    }
+  },
+  "2012-35": {
+    "name": "FIXING WHEEL NUT",
+    "espanol": "tuerca de rueda",
+    "qty_for_bag": 4,
+    "dealer_price": 2.1,
+    "consumer_price": 4.0,
+    "total_in_usa": 2.71,
+    "cost_in_usa_usd": 3.12,
+    "final_cost_usa": 3.43,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.43,
+      "Ref_Price": 4.6,
+      "Sell_price": 10.96,
+      "Reference_percent": 138.26
+    }
+  },
+  "2012-36": {
+    "name": "SQUARE WHEEL DRIVER 14 mm",
+    "espanol": "cubo de 14 mm",
+    "qty_for_bag": 2,
+    "dealer_price": 7.5,
+    "consumer_price": 13.8,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 15.87,
+      "Sell_price": 22.41,
+      "Reference_percent": 41.21
+    }
+  },
+  "2012-37": {
+    "name": "SQUARE WHEEL DRIVER 12,5 mm",
+    "espanol": "cubo de 12.5 mm",
+    "qty_for_bag": 2,
+    "dealer_price": 7.5,
+    "consumer_price": 13.8,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 15.87,
+      "Sell_price": 22.41,
+      "Reference_percent": 41.21
+    }
+  },
+  "2012-39": {
+    "name": "SCREW AND WASHER FIXING AXEL WHEELS",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 2.0,
+    "consumer_price": 3.7,
+    "total_in_usa": 2.58,
+    "cost_in_usa_usd": 2.97,
+    "final_cost_usa": 3.26,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.26,
+      "Ref_Price": 4.25,
+      "Sell_price": 10.74,
+      "Reference_percent": 152.71
+    }
+  },
+  "2012-42": {
+    "name": "SPHERICAL BEARING",
+    "espanol": "rodamiento esferico",
+    "qty_for_bag": 2,
+    "dealer_price": 14.0,
+    "consumer_price": 24.5,
+    "total_in_usa": 18.06,
+    "cost_in_usa_usd": 20.77,
+    "final_cost_usa": 22.85,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 24.47,
+      "Ref_Price": 28.17,
+      "Sell_price": 31.81,
+      "Reference_percent": 12.92
+    }
+  },
+  "2012-43": {
+    "name": "FLANGED SCREW M3X6",
+    "espanol": "tornillos para rotulas que fijan bola",
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-44": {
+    "name": "SOCKET HEAD SCREWS M4X22",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-45": {
+    "name": "LOWER PILOT ANTI-ROLL BAR SUPPORT",
+    "espanol": "soporte inferior barra estabilizadora (posiciones)",
+    "qty_for_bag": 1,
+    "dealer_price": 10.0,
+    "consumer_price": 18.0,
+    "total_in_usa": 12.9,
+    "cost_in_usa_usd": 14.83,
+    "final_cost_usa": 16.32,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 17.29,
+      "Ref_Price": 20.7,
+      "Sell_price": 22.48,
+      "Reference_percent": 8.6
+    }
+  },
+  "2012-46": {
+    "name": "SOCKET HEAD SCREW M3X8",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-47": {
+    "name": "FRONT ANTI-ROLL BAR PLASTIC JOINT (SHORT)",
+    "espanol": "rotula plastica de barra",
+    "qty_for_bag": 2,
+    "dealer_price": 3.0,
+    "consumer_price": 5.5,
+    "total_in_usa": 3.87,
+    "cost_in_usa_usd": 4.45,
+    "final_cost_usa": 4.9,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 5.55,
+      "Ref_Price": 6.32,
+      "Sell_price": 7.21,
+      "Reference_percent": 14.08
+    }
+  },
+  "2012-48": {
+    "name": "LOWER ANTI-ROLL BAR PILOT",
+    "espanol": "bola inferior de barra",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 7.5,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.75,
+      "Reference_percent": 13.11
+    }
+  },
+  "2012-49": {
+    "name": "COUNTERSUNK SCREWS M3X8",
+    "espanol": "tornillos",
+    "qty_for_bag": 8,
+    "dealer_price": 2.3,
+    "consumer_price": 4.2,
+    "total_in_usa": 2.97,
+    "cost_in_usa_usd": 3.41,
+    "final_cost_usa": 3.75,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.75,
+      "Ref_Price": 4.83,
+      "Sell_price": 11.38,
+      "Reference_percent": 135.61
+    }
+  },
+  "2012-50": {
+    "name": "ANTI-ROLL BAR ADJUSTING SCREW RH-LH",
+    "espanol": "derecha izquierda de barra",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 12.0,
+      "shipping_cost": 0.78,
+      "Costo_In_Arg": 7.31,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.5,
+      "Reference_percent": 10.21
+    }
+  },
+  "2012-51": {
+    "name": "UPPER ANTI-ROLL BAR PILOT DIAMETER 5.5",
+    "espanol": "bola para barra vieja . (para acoplar la rotula)",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 7.18,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.33,
+      "Reference_percent": 8.24
+    }
+  },
+  "2012-52": {
+    "name": "M4X16 SCREW FRONT DOWN STOP",
+    "espanol": null,
+    "qty_for_bag": 6,
+    "dealer_price": 2.3,
+    "consumer_price": 4.2,
+    "total_in_usa": 2.97,
+    "cost_in_usa_usd": 3.41,
+    "final_cost_usa": 3.75,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.75,
+      "Ref_Price": 4.83,
+      "Sell_price": 11.38,
+      "Reference_percent": 135.61
+    }
+  },
+  "2012-53": {
+    "name": "NYLON STOPPER FOR DOWN STOP",
+    "espanol": "plastico para parrilla de suspensión para que no se gire dont stop",
+    "qty_for_bag": 8,
+    "dealer_price": 1.3,
+    "consumer_price": 2.4,
+    "total_in_usa": 1.68,
+    "cost_in_usa_usd": 1.93,
+    "final_cost_usa": 2.12,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 3.09,
+      "Ref_Price": 2.76,
+      "Sell_price": 4.02,
+      "Reference_percent": 45.65
+    }
+  },
+  "2012-54": {
+    "name": "LOWER WISHBONE SHAFT PIN",
+    "espanol": "pines",
+    "qty_for_bag": 2,
+    "dealer_price": 4.3,
+    "consumer_price": 8.0,
+    "total_in_usa": 5.55,
+    "cost_in_usa_usd": 6.38,
+    "final_cost_usa": 7.02,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 8.32,
+      "Ref_Price": 9.2,
+      "Sell_price": 10.82,
+      "Reference_percent": 17.61
+    }
+  },
+  "2012-55": {
+    "name": "FRONT ANTI-ROLL BAR DIAMETER 5.5",
+    "espanol": "barra delantera vieja de 5.5mm",
+    "qty_for_bag": 1,
+    "dealer_price": 16.0,
+    "consumer_price": 28.0,
+    "total_in_usa": 20.64,
+    "cost_in_usa_usd": 23.74,
+    "final_cost_usa": 26.11,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 31.11,
+      "Ref_Price": 32.2,
+      "Sell_price": 40.44,
+      "Reference_percent": 25.59
+    }
+  },
+  "2012-56": {
+    "name": "BAR BARELL DIAM. 5.5",
+    "espanol": "\"ruleman\" de la barra vieja",
+    "qty_for_bag": 1,
+    "dealer_price": 8.25,
+    "consumer_price": 15.2,
+    "total_in_usa": 10.64,
+    "cost_in_usa_usd": 12.24,
+    "final_cost_usa": 13.46,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.46,
+      "Ref_Price": 17.48,
+      "Sell_price": 24.0,
+      "Reference_percent": 37.3
+    }
+  },
+  "2012-57": {
+    "name": "HEADLESS SCREW M3X3",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.4,
+    "consumer_price": 2.6,
+    "total_in_usa": 1.81,
+    "cost_in_usa_usd": 2.08,
+    "final_cost_usa": 2.28,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.28,
+      "Ref_Price": 2.99,
+      "Sell_price": 9.46,
+      "Reference_percent": 216.39
+    }
+  },
+  "2012-58": {
+    "name": "FLANGED BEARING FOR ANTI-ROLL BAR",
+    "espanol": "rodamiendo barra ",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 7.18,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.33,
+      "Reference_percent": 8.24
+    }
+  },
+  "2012-59": {
+    "name": "FRONT AXLE MOUNT LH",
+    "espanol": "cuaderna delantera izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 49.5,
+    "consumer_price": 86.0,
+    "total_in_usa": 63.86,
+    "cost_in_usa_usd": 73.43,
+    "final_cost_usa": 80.78,
+    "ARG": {
+      "weight": 85.0,
+      "shipping_cost": 5.53,
+      "Costo_In_Arg": 86.31,
+      "Ref_Price": 98.9,
+      "Sell_price": 112.2,
+      "Reference_percent": 13.45
+    }
+  },
+  "2012-60": {
+    "name": "FRONT AXLE MOUNT RH",
+    "espanol": "cuaderna delanter derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 49.5,
+    "consumer_price": 86.0,
+    "total_in_usa": 63.86,
+    "cost_in_usa_usd": 73.43,
+    "final_cost_usa": 80.78,
+    "ARG": {
+      "weight": 85.0,
+      "shipping_cost": 5.53,
+      "Costo_In_Arg": 86.31,
+      "Ref_Price": 98.9,
+      "Sell_price": 112.2,
+      "Reference_percent": 13.45
+    }
+  },
+  "2012-61": {
+    "name": "WISHBONES PLASTIC BUSH",
+    "espanol": "bujes de parrilla",
+    "qty_for_bag": 8,
+    "dealer_price": 10.0,
+    "consumer_price": 18.0,
+    "total_in_usa": 12.9,
+    "cost_in_usa_usd": 14.83,
+    "final_cost_usa": 16.32,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 17.29,
+      "Ref_Price": 20.7,
+      "Sell_price": 22.48,
+      "Reference_percent": 8.6
+    }
+  },
+  "2012-62": {
+    "name": "PAN HEAD SCREWS M4X8",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-63": {
+    "name": "STEERING ROD MM 88",
+    "espanol": "der/izq de brazo de direccion corto",
+    "qty_for_bag": 1,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 14.35,
+      "Ref_Price": 16.9,
+      "Sell_price": 18.66,
+      "Reference_percent": 10.41
+    }
+  },
+  "2012-64": {
+    "name": "STEERING ROD MM 94",
+    "espanol": "der/izq de brazo de direccion largo",
+    "qty_for_bag": 1,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 14.35,
+      "Ref_Price": 16.9,
+      "Sell_price": 18.66,
+      "Reference_percent": 10.41
+    }
+  },
+  "2012-65": {
+    "name": "STEERING AND REAR ANTI-ROLL BAR PLASTIC JOINT (LONG)",
+    "espanol": "rotula plastica de barra trasera y brazo de direccion",
+    "qty_for_bag": 2,
+    "dealer_price": 3.0,
+    "consumer_price": 5.5,
+    "total_in_usa": 3.87,
+    "cost_in_usa_usd": 4.45,
+    "final_cost_usa": 4.9,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 5.87,
+      "Ref_Price": 6.32,
+      "Sell_price": 7.63,
+      "Reference_percent": 20.73
+    }
+  },
+  "2012-67": {
+    "name": "PIVOT STEERING SPACER",
+    "espanol": "separador de brazo de direccion",
+    "qty_for_bag": 8,
+    "dealer_price": 1.2,
+    "consumer_price": 2.2,
+    "total_in_usa": 1.55,
+    "cost_in_usa_usd": 1.78,
+    "final_cost_usa": 1.96,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 3.58,
+      "Ref_Price": 2.53,
+      "Sell_price": 4.65,
+      "Reference_percent": 83.79
+    }
+  },
+  "2012-68": {
+    "name": "SERVO SAVER SHAFT",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 6.0,
+    "consumer_price": 11.0,
+    "total_in_usa": 7.74,
+    "cost_in_usa_usd": 8.9,
+    "final_cost_usa": 9.79,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 11.09,
+      "Ref_Price": 12.65,
+      "Sell_price": 14.42,
+      "Reference_percent": 13.99
+    }
+  },
+  "2012-69": {
+    "name": "SERVO SAVER BUSH",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 6.0,
+    "consumer_price": 11.0,
+    "total_in_usa": 7.74,
+    "cost_in_usa_usd": 8.9,
+    "final_cost_usa": 9.79,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 11.09,
+      "Ref_Price": 12.65,
+      "Sell_price": 14.42,
+      "Reference_percent": 13.99
+    }
+  },
+  "2012-70": {
+    "name": "SERVO SAVER ADJUSTEMENT NUT",
+    "espanol": "tuerca de ajuste del salva servo",
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.1,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": 12.0,
+      "shipping_cost": 0.78,
+      "Costo_In_Arg": 9.76,
+      "Ref_Price": 11.61,
+      "Sell_price": 12.69,
+      "Reference_percent": 9.3
+    }
+  },
+  "2012-71": {
+    "name": "SERVO SAVER BELL SPRING 0.5 mm",
+    "espanol": "chapa de salvaservo viejo",
+    "qty_for_bag": 10,
+    "dealer_price": 4.3,
+    "consumer_price": 8.0,
+    "total_in_usa": 5.55,
+    "cost_in_usa_usd": 6.38,
+    "final_cost_usa": 7.02,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 8.64,
+      "Ref_Price": 9.2,
+      "Sell_price": 11.23,
+      "Reference_percent": 22.07
+    }
+  },
+  "2012-72": {
+    "name": "SERVO SAVER BELL SPRING 0.8 mm",
+    "espanol": "chapa de salvaservo viejo",
+    "qty_for_bag": 10,
+    "dealer_price": 4.3,
+    "consumer_price": 8.0,
+    "total_in_usa": 5.55,
+    "cost_in_usa_usd": 6.38,
+    "final_cost_usa": 7.02,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 8.64,
+      "Ref_Price": 9.2,
+      "Sell_price": 11.23,
+      "Reference_percent": 22.07
+    }
+  },
+  "2012-73": {
+    "name": "SERVO SAVER LOWER BODY",
+    "espanol": "cuerpo inferior salvaservo viejo",
+    "qty_for_bag": 1,
+    "dealer_price": 26.5,
+    "consumer_price": 46.0,
+    "total_in_usa": 34.19,
+    "cost_in_usa_usd": 39.31,
+    "final_cost_usa": 43.24,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 44.86,
+      "Ref_Price": 52.9,
+      "Sell_price": 58.32,
+      "Reference_percent": 10.25
+    }
+  },
+  "2012-74": {
+    "name": "SERVO SAVER UPPER BODY",
+    "espanol": "cuerpo superior salva servo",
+    "qty_for_bag": 1,
+    "dealer_price": 20.0,
+    "consumer_price": 35.0,
+    "total_in_usa": 25.8,
+    "cost_in_usa_usd": 29.67,
+    "final_cost_usa": 32.64,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 33.94,
+      "Ref_Price": 40.25,
+      "Sell_price": 44.12,
+      "Reference_percent": 9.61
+    }
+  },
+  "2012-75": {
+    "name": "RETAINING RING SERVO SAVER",
+    "espanol": null,
+    "qty_for_bag": 3,
+    "dealer_price": 1.1,
+    "consumer_price": 2.0,
+    "total_in_usa": 1.42,
+    "cost_in_usa_usd": 1.63,
+    "final_cost_usa": 1.8,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 2.45,
+      "Ref_Price": 2.3,
+      "Sell_price": 3.19,
+      "Reference_percent": 38.7
+    }
+  },
+  "2012-76": {
+    "name": "COUNTERSUNK SCREW M4X12",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.55,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.0,
+    "cost_in_usa_usd": 2.3,
+    "final_cost_usa": 2.53,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.53,
+      "Ref_Price": 4.37,
+      "Sell_price": 9.79,
+      "Reference_percent": 124.03
+    }
+  },
+  "2012-77": {
+    "name": "RADIO PLATE CONNECTION TRIANGLE",
+    "espanol": "triangulo de coneccion del salvaservo viejo",
+    "qty_for_bag": 1,
+    "dealer_price": 15.0,
+    "consumer_price": 26.0,
+    "total_in_usa": 19.35,
+    "cost_in_usa_usd": 22.25,
+    "final_cost_usa": 24.48,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 29.48,
+      "Ref_Price": 29.9,
+      "Sell_price": 38.32,
+      "Reference_percent": 28.16
+    }
+  },
+  "2012-78": {
+    "name": "PAN-HEAD SCREW M3X6",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.1,
+    "consumer_price": 2.0,
+    "total_in_usa": 1.42,
+    "cost_in_usa_usd": 1.63,
+    "final_cost_usa": 1.8,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 6.8,
+      "Ref_Price": 2.3,
+      "Sell_price": 8.84,
+      "Reference_percent": 284.35
+    }
+  },
+  "2012-79": {
+    "name": "RADIO PLATE SPACER COLUMN",
+    "espanol": "columnas de radiotrain",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 7.83,
+      "Ref_Price": 8.62,
+      "Sell_price": 10.18,
+      "Reference_percent": 18.1
+    }
+  },
+  "2012-82": {
+    "name": "PAN-HEAD SCREW M4X10",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 2.3,
+    "consumer_price": 4.2,
+    "total_in_usa": 2.97,
+    "cost_in_usa_usd": 3.41,
+    "final_cost_usa": 3.75,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.75,
+      "Ref_Price": 4.83,
+      "Sell_price": 11.38,
+      "Reference_percent": 135.61
+    }
+  },
+  "2012-83": {
+    "name": "RECEIVER BOX",
+    "espanol": "caja de receptor",
+    "qty_for_bag": 1,
+    "dealer_price": 11.0,
+    "consumer_price": 19.0,
+    "total_in_usa": 14.19,
+    "cost_in_usa_usd": 16.32,
+    "final_cost_usa": 17.95,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 24.45,
+      "Ref_Price": 21.85,
+      "Sell_price": 31.79,
+      "Reference_percent": 45.49
+    }
+  },
+  "2012-84": {
+    "name": "COMPLETE FUEL TANK 700 cc",
+    "espanol": "tanque de combustible",
+    "qty_for_bag": 1,
+    "dealer_price": 62.0,
+    "consumer_price": 108.0,
+    "total_in_usa": 79.98,
+    "cost_in_usa_usd": 91.98,
+    "final_cost_usa": 101.17,
+    "ARG": {
+      "weight": 350.0,
+      "shipping_cost": 22.75,
+      "Costo_In_Arg": 123.92,
+      "Ref_Price": 124.2,
+      "Sell_price": 161.1,
+      "Reference_percent": 29.71
+    }
+  },
+  "2012-85": {
+    "name": "ALUMINIUM SIDE REINFORCING CHASSIS",
+    "espanol": "laterales de chasis",
+    "qty_for_bag": 1,
+    "dealer_price": 31.0,
+    "consumer_price": 54.0,
+    "total_in_usa": 39.99,
+    "cost_in_usa_usd": 45.99,
+    "final_cost_usa": 50.59,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 55.79,
+      "Ref_Price": 62.1,
+      "Sell_price": 72.53,
+      "Reference_percent": 16.8
+    }
+  },
+  "2012-86": {
+    "name": "PLASTIC SIDE BODY MOUNT LONG",
+    "espanol": "palito de carriceria lateral largo",
+    "qty_for_bag": 1,
+    "dealer_price": 4.2,
+    "consumer_price": 7.7,
+    "total_in_usa": 5.42,
+    "cost_in_usa_usd": 6.23,
+    "final_cost_usa": 6.85,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 8.8,
+      "Ref_Price": 8.85,
+      "Sell_price": 11.44,
+      "Reference_percent": 29.27
+    }
+  },
+  "2012-86/P": {
+    "name": "PLASTIC SIDE BODY MOUNT Porsche GT3 RS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 4.2,
+    "consumer_price": 7.7,
+    "total_in_usa": 5.42,
+    "cost_in_usa_usd": 6.23,
+    "final_cost_usa": 6.85,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 11.85,
+      "Ref_Price": 8.85,
+      "Sell_price": 15.4,
+      "Reference_percent": 74.01
+    }
+  },
+  "2012-88": {
+    "name": "CARBON FIBER SIDE GUARDS",
+    "espanol": "carbono lateral para carroceria",
+    "qty_for_bag": 1,
+    "dealer_price": 10.0,
+    "consumer_price": 18.5,
+    "total_in_usa": 12.9,
+    "cost_in_usa_usd": 14.83,
+    "final_cost_usa": 16.32,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 18.59,
+      "Ref_Price": 21.27,
+      "Sell_price": 24.17,
+      "Reference_percent": 13.63
+    }
+  },
+  "2012-89": {
+    "name": "COUNTERSUNK SCREW M4X25",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-90": {
+    "name": "COUNTERSUNK SCREW M4X16",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-92": {
+    "name": "OUTER FLANGE CLUTCH SHAFT SUPPORT",
+    "espanol": "Triangulo (tapa) del embrague",
+    "qty_for_bag": 1,
+    "dealer_price": 18.0,
+    "consumer_price": 31.5,
+    "total_in_usa": 23.22,
+    "cost_in_usa_usd": 26.7,
+    "final_cost_usa": 29.37,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 31.64,
+      "Ref_Price": 36.22,
+      "Sell_price": 41.13,
+      "Reference_percent": 13.56
+    }
+  },
+  "2012-93": {
+    "name": "BEARING 10X19X5",
+    "espanol": "Ruleman campana",
+    "qty_for_bag": 1,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 8.81,
+      "Ref_Price": 10.58,
+      "Sell_price": 11.45,
+      "Reference_percent": 8.22
+    }
+  },
+  "2012-94": {
+    "name": "CLUTCH SUPPORT SPACER COLUMN",
+    "espanol": "columna que va en acople de motor",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 8.15,
+      "Ref_Price": 8.62,
+      "Sell_price": 10.6,
+      "Reference_percent": 22.97
+    }
+  },
+  "2012-95": {
+    "name": "CLUTCH SHAFT",
+    "espanol": "tornillo de embrague",
+    "qty_for_bag": 1,
+    "dealer_price": 16.0,
+    "consumer_price": 28.0,
+    "total_in_usa": 20.64,
+    "cost_in_usa_usd": 23.74,
+    "final_cost_usa": 26.11,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 28.71,
+      "Ref_Price": 32.2,
+      "Sell_price": 37.32,
+      "Reference_percent": 15.9
+    }
+  },
+  "2012-96": {
+    "name": "PINION RETAINING RING",
+    "espanol": "ceger de piñon",
+    "qty_for_bag": 1,
+    "dealer_price": 1.2,
+    "consumer_price": 2.2,
+    "total_in_usa": 1.55,
+    "cost_in_usa_usd": 1.78,
+    "final_cost_usa": 1.96,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 6.96,
+      "Ref_Price": 2.53,
+      "Sell_price": 9.05,
+      "Reference_percent": 257.71
+    }
+  },
+  "2012-97": {
+    "name": "CLUTCH PINION Z 36",
+    "espanol": "piñon 36 ",
+    "qty_for_bag": 1,
+    "dealer_price": 19.0,
+    "consumer_price": 33.0,
+    "total_in_usa": 24.51,
+    "cost_in_usa_usd": 28.19,
+    "final_cost_usa": 31.01,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 34.26,
+      "Ref_Price": 37.95,
+      "Sell_price": 44.54,
+      "Reference_percent": 17.36
+    }
+  },
+  "2012-98": {
+    "name": "CLUTCH PINION Z 37",
+    "espanol": "piñon 37",
+    "qty_for_bag": 1,
+    "dealer_price": 19.0,
+    "consumer_price": 33.0,
+    "total_in_usa": 24.51,
+    "cost_in_usa_usd": 28.19,
+    "final_cost_usa": 31.01,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 34.26,
+      "Ref_Price": 37.95,
+      "Sell_price": 44.54,
+      "Reference_percent": 17.36
+    }
+  },
+  "2012-99": {
+    "name": "CLUTCH PINION Z 35",
+    "espanol": "piñon 35",
+    "qty_for_bag": 1,
+    "dealer_price": 19.0,
+    "consumer_price": 33.0,
+    "total_in_usa": 24.51,
+    "cost_in_usa_usd": 28.19,
+    "final_cost_usa": 31.01,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 34.26,
+      "Ref_Price": 37.95,
+      "Sell_price": 44.54,
+      "Reference_percent": 17.36
+    }
+  },
+  "2012-100": {
+    "name": "RETAINING RING FOR BELL CLUTCH",
+    "espanol": "ceger de tornillo de embrague",
+    "qty_for_bag": 4,
+    "dealer_price": 1.3,
+    "consumer_price": 2.5,
+    "total_in_usa": 1.68,
+    "cost_in_usa_usd": 1.93,
+    "final_cost_usa": 2.12,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 3.09,
+      "Ref_Price": 2.88,
+      "Sell_price": 4.02,
+      "Reference_percent": 39.58
+    }
+  },
+  "2012-101": {
+    "name": "BELL CLUTCH",
+    "espanol": "campana",
+    "qty_for_bag": 1,
+    "dealer_price": 29.0,
+    "consumer_price": 50.0,
+    "total_in_usa": 37.41,
+    "cost_in_usa_usd": 43.02,
+    "final_cost_usa": 47.32,
+    "ARG": {
+      "weight": 105.0,
+      "shipping_cost": 6.83,
+      "Costo_In_Arg": 54.15,
+      "Ref_Price": 57.5,
+      "Sell_price": 70.39,
+      "Reference_percent": 22.42
+    }
+  },
+  "2012-102": {
+    "name": "HEADLESS SCREW FOR CLUTCH FITTING",
+    "espanol": "prisionero de tornillo de embrague",
+    "qty_for_bag": 2,
+    "dealer_price": 2.75,
+    "consumer_price": 5.0,
+    "total_in_usa": 3.55,
+    "cost_in_usa_usd": 4.08,
+    "final_cost_usa": 4.49,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 9.49,
+      "Ref_Price": 5.75,
+      "Sell_price": 12.34,
+      "Reference_percent": 114.61
+    }
+  },
+  "2012-103": {
+    "name": "ENGINE MOUNTING SUPPORT",
+    "espanol": "acople de motor sin columnas",
+    "qty_for_bag": 1,
+    "dealer_price": 33.0,
+    "consumer_price": 57.5,
+    "total_in_usa": 42.57,
+    "cost_in_usa_usd": 48.96,
+    "final_cost_usa": 53.85,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 59.05,
+      "Ref_Price": 66.12,
+      "Sell_price": 76.77,
+      "Reference_percent": 16.11
+    }
+  },
+  "2012-104": {
+    "name": "PAN-HEAD SCREW M5X12",
+    "espanol": "tornillos de acople de motor",
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-105": {
+    "name": "COUNTERSUNK SCREW M5X12",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-106": {
+    "name": "SPECIAL WHASER FOR ENGINE FASTENING",
+    "espanol": "arandera de motor ( abajo)",
+    "qty_for_bag": 4,
+    "dealer_price": 4.5,
+    "consumer_price": 8.3,
+    "total_in_usa": 5.8,
+    "cost_in_usa_usd": 6.68,
+    "final_cost_usa": 7.34,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 8.31,
+      "Ref_Price": 9.54,
+      "Sell_price": 10.8,
+      "Reference_percent": 13.21
+    }
+  },
+  "2012-107": {
+    "name": "GEARWELL RETAINIG RING",
+    "espanol": "ceger de corona",
+    "qty_for_bag": 4,
+    "dealer_price": 1.4,
+    "consumer_price": 2.6,
+    "total_in_usa": 1.81,
+    "cost_in_usa_usd": 2.08,
+    "final_cost_usa": 2.28,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.28,
+      "Ref_Price": 2.99,
+      "Sell_price": 9.46,
+      "Reference_percent": 216.39
+    }
+  },
+  "2012-108": {
+    "name": "GEARWELL Z 64",
+    "espanol": "corona",
+    "qty_for_bag": 1,
+    "dealer_price": 35.0,
+    "consumer_price": 61.0,
+    "total_in_usa": 45.15,
+    "cost_in_usa_usd": 51.92,
+    "final_cost_usa": 57.11,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 62.31,
+      "Ref_Price": 70.15,
+      "Sell_price": 81.0,
+      "Reference_percent": 15.47
+    }
+  },
+  "2012-109": {
+    "name": "SECOND SHAFT",
+    "espanol": "eje medio",
+    "qty_for_bag": 1,
+    "dealer_price": 28.0,
+    "consumer_price": 49.0,
+    "total_in_usa": 36.12,
+    "cost_in_usa_usd": 41.54,
+    "final_cost_usa": 45.69,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 48.94,
+      "Ref_Price": 56.35,
+      "Sell_price": 63.62,
+      "Reference_percent": 12.9
+    }
+  },
+  "2012-110": {
+    "name": "SECOND SHAFT BEARING",
+    "espanol": "rodamiento eje medio",
+    "qty_for_bag": 1,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 8.81,
+      "Ref_Price": 10.58,
+      "Sell_price": 11.45,
+      "Reference_percent": 8.22
+    }
+  },
+  "2012-111": {
+    "name": "SECIND SHAFT SUPPORT FLANGE",
+    "espanol": "pieza donde van rodamientos de eje medio ",
+    "qty_for_bag": 1,
+    "dealer_price": 15.5,
+    "consumer_price": 27.0,
+    "total_in_usa": 20.0,
+    "cost_in_usa_usd": 22.99,
+    "final_cost_usa": 25.29,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 27.24,
+      "Ref_Price": 31.05,
+      "Sell_price": 35.41,
+      "Reference_percent": 14.04
+    }
+  },
+  "2012-112": {
+    "name": "SECOND SHAFT PINION Z 24",
+    "espanol": "piñon eje medio 24",
+    "qty_for_bag": 1,
+    "dealer_price": 24.0,
+    "consumer_price": 41.8,
+    "total_in_usa": 30.96,
+    "cost_in_usa_usd": 35.6,
+    "final_cost_usa": 39.16,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 41.76,
+      "Ref_Price": 48.07,
+      "Sell_price": 54.29,
+      "Reference_percent": 12.94
+    }
+  },
+  "2012-113": {
+    "name": "REAR AXLE MOUNT LH",
+    "espanol": "bancada trasera izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 44.0,
+    "consumer_price": 76.5,
+    "total_in_usa": 56.76,
+    "cost_in_usa_usd": 65.27,
+    "final_cost_usa": 71.8,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 78.3,
+      "Ref_Price": 87.97,
+      "Sell_price": 101.79,
+      "Reference_percent": 15.71
+    }
+  },
+  "2012-114": {
+    "name": "DIFFERENTIAL BEARING SUPPORT",
+    "espanol": "soporte de rodamientos de diff",
+    "qty_for_bag": 1,
+    "dealer_price": 26.5,
+    "consumer_price": 46.0,
+    "total_in_usa": 34.19,
+    "cost_in_usa_usd": 39.31,
+    "final_cost_usa": 43.24,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 45.84,
+      "Ref_Price": 52.9,
+      "Sell_price": 59.59,
+      "Reference_percent": 12.65
+    }
+  },
+  "2012-115": {
+    "name": "REAR UPPER WHISBONE SHAFT",
+    "espanol": "eje de parrilla superior trasera",
+    "qty_for_bag": 2,
+    "dealer_price": 4.2,
+    "consumer_price": 7.7,
+    "total_in_usa": 5.42,
+    "cost_in_usa_usd": 6.23,
+    "final_cost_usa": 6.85,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 8.8,
+      "Ref_Price": 8.85,
+      "Sell_price": 11.44,
+      "Reference_percent": 29.27
+    }
+  },
+  "2012-116": {
+    "name": "REAR UPPER WHISBONE",
+    "espanol": "parrilla trasera superior",
+    "qty_for_bag": 1,
+    "dealer_price": 17.0,
+    "consumer_price": 29.6,
+    "total_in_usa": 21.93,
+    "cost_in_usa_usd": 25.22,
+    "final_cost_usa": 27.74,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 30.34,
+      "Ref_Price": 34.04,
+      "Sell_price": 39.44,
+      "Reference_percent": 15.86
+    }
+  },
+  "2012-117": {
+    "name": "REAR UPRIGHT LH",
+    "espanol": "masa trasera izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 66.08,
+      "Ref_Price": 77.05,
+      "Sell_price": 85.9,
+      "Reference_percent": 11.49
+    }
+  },
+  "2012-118": {
+    "name": "REAR UPRIGHT RH",
+    "espanol": "masa trasera derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 66.08,
+      "Ref_Price": 77.05,
+      "Sell_price": 85.9,
+      "Reference_percent": 11.49
+    }
+  },
+  "2012-120": {
+    "name": "REAR UPRIGHT BEARINGS SPACER",
+    "espanol": "espaciador de rodamientos de masa ",
+    "qty_for_bag": 2,
+    "dealer_price": 3.2,
+    "consumer_price": 5.9,
+    "total_in_usa": 4.13,
+    "cost_in_usa_usd": 4.75,
+    "final_cost_usa": 5.22,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 6.52,
+      "Ref_Price": 6.79,
+      "Sell_price": 8.48,
+      "Reference_percent": 24.89
+    }
+  },
+  "2012-121": {
+    "name": "REAR WHEEL DRIVER SQUARE 11.5 mm",
+    "espanol": "cubos de 11.5 traseros",
+    "qty_for_bag": 1,
+    "dealer_price": 9.5,
+    "consumer_price": 17.5,
+    "total_in_usa": 12.26,
+    "cost_in_usa_usd": 14.09,
+    "final_cost_usa": 15.5,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 17.12,
+      "Ref_Price": 20.12,
+      "Sell_price": 22.26,
+      "Reference_percent": 10.64
+    }
+  },
+  "2012-122": {
+    "name": "REAR DRIVING AXLE",
+    "espanol": "eje de rueda trasero",
+    "qty_for_bag": 1,
+    "dealer_price": 13.2,
+    "consumer_price": 23.0,
+    "total_in_usa": 17.03,
+    "cost_in_usa_usd": 19.58,
+    "final_cost_usa": 21.54,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 24.79,
+      "Ref_Price": 26.45,
+      "Sell_price": 32.23,
+      "Reference_percent": 21.85
+    }
+  },
+  "2012-123": {
+    "name": "REAR TOE IN PLASTIC BUSH 1° - 3°",
+    "espanol": "alinear de 1-3 ",
+    "qty_for_bag": 4,
+    "dealer_price": 17.0,
+    "consumer_price": 29.5,
+    "total_in_usa": 21.93,
+    "cost_in_usa_usd": 25.22,
+    "final_cost_usa": 27.74,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 28.71,
+      "Ref_Price": 33.92,
+      "Sell_price": 37.32,
+      "Reference_percent": 10.02
+    }
+  },
+  "2012-124": {
+    "name": "REAR TOE IN PLASTIC BUSH 1.5° - 2.5°",
+    "espanol": "alinear de 1.5 - 2.5",
+    "qty_for_bag": 4,
+    "dealer_price": 17.0,
+    "consumer_price": 29.5,
+    "total_in_usa": 21.93,
+    "cost_in_usa_usd": 25.22,
+    "final_cost_usa": 27.74,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 28.71,
+      "Ref_Price": 33.92,
+      "Sell_price": 37.32,
+      "Reference_percent": 10.02
+    }
+  },
+  "2012-125": {
+    "name": "REAR TOE IN PLASTIC BUSH 2°",
+    "espanol": "alinear 2",
+    "qty_for_bag": 4,
+    "dealer_price": 17.0,
+    "consumer_price": 29.5,
+    "total_in_usa": 21.93,
+    "cost_in_usa_usd": 25.22,
+    "final_cost_usa": 27.74,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 28.71,
+      "Ref_Price": 33.92,
+      "Sell_price": 37.32,
+      "Reference_percent": 10.02
+    }
+  },
+  "2012-126": {
+    "name": "REAR TOE IN PLASTIC BUSH 3.5° - 0.5°",
+    "espanol": "alinear 3.5 - 0.5",
+    "qty_for_bag": 4,
+    "dealer_price": 17.0,
+    "consumer_price": 29.5,
+    "total_in_usa": 21.93,
+    "cost_in_usa_usd": 25.22,
+    "final_cost_usa": 27.74,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 28.71,
+      "Ref_Price": 33.92,
+      "Sell_price": 37.32,
+      "Reference_percent": 10.02
+    }
+  },
+  "2012-127": {
+    "name": "REAR TOE IN PLASTIC BUSH 4.5°",
+    "espanol": "alinear 4.5",
+    "qty_for_bag": 4,
+    "dealer_price": 17.0,
+    "consumer_price": 29.5,
+    "total_in_usa": 21.93,
+    "cost_in_usa_usd": 25.22,
+    "final_cost_usa": 27.74,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 28.71,
+      "Ref_Price": 33.92,
+      "Sell_price": 37.32,
+      "Reference_percent": 10.02
+    }
+  },
+  "2012-128": {
+    "name": "REAR TOE IN PLASTIC BUSH 4°",
+    "espanol": "alinear 4",
+    "qty_for_bag": 4,
+    "dealer_price": 17.0,
+    "consumer_price": 29.5,
+    "total_in_usa": 21.93,
+    "cost_in_usa_usd": 25.22,
+    "final_cost_usa": 27.74,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 28.71,
+      "Ref_Price": 33.92,
+      "Sell_price": 37.32,
+      "Reference_percent": 10.02
+    }
+  },
+  "2012-129": {
+    "name": "REAR LOWER UPRIGHT SHAFT",
+    "espanol": "eje de parrilla trasera inferior",
+    "qty_for_bag": 2,
+    "dealer_price": 4.2,
+    "consumer_price": 7.7,
+    "total_in_usa": 5.42,
+    "cost_in_usa_usd": 6.23,
+    "final_cost_usa": 6.85,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 8.8,
+      "Ref_Price": 8.85,
+      "Sell_price": 11.44,
+      "Reference_percent": 29.27
+    }
+  },
+  "2012-130": {
+    "name": "REAR LOWER WISHBONE LH",
+    "espanol": "parrilla trasera inferior izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 36.0,
+    "consumer_price": 62.5,
+    "total_in_usa": 46.44,
+    "cost_in_usa_usd": 53.41,
+    "final_cost_usa": 58.75,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 65.25,
+      "Ref_Price": 71.88,
+      "Sell_price": 84.83,
+      "Reference_percent": 18.02
+    }
+  },
+  "2012-131": {
+    "name": "REAR LOWER WISHBONE RH",
+    "espanol": "parrilla trasera inferior derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 36.0,
+    "consumer_price": 62.5,
+    "total_in_usa": 46.44,
+    "cost_in_usa_usd": 53.41,
+    "final_cost_usa": 58.75,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 65.25,
+      "Ref_Price": 71.88,
+      "Sell_price": 84.83,
+      "Reference_percent": 18.02
+    }
+  },
+  "2012-132": {
+    "name": "DRIVE SHAFT",
+    "espanol": "palier",
+    "qty_for_bag": 1,
+    "dealer_price": 9.5,
+    "consumer_price": 17.5,
+    "total_in_usa": 12.26,
+    "cost_in_usa_usd": 14.09,
+    "final_cost_usa": 15.5,
+    "ARG": {
+      "weight": 55.0,
+      "shipping_cost": 3.58,
+      "Costo_In_Arg": 19.08,
+      "Ref_Price": 20.12,
+      "Sell_price": 24.8,
+      "Reference_percent": 23.26
+    }
+  },
+  "2012-133": {
+    "name": "BALLS FOR DRIVE SHAFT",
+    "espanol": "bolas de palier",
+    "qty_for_bag": 6,
+    "dealer_price": 3.0,
+    "consumer_price": 5.5,
+    "total_in_usa": 3.87,
+    "cost_in_usa_usd": 4.45,
+    "final_cost_usa": 4.9,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 5.87,
+      "Ref_Price": 6.32,
+      "Sell_price": 7.63,
+      "Reference_percent": 20.73
+    }
+  },
+  "2012-134": {
+    "name": "REAR LOWER MOUNT SHOCK FORK",
+    "espanol": "posicion de amortiguador trasera 4 agujeros",
+    "qty_for_bag": 1,
+    "dealer_price": 14.0,
+    "consumer_price": 24.35,
+    "total_in_usa": 18.06,
+    "cost_in_usa_usd": 20.77,
+    "final_cost_usa": 22.85,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 24.15,
+      "Ref_Price": 28.0,
+      "Sell_price": 31.39,
+      "Reference_percent": 12.11
+    }
+  },
+  "2012-135": {
+    "name": "ANTI-ROLL BAR UPPER PIVOT DIAM. 5 mm",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 11.53,
+      "Ref_Price": 8.62,
+      "Sell_price": 14.99,
+      "Reference_percent": 73.9
+    }
+  },
+  "2012-136": {
+    "name": "ANTI-ROLL BAR BARREL DIAM. 5 mm",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 8.25,
+    "consumer_price": 15.2,
+    "total_in_usa": 10.64,
+    "cost_in_usa_usd": 12.24,
+    "final_cost_usa": 13.46,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.46,
+      "Ref_Price": 17.48,
+      "Sell_price": 24.0,
+      "Reference_percent": 37.3
+    }
+  },
+  "2012-137": {
+    "name": "REAR ANTI-ROLL BAR DIAM. 5 mm",
+    "espanol": "\"rodamiento\" barra vieja",
+    "qty_for_bag": 1,
+    "dealer_price": 16.0,
+    "consumer_price": 27.8,
+    "total_in_usa": 20.64,
+    "cost_in_usa_usd": 23.74,
+    "final_cost_usa": 26.11,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 31.11,
+      "Ref_Price": 31.97,
+      "Sell_price": 40.44,
+      "Reference_percent": 26.49
+    }
+  },
+  "2012-138": {
+    "name": "M4X20 SCREW REAR DOWN STOP",
+    "espanol": null,
+    "qty_for_bag": 6,
+    "dealer_price": 1.5,
+    "consumer_price": 3.8,
+    "total_in_usa": 1.94,
+    "cost_in_usa_usd": 2.23,
+    "final_cost_usa": 2.45,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.45,
+      "Ref_Price": 4.37,
+      "Sell_price": 9.69,
+      "Reference_percent": 121.74
+    }
+  },
+  "2012-139": {
+    "name": "REAR UPPER SHOCK MOUNT",
+    "espanol": "torreta de amortiguadores trasera",
+    "qty_for_bag": 1,
+    "dealer_price": 24.0,
+    "consumer_price": 41.7,
+    "total_in_usa": 30.96,
+    "cost_in_usa_usd": 35.6,
+    "final_cost_usa": 39.16,
+    "ARG": {
+      "weight": 75.0,
+      "shipping_cost": 4.88,
+      "Costo_In_Arg": 44.04,
+      "Ref_Price": 47.95,
+      "Sell_price": 57.25,
+      "Reference_percent": 19.4
+    }
+  },
+  "2012-140": {
+    "name": "COUNTERSUNK SCREW M4X14",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-141": {
+    "name": "PIN 4X10",
+    "espanol": "pines de cuaderna",
+    "qty_for_bag": 4,
+    "dealer_price": 1.2,
+    "consumer_price": 2.2,
+    "total_in_usa": 1.55,
+    "cost_in_usa_usd": 1.78,
+    "final_cost_usa": 1.96,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 2.61,
+      "Ref_Price": 2.53,
+      "Sell_price": 3.39,
+      "Reference_percent": 33.99
+    }
+  },
+  "2012-142": {
+    "name": "COUNTERSUNK SCREW M4X10",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-143": {
+    "name": "UPPER PIN REAR SHOCK FIXING",
+    "espanol": "pieza en la que encastra el amoritiguador traseros (va el clip)",
+    "qty_for_bag": 1,
+    "dealer_price": 4.3,
+    "consumer_price": 7.9,
+    "total_in_usa": 5.55,
+    "cost_in_usa_usd": 6.38,
+    "final_cost_usa": 7.02,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 8.64,
+      "Ref_Price": 9.08,
+      "Sell_price": 11.23,
+      "Reference_percent": 23.68
+    }
+  },
+  "2012-144": {
+    "name": "RETAINER RING FOR SHOCKS",
+    "espanol": "clips amortiguador",
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 3.34,
+      "Ref_Price": 4.37,
+      "Sell_price": 4.34,
+      "Reference_percent": -0.69
+    }
+  },
+  "2012-145": {
+    "name": "SOCKET HEAD SCREW M4X20",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-146": {
+    "name": "REAR BODY SUPPORT BRACKET",
+    "espanol": "soporte de carroceria de aluminio (brazo)",
+    "qty_for_bag": 1,
+    "dealer_price": 13.2,
+    "consumer_price": 23.0,
+    "total_in_usa": 17.03,
+    "cost_in_usa_usd": 19.58,
+    "final_cost_usa": 21.54,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 22.84,
+      "Ref_Price": 26.45,
+      "Sell_price": 29.69,
+      "Reference_percent": 12.25
+    }
+  },
+  "2012-147": {
+    "name": "CARBON FIBER REAR BODY SUPPORT",
+    "espanol": "carbono de carroceria trasero",
+    "qty_for_bag": 1,
+    "dealer_price": 12.0,
+    "consumer_price": 20.9,
+    "total_in_usa": 15.48,
+    "cost_in_usa_usd": 17.8,
+    "final_cost_usa": 19.58,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 20.88,
+      "Ref_Price": 24.03,
+      "Sell_price": 27.14,
+      "Reference_percent": 12.94
+    }
+  },
+  "2012-148": {
+    "name": "REAR BODY MOUNT COLUMN",
+    "espanol": "palito de carroceria trasero completo",
+    "qty_for_bag": 1,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 9.46,
+      "Ref_Price": 10.58,
+      "Sell_price": 12.3,
+      "Reference_percent": 16.26
+    }
+  },
+  "2012-149": {
+    "name": "COUNTERSUNK SCREW M5X18",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-150": {
+    "name": "REAR MOUNTS SPACER",
+    "espanol": "pieza que une las dos cuadernas en forma de \"S\"",
+    "qty_for_bag": 1,
+    "dealer_price": 12.5,
+    "consumer_price": 21.75,
+    "total_in_usa": 16.12,
+    "cost_in_usa_usd": 18.54,
+    "final_cost_usa": 20.4,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 22.67,
+      "Ref_Price": 25.01,
+      "Sell_price": 29.47,
+      "Reference_percent": 17.83
+    }
+  },
+  "2012-151": {
+    "name": "REAR AXLE MOUNT RH",
+    "espanol": "Bancada trasera derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 42.5,
+    "consumer_price": 74.0,
+    "total_in_usa": 54.83,
+    "cost_in_usa_usd": 63.05,
+    "final_cost_usa": 69.35,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 75.85,
+      "Ref_Price": 85.1,
+      "Sell_price": 98.6,
+      "Reference_percent": 15.86
+    }
+  },
+  "2012-152": {
+    "name": "CARBON FIBER BATTERY SUPPORT",
+    "espanol": "soporte de bateria viejo",
+    "qty_for_bag": 1,
+    "dealer_price": 12.5,
+    "consumer_price": 21.75,
+    "total_in_usa": 16.12,
+    "cost_in_usa_usd": 18.54,
+    "final_cost_usa": 20.4,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 25.4,
+      "Ref_Price": 25.01,
+      "Sell_price": 33.02,
+      "Reference_percent": 32.03
+    }
+  },
+  "2012-153": {
+    "name": "DIFFERENTIAL GEARWELL Z 73",
+    "espanol": "corona de diferencial",
+    "qty_for_bag": 1,
+    "dealer_price": 31.0,
+    "consumer_price": 54.0,
+    "total_in_usa": 39.99,
+    "cost_in_usa_usd": 45.99,
+    "final_cost_usa": 50.59,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 55.79,
+      "Ref_Price": 62.1,
+      "Sell_price": 72.53,
+      "Reference_percent": 16.8
+    }
+  },
+  "2012-154": {
+    "name": "SECOND SHAFT PINION Z 25",
+    "espanol": "piñon eje medio 25",
+    "qty_for_bag": 1,
+    "dealer_price": 24.0,
+    "consumer_price": 41.7,
+    "total_in_usa": 30.96,
+    "cost_in_usa_usd": 35.6,
+    "final_cost_usa": 39.16,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 41.76,
+      "Ref_Price": 47.95,
+      "Sell_price": 54.29,
+      "Reference_percent": 13.22
+    }
+  },
+  "2012-155": {
+    "name": "PROTECTIVE BELLOW",
+    "espanol": "fuelle de palier",
+    "qty_for_bag": 2,
+    "dealer_price": 10.0,
+    "consumer_price": 18.0,
+    "total_in_usa": 12.9,
+    "cost_in_usa_usd": 14.83,
+    "final_cost_usa": 16.32,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 17.62,
+      "Ref_Price": 20.7,
+      "Sell_price": 22.91,
+      "Reference_percent": 10.68
+    }
+  },
+  "2012-163": {
+    "name": "DRIVE SHAFT RUBBER PADS",
+    "espanol": "gomas de palier",
+    "qty_for_bag": 4,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 7.83,
+      "Ref_Price": 8.62,
+      "Sell_price": 10.18,
+      "Reference_percent": 18.1
+    }
+  },
+  "2012-166": {
+    "name": "CARBON FIBER PIPE SUPPORT",
+    "espanol": "soporte de escape samba 7",
+    "qty_for_bag": 1,
+    "dealer_price": 15.0,
+    "consumer_price": 26.0,
+    "total_in_usa": 19.35,
+    "cost_in_usa_usd": 22.25,
+    "final_cost_usa": 24.48,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 27.08,
+      "Ref_Price": 29.9,
+      "Sell_price": 35.2,
+      "Reference_percent": 17.73
+    }
+  },
+  "2012-170": {
+    "name": "SERVO SAVER SPHERICAL JOINT LONG",
+    "espanol": "columna de salvaservo para brazo de servo",
+    "qty_for_bag": 2,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 9.46,
+      "Ref_Price": 10.58,
+      "Sell_price": 12.3,
+      "Reference_percent": 16.26
+    }
+  },
+  "2012-172": {
+    "name": "RETAINING BRAKE LINE",
+    "espanol": "clips para manguera de freno",
+    "qty_for_bag": 2,
+    "dealer_price": 3.3,
+    "consumer_price": 6.0,
+    "total_in_usa": 4.26,
+    "cost_in_usa_usd": 4.9,
+    "final_cost_usa": 5.39,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 6.36,
+      "Ref_Price": 6.9,
+      "Sell_price": 8.27,
+      "Reference_percent": 19.86
+    }
+  },
+  "2012-175": {
+    "name": "DIFFERENTIAL BEARING 15/24/5",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.3,
+    "consumer_price": 9.75,
+    "total_in_usa": 6.84,
+    "cost_in_usa_usd": 7.86,
+    "final_cost_usa": 8.65,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.65,
+      "Ref_Price": 11.21,
+      "Sell_price": 17.75,
+      "Reference_percent": 58.34
+    }
+  },
+  "2012-177": {
+    "name": "COMPLETE STEERING STOPPER",
+    "espanol": "tope de direccion",
+    "qty_for_bag": 1,
+    "dealer_price": 6.2,
+    "consumer_price": 11.4,
+    "total_in_usa": 8.0,
+    "cost_in_usa_usd": 9.2,
+    "final_cost_usa": 10.12,
+    "ARG": {
+      "weight": 25.0,
+      "shipping_cost": 1.62,
+      "Costo_In_Arg": 11.74,
+      "Ref_Price": 13.11,
+      "Sell_price": 15.26,
+      "Reference_percent": 16.4
+    }
+  },
+  "2012-178": {
+    "name": "FRONT UPRIGHT -3 RH",
+    "espanol": "masa con offset",
+    "qty_for_bag": 1,
+    "dealer_price": 32.5,
+    "consumer_price": 56.5,
+    "total_in_usa": 41.93,
+    "cost_in_usa_usd": 48.21,
+    "final_cost_usa": 53.04,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 58.04,
+      "Ref_Price": 64.97,
+      "Sell_price": 75.45,
+      "Reference_percent": 16.13
+    }
+  },
+  "2012-179": {
+    "name": "FRONT UPRIGHT -3 LH",
+    "espanol": "masa con offset",
+    "qty_for_bag": 1,
+    "dealer_price": 32.5,
+    "consumer_price": 56.5,
+    "total_in_usa": 41.93,
+    "cost_in_usa_usd": 48.21,
+    "final_cost_usa": 53.04,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 58.04,
+      "Ref_Price": 64.97,
+      "Sell_price": 75.45,
+      "Reference_percent": 16.13
+    }
+  },
+  "2012-185": {
+    "name": "STEERING PIVOT DIAM. 4mm",
+    "espanol": "bola para salva servo . rotula de direccion",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 12.0,
+      "shipping_cost": 0.78,
+      "Costo_In_Arg": 7.31,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.5,
+      "Reference_percent": 10.21
+    }
+  },
+  "2012-186": {
+    "name": "PAN-HEAD SCREW M4X16",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 3.0,
+    "consumer_price": 5.5,
+    "total_in_usa": 3.87,
+    "cost_in_usa_usd": 4.45,
+    "final_cost_usa": 4.9,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 9.9,
+      "Ref_Price": 6.32,
+      "Sell_price": 12.87,
+      "Reference_percent": 103.64
+    }
+  },
+  "2012-187": {
+    "name": "PIVOT END WISHBONE SHORT",
+    "espanol": "rotula de aluminio completa",
+    "qty_for_bag": 1,
+    "dealer_price": 13.0,
+    "consumer_price": 22.6,
+    "total_in_usa": 16.77,
+    "cost_in_usa_usd": 19.29,
+    "final_cost_usa": 21.21,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 23.16,
+      "Ref_Price": 25.99,
+      "Sell_price": 30.11,
+      "Reference_percent": 15.85
+    }
+  },
+  "2012-188": {
+    "name": "COUNTERSUNK SCREW M4X8",
+    "espanol": null,
+    "qty_for_bag": 8,
+    "dealer_price": 3.0,
+    "consumer_price": 5.5,
+    "total_in_usa": 3.87,
+    "cost_in_usa_usd": 4.45,
+    "final_cost_usa": 4.9,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 9.9,
+      "Ref_Price": 6.32,
+      "Sell_price": 12.87,
+      "Reference_percent": 103.64
+    }
+  },
+  "2012-189": {
+    "name": "SCREWS MOUNT BODYSHELL COLUMN",
+    "espanol": "tornillos  ",
+    "qty_for_bag": 4,
+    "dealer_price": 3.0,
+    "consumer_price": 5.5,
+    "total_in_usa": 3.87,
+    "cost_in_usa_usd": 4.45,
+    "final_cost_usa": 4.9,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 9.9,
+      "Ref_Price": 6.32,
+      "Sell_price": 12.87,
+      "Reference_percent": 103.64
+    }
+  },
+  "2012-190": {
+    "name": "PAN-HEAD SCREW M6X18 AND WASHER",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 2.0,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.58,
+    "cost_in_usa_usd": 2.97,
+    "final_cost_usa": 3.26,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.26,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.74,
+      "Reference_percent": 145.77
+    }
+  },
+  "2012-192": {
+    "name": "FRONT ANTI-ROLL BAR DIAM. 6 mm",
+    "espanol": "barra 6mm vieja ",
+    "qty_for_bag": 1,
+    "dealer_price": 16.0,
+    "consumer_price": 27.8,
+    "total_in_usa": 20.64,
+    "cost_in_usa_usd": 23.74,
+    "final_cost_usa": 26.11,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 29.36,
+      "Ref_Price": 31.97,
+      "Sell_price": 38.17,
+      "Reference_percent": 19.39
+    }
+  },
+  "2012-193": {
+    "name": "ANTI-ROLL BAR BARREL DIAM. 6 mm",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 8.25,
+    "consumer_price": 15.0,
+    "total_in_usa": 10.64,
+    "cost_in_usa_usd": 12.24,
+    "final_cost_usa": 13.46,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.46,
+      "Ref_Price": 17.25,
+      "Sell_price": 24.0,
+      "Reference_percent": 39.13
+    }
+  },
+  "2012-194": {
+    "name": "REAR ANTI-ROLL BAR DIAM. 5,5 mm",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 16.0,
+    "consumer_price": 27.8,
+    "total_in_usa": 20.64,
+    "cost_in_usa_usd": 23.74,
+    "final_cost_usa": 26.11,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 31.11,
+      "Ref_Price": 31.97,
+      "Sell_price": 40.44,
+      "Reference_percent": 26.49
+    }
+  },
+  "2012-195": {
+    "name": "FRONT WEIGHT",
+    "espanol": "plomos delanteros",
+    "qty_for_bag": 2,
+    "dealer_price": 21.5,
+    "consumer_price": 37.4,
+    "total_in_usa": 27.73,
+    "cost_in_usa_usd": 31.9,
+    "final_cost_usa": 35.08,
+    "ARG": {
+      "weight": 170.0,
+      "shipping_cost": 11.05,
+      "Costo_In_Arg": 46.13,
+      "Ref_Price": 43.01,
+      "Sell_price": 59.97,
+      "Reference_percent": 39.43
+    }
+  },
+  "2012-196": {
+    "name": "MEDIUM WEIGHT",
+    "espanol": "plomo grande salva servo",
+    "qty_for_bag": 2,
+    "dealer_price": 21.5,
+    "consumer_price": 37.4,
+    "total_in_usa": 27.73,
+    "cost_in_usa_usd": 31.9,
+    "final_cost_usa": 35.08,
+    "ARG": {
+      "weight": 210.0,
+      "shipping_cost": 13.65,
+      "Costo_In_Arg": 48.73,
+      "Ref_Price": 43.01,
+      "Sell_price": 63.35,
+      "Reference_percent": 47.29
+    }
+  },
+  "2012-197": {
+    "name": "CENTRAL WEIGHT",
+    "espanol": "plomo tanque",
+    "qty_for_bag": 2,
+    "dealer_price": 21.5,
+    "consumer_price": 37.4,
+    "total_in_usa": 27.73,
+    "cost_in_usa_usd": 31.9,
+    "final_cost_usa": 35.08,
+    "ARG": {
+      "weight": 200.0,
+      "shipping_cost": 13.0,
+      "Costo_In_Arg": 48.08,
+      "Ref_Price": 43.01,
+      "Sell_price": 62.5,
+      "Reference_percent": 45.32
+    }
+  },
+  "2012-198": {
+    "name": "FRONT UPRIGHT BEARING SPACER",
+    "espanol": "espaciador de rodamientos masa delantera",
+    "qty_for_bag": 2,
+    "dealer_price": 3.2,
+    "consumer_price": 5.9,
+    "total_in_usa": 4.13,
+    "cost_in_usa_usd": 4.75,
+    "final_cost_usa": 5.22,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 7.17,
+      "Ref_Price": 6.79,
+      "Sell_price": 9.32,
+      "Reference_percent": 37.26
+    }
+  },
+  "2012-199": {
+    "name": "FRONT UPRIGHT STANDARD SPACER",
+    "espanol": "cono 6 mm",
+    "qty_for_bag": 4,
+    "dealer_price": 9.0,
+    "consumer_price": 15.6,
+    "total_in_usa": 11.61,
+    "cost_in_usa_usd": 13.35,
+    "final_cost_usa": 14.69,
+    "ARG": {
+      "weight": 17.0,
+      "shipping_cost": 1.1,
+      "Costo_In_Arg": 15.79,
+      "Ref_Price": 17.94,
+      "Sell_price": 20.53,
+      "Reference_percent": 14.44
+    }
+  },
+  "2012-200": {
+    "name": "FRONT UPRIGHT MEDIUM SPACER -2",
+    "espanol": "cono 4 mm",
+    "qty_for_bag": 4,
+    "dealer_price": 9.0,
+    "consumer_price": 15.6,
+    "total_in_usa": 11.61,
+    "cost_in_usa_usd": 13.35,
+    "final_cost_usa": 14.69,
+    "ARG": {
+      "weight": 17.0,
+      "shipping_cost": 1.1,
+      "Costo_In_Arg": 15.79,
+      "Ref_Price": 17.94,
+      "Sell_price": 20.53,
+      "Reference_percent": 14.44
+    }
+  },
+  "2012-201": {
+    "name": "FRONT UPRIGHT SHORT SPACER -4",
+    "espanol": "cono 2 mm",
+    "qty_for_bag": 4,
+    "dealer_price": 9.0,
+    "consumer_price": 15.6,
+    "total_in_usa": 11.61,
+    "cost_in_usa_usd": 13.35,
+    "final_cost_usa": 14.69,
+    "ARG": {
+      "weight": 17.0,
+      "shipping_cost": 1.1,
+      "Costo_In_Arg": 15.79,
+      "Ref_Price": 17.94,
+      "Sell_price": 20.53,
+      "Reference_percent": 14.44
+    }
+  },
+  "2012-202": {
+    "name": "FRONT NEW BRAKE HUB STANDARD 14mm",
+    "espanol": "cubo para disco estrella 14mm",
+    "qty_for_bag": 2,
+    "dealer_price": 32.0,
+    "consumer_price": 55.7,
+    "total_in_usa": 41.28,
+    "cost_in_usa_usd": 47.47,
+    "final_cost_usa": 52.22,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 54.82,
+      "Ref_Price": 64.05,
+      "Sell_price": 71.27,
+      "Reference_percent": 11.27
+    }
+  },
+  "2012-203": {
+    "name": "FRONT NEW BRAKE HUB STANDARD 12mm",
+    "espanol": "cubo para delante de 12 mm",
+    "qty_for_bag": 2,
+    "dealer_price": 32.0,
+    "consumer_price": 55.7,
+    "total_in_usa": 41.28,
+    "cost_in_usa_usd": 47.47,
+    "final_cost_usa": 52.22,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 54.82,
+      "Ref_Price": 64.05,
+      "Sell_price": 71.27,
+      "Reference_percent": 11.27
+    }
+  },
+  "2012-204": {
+    "name": "REAR NEW BRAKE HUB STANDARD 11,5mm",
+    "espanol": "cubo traser de 11.5",
+    "qty_for_bag": 2,
+    "dealer_price": 32.0,
+    "consumer_price": 55.7,
+    "total_in_usa": 41.28,
+    "cost_in_usa_usd": 47.47,
+    "final_cost_usa": 52.22,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 54.82,
+      "Ref_Price": 64.05,
+      "Sell_price": 71.27,
+      "Reference_percent": 11.27
+    }
+  },
+  "2012-205": {
+    "name": "NEW BRAKE DISK 2015",
+    "espanol": "disco estrella",
+    "qty_for_bag": 2,
+    "dealer_price": 16.2,
+    "consumer_price": 28.2,
+    "total_in_usa": 20.9,
+    "cost_in_usa_usd": 24.03,
+    "final_cost_usa": 26.44,
+    "ARG": {
+      "weight": 22.0,
+      "shipping_cost": 1.43,
+      "Costo_In_Arg": 27.87,
+      "Ref_Price": 32.43,
+      "Sell_price": 36.23,
+      "Reference_percent": 11.72
+    }
+  },
+  "2012-206": {
+    "name": "STEERING PIVOT DIAM. 3 mm",
+    "espanol": "masa con offset",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 11.53,
+      "Ref_Price": 8.62,
+      "Sell_price": 14.99,
+      "Reference_percent": 73.9
+    }
+  },
+  "2012-208": {
+    "name": "SERVOSAVER ROD M4XL52 mm",
+    "espanol": "der-izq de servos",
+    "qty_for_bag": 1,
+    "dealer_price": 7.0,
+    "consumer_price": 12.9,
+    "total_in_usa": 9.03,
+    "cost_in_usa_usd": 10.38,
+    "final_cost_usa": 11.42,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 12.72,
+      "Ref_Price": 14.83,
+      "Sell_price": 16.54,
+      "Reference_percent": 11.53
+    }
+  },
+  "2012-209": {
+    "name": "COMPLETE JOINT HOLE DIAM. 3mm",
+    "espanol": "rotula de 3mm completa",
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.1,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": 12.0,
+      "shipping_cost": 0.78,
+      "Costo_In_Arg": 9.76,
+      "Ref_Price": 11.61,
+      "Sell_price": 12.69,
+      "Reference_percent": 9.3
+    }
+  },
+  "2012-210": {
+    "name": "ENGINE BRACKET",
+    "espanol": "tensor de motor (atras)",
+    "qty_for_bag": 1,
+    "dealer_price": 25.0,
+    "consumer_price": 43.5,
+    "total_in_usa": 32.25,
+    "cost_in_usa_usd": 37.09,
+    "final_cost_usa": 40.8,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 42.75,
+      "Ref_Price": 50.02,
+      "Sell_price": 55.58,
+      "Reference_percent": 11.12
+    }
+  },
+  "2012-211": {
+    "name": "DIFFERENTIAL OUTER HUB",
+    "espanol": "cubo de diferencial",
+    "qty_for_bag": 1,
+    "dealer_price": 14.5,
+    "consumer_price": 25.2,
+    "total_in_usa": 18.71,
+    "cost_in_usa_usd": 21.51,
+    "final_cost_usa": 23.66,
+    "ARG": {
+      "weight": 45.0,
+      "shipping_cost": 2.92,
+      "Costo_In_Arg": 26.58,
+      "Ref_Price": 28.98,
+      "Sell_price": 34.55,
+      "Reference_percent": 19.22
+    }
+  },
+  "2012-212": {
+    "name": "GROOVED CHASSIS 530",
+    "espanol": "chasis calado",
+    "qty_for_bag": 1,
+    "dealer_price": 167.0,
+    "consumer_price": 290.5,
+    "total_in_usa": 215.43,
+    "cost_in_usa_usd": 247.74,
+    "final_cost_usa": 272.52,
+    "ARG": {
+      "weight": 1000.0,
+      "shipping_cost": 65.0,
+      "Costo_In_Arg": 337.52,
+      "Ref_Price": 334.07,
+      "Sell_price": 438.78,
+      "Reference_percent": 31.34
+    }
+  },
+  "2012-213": {
+    "name": "NEW BATTERY HOLDER SET",
+    "espanol": "soporte nuevo de bateria",
+    "qty_for_bag": 1,
+    "dealer_price": 44.0,
+    "consumer_price": 76.5,
+    "total_in_usa": 56.76,
+    "cost_in_usa_usd": 65.27,
+    "final_cost_usa": 71.8,
+    "ARG": {
+      "weight": 95.0,
+      "shipping_cost": 6.17,
+      "Costo_In_Arg": 77.97,
+      "Ref_Price": 87.97,
+      "Sell_price": 101.36,
+      "Reference_percent": 15.22
+    }
+  },
+  "2012-213V": {
+    "name": "VELCRO FOR BATTERY SUPPORT",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 6.0,
+    "consumer_price": 11.0,
+    "total_in_usa": 7.74,
+    "cost_in_usa_usd": 8.9,
+    "final_cost_usa": 9.79,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 14.79,
+      "Ref_Price": 12.65,
+      "Sell_price": 19.23,
+      "Reference_percent": 52.02
+    }
+  },
+  "2012-214": {
+    "name": "CONVERSION KIT SHORT WHEELBASE FOR PORSCHE (RADIO PLATE DOUBLE SERVO)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 246.5,
+    "consumer_price": 428.0,
+    "total_in_usa": 317.99,
+    "cost_in_usa_usd": 365.68,
+    "final_cost_usa": 402.25,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 407.25,
+      "Ref_Price": 492.2,
+      "Sell_price": 529.43,
+      "Reference_percent": 7.56
+    }
+  },
+  "2012-215": {
+    "name": "CONVERSION KIT SHORT WHEELBASE FOR PORSCHE (RADIO PLATE BIG SERVO)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 246.5,
+    "consumer_price": 428.0,
+    "total_in_usa": 317.99,
+    "cost_in_usa_usd": 365.68,
+    "final_cost_usa": 402.25,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 407.25,
+      "Ref_Price": 492.2,
+      "Sell_price": 529.43,
+      "Reference_percent": 7.56
+    }
+  },
+  "2012-216": {
+    "name": "RADIO PLATE DOUBLE SERVO (FOR SHORT CAR)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 55.0,
+    "consumer_price": 95.7,
+    "total_in_usa": 70.95,
+    "cost_in_usa_usd": 81.59,
+    "final_cost_usa": 89.75,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 94.75,
+      "Ref_Price": 110.05,
+      "Sell_price": 123.17,
+      "Reference_percent": 11.92
+    }
+  },
+  "2012-217": {
+    "name": "RADIO PLATE BIG SERVO (FOR SHORT CAR)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 55.0,
+    "consumer_price": 95.7,
+    "total_in_usa": 70.95,
+    "cost_in_usa_usd": 81.59,
+    "final_cost_usa": 89.75,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 94.75,
+      "Ref_Price": 110.05,
+      "Sell_price": 123.17,
+      "Reference_percent": 11.92
+    }
+  },
+  "2012-218": {
+    "name": "REAR CARBON BODY SUPPORT (FOR PORSCHE BODYSHELL)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 12.0,
+    "consumer_price": 20.9,
+    "total_in_usa": 15.48,
+    "cost_in_usa_usd": 17.8,
+    "final_cost_usa": 19.58,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 24.58,
+      "Ref_Price": 24.03,
+      "Sell_price": 31.95,
+      "Reference_percent": 32.96
+    }
+  },
+  "2012-219": {
+    "name": "REAR PLASTIC COLUMN SUPPORT (FOR PORSCHE BODYSHELL)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.05,
+      "Ref_Price": 16.9,
+      "Sell_price": 23.47,
+      "Reference_percent": 38.88
+    }
+  },
+  "2012-220": {
+    "name": "RADIO PLATE SPACER 5th COLUMN",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 4.5,
+    "consumer_price": 8.3,
+    "total_in_usa": 5.8,
+    "cost_in_usa_usd": 6.68,
+    "final_cost_usa": 7.34,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 12.34,
+      "Ref_Price": 9.54,
+      "Sell_price": 16.04,
+      "Reference_percent": 68.13
+    }
+  },
+  "2012-221": {
+    "name": "LOWER ROLL BAR MOUNT LH 4 HOLES",
+    "espanol": "posiciones de barra trasera con 4 izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 13.0,
+    "consumer_price": 22.6,
+    "total_in_usa": 16.77,
+    "cost_in_usa_usd": 19.29,
+    "final_cost_usa": 21.21,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 22.18,
+      "Ref_Price": 25.99,
+      "Sell_price": 28.83,
+      "Reference_percent": 10.93
+    }
+  },
+  "2012-222": {
+    "name": "LOWER ROLL BAR MOUNT RH 4 HOLES",
+    "espanol": "posiciones de barra trasera con 4 derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 13.0,
+    "consumer_price": 22.6,
+    "total_in_usa": 16.77,
+    "cost_in_usa_usd": 19.29,
+    "final_cost_usa": 21.21,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 22.18,
+      "Ref_Price": 25.99,
+      "Sell_price": 28.83,
+      "Reference_percent": 10.93
+    }
+  },
+  "2012-223": {
+    "name": "CLUTCH PINION Z34",
+    "espanol": "piñon 34",
+    "qty_for_bag": 1,
+    "dealer_price": 19.0,
+    "consumer_price": 33.0,
+    "total_in_usa": 24.51,
+    "cost_in_usa_usd": 28.19,
+    "final_cost_usa": 31.01,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 34.26,
+      "Ref_Price": 37.95,
+      "Sell_price": 44.54,
+      "Reference_percent": 17.36
+    }
+  },
+  "2012-224": {
+    "name": "FRONT END KIT 2017",
+    "espanol": "KIT TREN DELANTERO",
+    "qty_for_bag": 1,
+    "dealer_price": 473.0,
+    "consumer_price": 755.0,
+    "total_in_usa": 610.17,
+    "cost_in_usa_usd": 701.7,
+    "final_cost_usa": 771.87,
+    "ARG": {
+      "weight": 1000.0,
+      "shipping_cost": 65.0,
+      "Costo_In_Arg": 836.87,
+      "Ref_Price": 868.25,
+      "Sell_price": 1087.93,
+      "Reference_percent": 25.3
+    }
+  },
+  "2012-225": {
+    "name": "NEW MEDIUM WEIGHT",
+    "espanol": "peso de servos . no grande",
+    "qty_for_bag": 1,
+    "dealer_price": 21.5,
+    "consumer_price": 37.4,
+    "total_in_usa": 27.73,
+    "cost_in_usa_usd": 31.9,
+    "final_cost_usa": 35.08,
+    "ARG": {
+      "weight": 160.0,
+      "shipping_cost": 10.4,
+      "Costo_In_Arg": 45.48,
+      "Ref_Price": 43.01,
+      "Sell_price": 59.12,
+      "Reference_percent": 37.46
+    }
+  },
+  "2012-226": {
+    "name": "MEDIUM WEIGHT FOR SHORT CHASSIS",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 21.5,
+    "consumer_price": 37.4,
+    "total_in_usa": 27.73,
+    "cost_in_usa_usd": 31.9,
+    "final_cost_usa": 35.08,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 40.08,
+      "Ref_Price": 43.01,
+      "Sell_price": 52.1,
+      "Reference_percent": 21.13
+    }
+  },
+  "2012-227": {
+    "name": "COMPLETE REAR ANTI-ROLL BAR KIT 2017",
+    "espanol": "barra nueva trasera",
+    "qty_for_bag": 1,
+    "dealer_price": 100.0,
+    "consumer_price": 174.0,
+    "total_in_usa": 129.0,
+    "cost_in_usa_usd": 148.35,
+    "final_cost_usa": 163.19,
+    "ARG": {
+      "weight": 75.0,
+      "shipping_cost": 4.88,
+      "Costo_In_Arg": 168.07,
+      "Ref_Price": 200.1,
+      "Sell_price": 218.49,
+      "Reference_percent": 9.19
+    }
+  },
+  "2012-228": {
+    "name": "COMPLETE SERVO SAVER",
+    "espanol": "salva servo nuevo completo",
+    "qty_for_bag": 1,
+    "dealer_price": 94.0,
+    "consumer_price": 148.8,
+    "total_in_usa": 121.26,
+    "cost_in_usa_usd": 139.45,
+    "final_cost_usa": 153.39,
+    "ARG": {
+      "weight": 90.0,
+      "shipping_cost": 5.85,
+      "Costo_In_Arg": 159.24,
+      "Ref_Price": 171.12,
+      "Sell_price": 207.01,
+      "Reference_percent": 20.97
+    }
+  },
+  "2012-229": {
+    "name": "FRONT LOWER WISHBONE LH 2017",
+    "espanol": "parrilla inferior tren delantero nuevo izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 69.33,
+      "Ref_Price": 77.05,
+      "Sell_price": 90.13,
+      "Reference_percent": 16.98
+    }
+  },
+  "2012-230": {
+    "name": "FRONT LOWER WISHBONE RH 2017",
+    "espanol": "parrilla inferior tren delantero nuevo derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 69.33,
+      "Ref_Price": 77.05,
+      "Sell_price": 90.13,
+      "Reference_percent": 16.98
+    }
+  },
+  "2012-231": {
+    "name": "FRONT AXLE MOUNT LH 2017",
+    "espanol": "cuaderna tren delantero nuevo izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 49.5,
+    "consumer_price": 86.0,
+    "total_in_usa": 63.86,
+    "cost_in_usa_usd": 73.43,
+    "final_cost_usa": 80.78,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 87.28,
+      "Ref_Price": 98.9,
+      "Sell_price": 113.46,
+      "Reference_percent": 14.72
+    }
+  },
+  "2012-232": {
+    "name": "FRONT AXLE MOUNT RH 2017",
+    "espanol": "cuaderna tren delantero nuevo izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 49.5,
+    "consumer_price": 86.0,
+    "total_in_usa": 63.86,
+    "cost_in_usa_usd": 73.43,
+    "final_cost_usa": 80.78,
+    "ARG": {
+      "weight": 100.0,
+      "shipping_cost": 6.5,
+      "Costo_In_Arg": 87.28,
+      "Ref_Price": 98.9,
+      "Sell_price": 113.46,
+      "Reference_percent": 14.72
+    }
+  },
+  "2012-233": {
+    "name": "CARBON FIBER FRONT MOUNT PLATE 2017",
+    "espanol": "carbono que une cuadernas tren delantero viejo",
+    "qty_for_bag": 1,
+    "dealer_price": 15.0,
+    "consumer_price": 26.1,
+    "total_in_usa": 19.35,
+    "cost_in_usa_usd": 22.25,
+    "final_cost_usa": 24.48,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 26.43,
+      "Ref_Price": 30.02,
+      "Sell_price": 34.36,
+      "Reference_percent": 14.46
+    }
+  },
+  "2012-234": {
+    "name": "FRONT SHOCK SUPPORT 2017",
+    "espanol": "torreta de amortiguadores tren delantero viejo",
+    "qty_for_bag": 1,
+    "dealer_price": 22.0,
+    "consumer_price": 38.3,
+    "total_in_usa": 28.38,
+    "cost_in_usa_usd": 32.64,
+    "final_cost_usa": 35.9,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 39.15,
+      "Ref_Price": 44.04,
+      "Sell_price": 50.9,
+      "Reference_percent": 15.58
+    }
+  },
+  "2012-235": {
+    "name": "RADIO PLATE CONNECTION TRIANGLE 2017",
+    "espanol": "triangulo de salvaservo tren delantero nuevo",
+    "qty_for_bag": 1,
+    "dealer_price": 17.5,
+    "consumer_price": 30.45,
+    "total_in_usa": 22.57,
+    "cost_in_usa_usd": 25.96,
+    "final_cost_usa": 28.56,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 33.56,
+      "Ref_Price": 35.02,
+      "Sell_price": 43.63,
+      "Reference_percent": 24.59
+    }
+  },
+  "2012-236": {
+    "name": "PLASTIC SPACER FOR CONNECTION TRIANGLE 2017",
+    "espanol": "plasticos de triangulo de salva servo",
+    "qty_for_bag": 4,
+    "dealer_price": 4.0,
+    "consumer_price": 7.5,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 7.18,
+      "Ref_Price": 8.62,
+      "Sell_price": 9.33,
+      "Reference_percent": 8.24
+    }
+  },
+  "2012-237": {
+    "name": "DOUBLE SERVO RADIO PLATE 2017",
+    "espanol": "radio train tren delantero nuevo",
+    "qty_for_bag": 1,
+    "dealer_price": 35.0,
+    "consumer_price": 60.9,
+    "total_in_usa": 45.15,
+    "cost_in_usa_usd": 51.92,
+    "final_cost_usa": 57.11,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 59.71,
+      "Ref_Price": 70.03,
+      "Sell_price": 77.62,
+      "Reference_percent": 10.84
+    }
+  },
+  "2012-238": {
+    "name": "SERVO SAVER SHAFT 2017",
+    "espanol": "eje de salvaservo nuevo",
+    "qty_for_bag": 1,
+    "dealer_price": 6.0,
+    "consumer_price": 11.0,
+    "total_in_usa": 7.74,
+    "cost_in_usa_usd": 8.9,
+    "final_cost_usa": 9.79,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 14.79,
+      "Ref_Price": 12.65,
+      "Sell_price": 19.23,
+      "Reference_percent": 52.02
+    }
+  },
+  "2012-239": {
+    "name": "SERVO SAVER BUSH 2017",
+    "espanol": "parte de salvaservo nuevo",
+    "qty_for_bag": 1,
+    "dealer_price": 6.0,
+    "consumer_price": 11.0,
+    "total_in_usa": 7.74,
+    "cost_in_usa_usd": 8.9,
+    "final_cost_usa": 9.79,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 14.79,
+      "Ref_Price": 12.65,
+      "Sell_price": 19.23,
+      "Reference_percent": 52.02
+    }
+  },
+  "2012-240": {
+    "name": "SERVO SAVER ADJUSTEMENT NUT 2017",
+    "espanol": "tuerca de ajuste salva servo",
+    "qty_for_bag": 1,
+    "dealer_price": 6.6,
+    "consumer_price": 12.0,
+    "total_in_usa": 8.51,
+    "cost_in_usa_usd": 9.79,
+    "final_cost_usa": 10.77,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 15.77,
+      "Ref_Price": 13.8,
+      "Sell_price": 20.5,
+      "Reference_percent": 48.55
+    }
+  },
+  "2012-241": {
+    "name": "SERVO SAVER NUT O RING 2017",
+    "espanol": "oring salva servo",
+    "qty_for_bag": 4,
+    "dealer_price": 3.0,
+    "consumer_price": 5.5,
+    "total_in_usa": 3.87,
+    "cost_in_usa_usd": 4.45,
+    "final_cost_usa": 4.9,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 9.9,
+      "Ref_Price": 6.32,
+      "Sell_price": 12.87,
+      "Reference_percent": 103.64
+    }
+  },
+  "2012-242": {
+    "name": "SERVO SAVER SPRING 2,6 MM",
+    "espanol": "resorte salvaservo",
+    "qty_for_bag": 1,
+    "dealer_price": 4.3,
+    "consumer_price": 7.9,
+    "total_in_usa": 5.55,
+    "cost_in_usa_usd": 6.38,
+    "final_cost_usa": 7.02,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 12.02,
+      "Ref_Price": 9.08,
+      "Sell_price": 15.63,
+      "Reference_percent": 72.14
+    }
+  },
+  "2012-244": {
+    "name": "SERVO SAVER LOWER BODY 2017",
+    "espanol": "cuerpo inferior salvaservo",
+    "qty_for_bag": 1,
+    "dealer_price": 26.5,
+    "consumer_price": 46.1,
+    "total_in_usa": 34.19,
+    "cost_in_usa_usd": 39.31,
+    "final_cost_usa": 43.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 48.24,
+      "Ref_Price": 53.02,
+      "Sell_price": 62.71,
+      "Reference_percent": 18.28
+    }
+  },
+  "2012-245": {
+    "name": "SERVO SAVER END 4 HOLES 2017",
+    "espanol": "pieza salvaservo ackkerman",
+    "qty_for_bag": 1,
+    "dealer_price": 22.0,
+    "consumer_price": 38.4,
+    "total_in_usa": 28.38,
+    "cost_in_usa_usd": 32.64,
+    "final_cost_usa": 35.9,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 40.9,
+      "Ref_Price": 44.16,
+      "Sell_price": 53.17,
+      "Reference_percent": 20.4
+    }
+  },
+  "2012-246": {
+    "name": "SERVO SAVER END 6 HOLES 2017",
+    "espanol": "pieza salvaservo ackkerman",
+    "qty_for_bag": 1,
+    "dealer_price": 22.0,
+    "consumer_price": 38.4,
+    "total_in_usa": 28.38,
+    "cost_in_usa_usd": 32.64,
+    "final_cost_usa": 35.9,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 40.9,
+      "Ref_Price": 44.16,
+      "Sell_price": 53.17,
+      "Reference_percent": 20.4
+    }
+  },
+  "2012-248": {
+    "name": "SERVO SAVER UPPER BODY 2017",
+    "espanol": "cuerpo superior salvaservo",
+    "qty_for_bag": 1,
+    "dealer_price": 20.0,
+    "consumer_price": 34.8,
+    "total_in_usa": 25.8,
+    "cost_in_usa_usd": 29.67,
+    "final_cost_usa": 32.64,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 37.64,
+      "Ref_Price": 40.02,
+      "Sell_price": 48.93,
+      "Reference_percent": 22.26
+    }
+  },
+  "2012-249": {
+    "name": "TITANIUM FRONT ANTI ROLL BAR KIT 2017",
+    "espanol": "kit de barra delantera nueva",
+    "qty_for_bag": 1,
+    "dealer_price": 100.0,
+    "consumer_price": 174.0,
+    "total_in_usa": 129.0,
+    "cost_in_usa_usd": 148.35,
+    "final_cost_usa": 163.19,
+    "ARG": {
+      "weight": 75.0,
+      "shipping_cost": 4.88,
+      "Costo_In_Arg": 168.07,
+      "Ref_Price": 200.1,
+      "Sell_price": 218.49,
+      "Reference_percent": 9.19
+    }
+  },
+  "2012-250": {
+    "name": "TITANIUM FRONT ANTI ROLL BAR AXLE 2017",
+    "espanol": "barra central delantera de la barra",
+    "qty_for_bag": 1,
+    "dealer_price": 15.5,
+    "consumer_price": 27.0,
+    "total_in_usa": 20.0,
+    "cost_in_usa_usd": 22.99,
+    "final_cost_usa": 25.29,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 27.56,
+      "Ref_Price": 31.05,
+      "Sell_price": 35.83,
+      "Reference_percent": 15.39
+    }
+  },
+  "2012-251": {
+    "name": "BODY MOUNT ANTIROLL BAR BLADE LH",
+    "espanol": "cuerpo de aluminio donde monta barra izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 19.0,
+    "consumer_price": 33.0,
+    "total_in_usa": 24.51,
+    "cost_in_usa_usd": 28.19,
+    "final_cost_usa": 31.01,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 33.28,
+      "Ref_Price": 37.95,
+      "Sell_price": 43.26,
+      "Reference_percent": 13.99
+    }
+  },
+  "2012-252": {
+    "name": "BODY MOUNT ANTIROLL BAR BLADE RH",
+    "espanol": "cuerpo de aluminio donde monta barra derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 19.0,
+    "consumer_price": 33.0,
+    "total_in_usa": 24.51,
+    "cost_in_usa_usd": 28.19,
+    "final_cost_usa": 31.01,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 33.28,
+      "Ref_Price": 37.95,
+      "Sell_price": 43.26,
+      "Reference_percent": 13.99
+    }
+  },
+  "2012-253": {
+    "name": "TITANIUM BLADE ANTIROLL BAR 2,75 MM",
+    "espanol": "barra 2.75",
+    "qty_for_bag": 2,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 64.13,
+      "Ref_Price": 77.05,
+      "Sell_price": 83.37,
+      "Reference_percent": 8.2
+    }
+  },
+  "2012-254": {
+    "name": "TITANIUM BLADE ANTIROLL BAR 2,5 MM",
+    "espanol": "barra 2.5",
+    "qty_for_bag": 2,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 64.13,
+      "Ref_Price": 77.05,
+      "Sell_price": 83.37,
+      "Reference_percent": 8.2
+    }
+  },
+  "2012-255": {
+    "name": "TITANIUM BLADE ANTIROLL BAR 2,00 MM",
+    "espanol": "barra 2",
+    "qty_for_bag": 2,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 64.13,
+      "Ref_Price": 77.05,
+      "Sell_price": 83.37,
+      "Reference_percent": 8.2
+    }
+  },
+  "2012-256": {
+    "name": "TITANIUM BLADE ANTIROLL BAR 1,75 MM",
+    "espanol": "barra 1.75",
+    "qty_for_bag": 2,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 64.13,
+      "Ref_Price": 77.05,
+      "Sell_price": 83.37,
+      "Reference_percent": 8.2
+    }
+  },
+  "2012-257": {
+    "name": "TITANIUM BLADE ANTIROLL BAR 2,25 MM",
+    "espanol": "barra 2.25 ",
+    "qty_for_bag": 2,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 64.13,
+      "Ref_Price": 77.05,
+      "Sell_price": 83.37,
+      "Reference_percent": 8.2
+    }
+  },
+  "2012-258": {
+    "name": "TITANIUM BLADE ANTIROLL BAR 1,5 MM",
+    "espanol": "barra 1.5",
+    "qty_for_bag": 2,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 64.13,
+      "Ref_Price": 77.05,
+      "Sell_price": 83.37,
+      "Reference_percent": 8.2
+    }
+  },
+  "2012-259": {
+    "name": "TITANIUM REAR ANTIROLL BAR AXLE",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 15.5,
+    "consumer_price": 27.0,
+    "total_in_usa": 20.0,
+    "cost_in_usa_usd": 22.99,
+    "final_cost_usa": 25.29,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 30.29,
+      "Ref_Price": 31.05,
+      "Sell_price": 39.38,
+      "Reference_percent": 26.83
+    }
+  },
+  "2012-260": {
+    "name": "TITANIUM BLADE ANTIROLL BAR 3,00 MM",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 38.5,
+    "consumer_price": 67.0,
+    "total_in_usa": 49.66,
+    "cost_in_usa_usd": 57.11,
+    "final_cost_usa": 62.83,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 67.83,
+      "Ref_Price": 77.05,
+      "Sell_price": 88.18,
+      "Reference_percent": 14.45
+    }
+  },
+  "2012-262": {
+    "name": "SERVO SAVER HOLDER",
+    "espanol": "traba salvaservo alinear",
+    "qty_for_bag": 1,
+    "dealer_price": 19.0,
+    "consumer_price": 33.0,
+    "total_in_usa": 24.51,
+    "cost_in_usa_usd": 28.19,
+    "final_cost_usa": 31.01,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 31.98,
+      "Ref_Price": 37.95,
+      "Sell_price": 41.57,
+      "Reference_percent": 9.54
+    }
+  },
+  "2012-263": {
+    "name": "LOWER REAR SHOCK MOUNT KIT",
+    "espanol": "kit de posicion de amoriguador trasero de 3 agujeros",
+    "qty_for_bag": 1,
+    "dealer_price": 35.0,
+    "consumer_price": 60.9,
+    "total_in_usa": 45.15,
+    "cost_in_usa_usd": 51.92,
+    "final_cost_usa": 57.11,
+    "ARG": {
+      "weight": 70.0,
+      "shipping_cost": 4.55,
+      "Costo_In_Arg": 61.66,
+      "Ref_Price": 70.03,
+      "Sell_price": 80.16,
+      "Reference_percent": 14.47
+    }
+  },
+  "2012-264": {
+    "name": "REAR LONG LOWER SHOCK FORK 3 HOLES",
+    "espanol": "pieza de 3 agujeros de amortiguador trasero SOLA . sin kit",
+    "qty_for_bag": 1,
+    "dealer_price": 14.0,
+    "consumer_price": 24.35,
+    "total_in_usa": 18.06,
+    "cost_in_usa_usd": 20.77,
+    "final_cost_usa": 22.85,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 25.12,
+      "Ref_Price": 28.0,
+      "Sell_price": 32.66,
+      "Reference_percent": 16.64
+    }
+  },
+  "2012-265": {
+    "name": "COMPLETE ADJUSTABLE KIT FRONT LOWER ENGINE MOUNT",
+    "espanol": "kit de agarre de motor delantero . con lateral incluido",
+    "qty_for_bag": 1,
+    "dealer_price": 61.5,
+    "consumer_price": 107.0,
+    "total_in_usa": 79.34,
+    "cost_in_usa_usd": 91.24,
+    "final_cost_usa": 100.36,
+    "ARG": {
+      "weight": 120.0,
+      "shipping_cost": 7.8,
+      "Costo_In_Arg": 108.16,
+      "Ref_Price": 123.05,
+      "Sell_price": 140.61,
+      "Reference_percent": 14.27
+    }
+  },
+  "2012-266": {
+    "name": "FRONT LOWER ENGINE MOUNT KIT",
+    "espanol": "agarre de motor delantero sin lateral",
+    "qty_for_bag": 1,
+    "dealer_price": 33.0,
+    "consumer_price": 57.4,
+    "total_in_usa": 42.57,
+    "cost_in_usa_usd": 48.96,
+    "final_cost_usa": 53.85,
+    "ARG": {
+      "weight": 50.0,
+      "shipping_cost": 3.25,
+      "Costo_In_Arg": 57.1,
+      "Ref_Price": 66.01,
+      "Sell_price": 74.23,
+      "Reference_percent": 12.45
+    }
+  },
+  "2012-267": {
+    "name": "RADIO PLATE 2019 FOR 3 STANDARD SERVO",
+    "espanol": "radiotrain para 3 servos chicos",
+    "qty_for_bag": 1,
+    "dealer_price": 35.0,
+    "consumer_price": 60.9,
+    "total_in_usa": 45.15,
+    "cost_in_usa_usd": 51.92,
+    "final_cost_usa": 57.11,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 59.71,
+      "Ref_Price": 70.03,
+      "Sell_price": 77.62,
+      "Reference_percent": 10.84
+    }
+  },
+  "2012-268": {
+    "name": "OVAL BUSH",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 10.0,
+    "consumer_price": 18.0,
+    "total_in_usa": 12.9,
+    "cost_in_usa_usd": 14.83,
+    "final_cost_usa": 16.32,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 21.32,
+      "Ref_Price": 20.7,
+      "Sell_price": 27.72,
+      "Reference_percent": 33.91
+    }
+  },
+  "2012-269": {
+    "name": "ENGINE SUPPORT SPACER",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 4.5,
+    "consumer_price": 8.3,
+    "total_in_usa": 5.8,
+    "cost_in_usa_usd": 6.68,
+    "final_cost_usa": 7.34,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 12.34,
+      "Ref_Price": 9.54,
+      "Sell_price": 16.04,
+      "Reference_percent": 68.13
+    }
+  },
+  "2012-270": {
+    "name": "SIDE STIFFENER CHASSIS 2017 LH, RH",
+    "espanol": "laterales de chasis para pernos",
+    "qty_for_bag": 1,
+    "dealer_price": 31.0,
+    "consumer_price": 54.0,
+    "total_in_usa": 39.99,
+    "cost_in_usa_usd": 45.99,
+    "final_cost_usa": 50.59,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 55.79,
+      "Ref_Price": 62.1,
+      "Sell_price": 72.53,
+      "Reference_percent": 16.8
+    }
+  },
+  "2012-271": {
+    "name": "CARBON FIBER PIPE SUPPORT FOR SAMBA 8",
+    "espanol": "soporte samba 8",
+    "qty_for_bag": 1,
+    "dealer_price": 15.5,
+    "consumer_price": 27.0,
+    "total_in_usa": 20.0,
+    "cost_in_usa_usd": 22.99,
+    "final_cost_usa": 25.29,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 27.89,
+      "Ref_Price": 31.05,
+      "Sell_price": 36.26,
+      "Reference_percent": 16.78
+    }
+  },
+  "2012-272": {
+    "name": "CARBON FIBER SUPPORT FOR FUEL RECOVERY",
+    "espanol": "carbono para tachito",
+    "qty_for_bag": 1,
+    "dealer_price": 9.0,
+    "consumer_price": 16.5,
+    "total_in_usa": 11.61,
+    "cost_in_usa_usd": 13.35,
+    "final_cost_usa": 14.69,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 16.64,
+      "Ref_Price": 18.97,
+      "Sell_price": 21.63,
+      "Reference_percent": 14.02
+    }
+  },
+  "2012-273": {
+    "name": "NEW FRONT UPRIGHT",
+    "espanol": "masa NUEVA",
+    "qty_for_bag": 1,
+    "dealer_price": 33.0,
+    "consumer_price": 57.4,
+    "total_in_usa": 42.57,
+    "cost_in_usa_usd": 48.96,
+    "final_cost_usa": 53.85,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 56.45,
+      "Ref_Price": 66.01,
+      "Sell_price": 73.39,
+      "Reference_percent": 11.18
+    }
+  },
+  "2012-274": {
+    "name": "NEW BAG FOR LARGE SCALE MODEL",
+    "espanol": "bolso de auto",
+    "qty_for_bag": 1,
+    "dealer_price": 80.0,
+    "consumer_price": 120.0,
+    "total_in_usa": 103.2,
+    "cost_in_usa_usd": 118.68,
+    "final_cost_usa": 130.55,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 135.55,
+      "Ref_Price": 138.0,
+      "Sell_price": 176.22,
+      "Reference_percent": 27.7
+    }
+  },
+  "2012-275": {
+    "name": "BODYSHELL SUPPORT, SUITABLE FOR SAMBA 7 AND SAMBA 8",
+    "espanol": "palito de carroceria doblado",
+    "qty_for_bag": 1,
+    "dealer_price": 16.0,
+    "consumer_price": 27.8,
+    "total_in_usa": 20.64,
+    "cost_in_usa_usd": 23.74,
+    "final_cost_usa": 26.11,
+    "ARG": {
+      "weight": 30.0,
+      "shipping_cost": 1.95,
+      "Costo_In_Arg": 28.06,
+      "Ref_Price": 31.97,
+      "Sell_price": 36.48,
+      "Reference_percent": 14.11
+    }
+  },
+  "2012-276": {
+    "name": "NEW ACCESSORIES BAG",
+    "espanol": "bolso ",
+    "qty_for_bag": 1,
+    "dealer_price": 60.0,
+    "consumer_price": 90.0,
+    "total_in_usa": 77.4,
+    "cost_in_usa_usd": 89.01,
+    "final_cost_usa": 97.91,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 102.91,
+      "Ref_Price": 103.5,
+      "Sell_price": 133.78,
+      "Reference_percent": 29.26
+    }
+  },
+  "2012-277": {
+    "name": "CAR COVER",
+    "espanol": "covertor de autos",
+    "qty_for_bag": 1,
+    "dealer_price": 36.0,
+    "consumer_price": 54.0,
+    "total_in_usa": 46.44,
+    "cost_in_usa_usd": 53.41,
+    "final_cost_usa": 58.75,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 63.75,
+      "Ref_Price": 62.1,
+      "Sell_price": 82.88,
+      "Reference_percent": 33.46
+    }
+  },
+  "2012-278": {
+    "name": "LEFT SIDE BRACE",
+    "espanol": "Tensor largo izquierdo",
+    "qty_for_bag": 1,
+    "dealer_price": 44.0,
+    "consumer_price": 76.5,
+    "total_in_usa": 56.76,
+    "cost_in_usa_usd": 65.27,
+    "final_cost_usa": 71.8,
+    "ARG": {
+      "weight": 75.0,
+      "shipping_cost": 4.88,
+      "Costo_In_Arg": 76.68,
+      "Ref_Price": 87.97,
+      "Sell_price": 99.68,
+      "Reference_percent": 13.31
+    }
+  },
+  "2012-279": {
+    "name": "FUEL TANK PLASTIC BOTTLE ONLY",
+    "espanol": "tanque nuevo ",
+    "qty_for_bag": 1,
+    "dealer_price": 27.5,
+    "consumer_price": 47.85,
+    "total_in_usa": 35.48,
+    "cost_in_usa_usd": 40.8,
+    "final_cost_usa": 44.88,
+    "ARG": {
+      "weight": 350.0,
+      "shipping_cost": 22.75,
+      "Costo_In_Arg": 67.63,
+      "Ref_Price": 55.03,
+      "Sell_price": 87.92,
+      "Reference_percent": 59.77
+    }
+  },
+  "2012-280": {
+    "name": "PERFORMANCE KIT",
+    "espanol": "Kit de performance . ver foto",
+    "qty_for_bag": 1,
+    "dealer_price": 238.0,
+    "consumer_price": 414.0,
+    "total_in_usa": 307.02,
+    "cost_in_usa_usd": 353.07,
+    "final_cost_usa": 388.38,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 393.38,
+      "Ref_Price": 476.1,
+      "Sell_price": 511.39,
+      "Reference_percent": 7.41
+    }
+  },
+  "2012-280SH": {
+    "name": "PERFORMANCE KIT SHORT",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 238.0,
+    "consumer_price": 414.0,
+    "total_in_usa": 307.02,
+    "cost_in_usa_usd": 353.07,
+    "final_cost_usa": 388.38,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 393.38,
+      "Ref_Price": 476.1,
+      "Sell_price": 511.39,
+      "Reference_percent": 7.41
+    }
+  },
+  "2012-281": {
+    "name": "LOWER ROLL BAR MOUNT LH 3 HOLES 2019",
+    "espanol": "soporte barra nueva mas dura izquierda",
+    "qty_for_bag": 1,
+    "dealer_price": 13.0,
+    "consumer_price": 22.6,
+    "total_in_usa": 16.77,
+    "cost_in_usa_usd": 19.29,
+    "final_cost_usa": 21.21,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 22.18,
+      "Ref_Price": 25.99,
+      "Sell_price": 28.83,
+      "Reference_percent": 10.93
+    }
+  },
+  "2012-282": {
+    "name": "LOWER ROLL BAR MOUNT RH 3 HOLES 2019",
+    "espanol": "soporte barra nueva mas dura derecha",
+    "qty_for_bag": 1,
+    "dealer_price": 13.0,
+    "consumer_price": 22.6,
+    "total_in_usa": 16.77,
+    "cost_in_usa_usd": 19.29,
+    "final_cost_usa": 21.21,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 22.18,
+      "Ref_Price": 25.99,
+      "Sell_price": 28.83,
+      "Reference_percent": 10.93
+    }
+  },
+  "2012-283": {
+    "name": "CHASSIS SHORT",
+    "espanol": "Chasis corto KIT 2020 sin laterales",
+    "qty_for_bag": 1,
+    "dealer_price": 165.0,
+    "consumer_price": 287.0,
+    "total_in_usa": 212.85,
+    "cost_in_usa_usd": 244.78,
+    "final_cost_usa": 269.26,
+    "ARG": {
+      "weight": 1100.0,
+      "shipping_cost": 71.5,
+      "Costo_In_Arg": 340.76,
+      "Ref_Price": 330.05,
+      "Sell_price": 442.99,
+      "Reference_percent": 34.22
+    }
+  },
+  "2012-284": {
+    "name": "SHORT CHASSIS CONVERSION KIT DOUBLE SERVO RADIO PLATE",
+    "espanol": "chasis corto 2020 3 servos sin laterales",
+    "qty_for_bag": 1,
+    "dealer_price": 240.0,
+    "consumer_price": 417.0,
+    "total_in_usa": 309.6,
+    "cost_in_usa_usd": 356.04,
+    "final_cost_usa": 391.64,
+    "ARG": {
+      "weight": 1100.0,
+      "shipping_cost": 71.5,
+      "Costo_In_Arg": 463.14,
+      "Ref_Price": 479.55,
+      "Sell_price": 602.08,
+      "Reference_percent": 25.55
+    }
+  },
+  "2012-285": {
+    "name": "SHORT CHASSIS CONVERSION KIT SINGLE SERVO RADIO PLATE",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 240.0,
+    "consumer_price": 417.0,
+    "total_in_usa": 309.6,
+    "cost_in_usa_usd": 356.04,
+    "final_cost_usa": 391.64,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 396.64,
+      "Ref_Price": 479.55,
+      "Sell_price": 515.63,
+      "Reference_percent": 7.52
+    }
+  },
+  "2012-286": {
+    "name": "DOUBLE SERVO RADIO PLATE FOR SHORT CHASSIS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 35.0,
+    "consumer_price": 60.9,
+    "total_in_usa": 45.15,
+    "cost_in_usa_usd": 51.92,
+    "final_cost_usa": 57.11,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 62.11,
+      "Ref_Price": 70.03,
+      "Sell_price": 80.74,
+      "Reference_percent": 15.29
+    }
+  },
+  "2012-287": {
+    "name": "SINGLE SERVO RADIO PLATE FOR SHORT CHASSIS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 35.0,
+    "consumer_price": 60.9,
+    "total_in_usa": 45.15,
+    "cost_in_usa_usd": 51.92,
+    "final_cost_usa": 57.11,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 62.11,
+      "Ref_Price": 70.03,
+      "Sell_price": 80.74,
+      "Reference_percent": 15.29
+    }
+  },
+  "2012-288": {
+    "name": "RECEIVER BOX FOR SHORT CHASSIS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 43.0,
+    "consumer_price": 74.0,
+    "total_in_usa": 55.47,
+    "cost_in_usa_usd": 63.79,
+    "final_cost_usa": 70.17,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 75.17,
+      "Ref_Price": 85.1,
+      "Sell_price": 97.72,
+      "Reference_percent": 14.83
+    }
+  },
+  "2012-289": {
+    "name": "SERVO SAVER ROD M4XL44 mm",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 6.6,
+    "consumer_price": 12.15,
+    "total_in_usa": 8.51,
+    "cost_in_usa_usd": 9.79,
+    "final_cost_usa": 10.77,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 15.77,
+      "Ref_Price": 13.97,
+      "Sell_price": 20.5,
+      "Reference_percent": 46.74
+    }
+  },
+  "2012-290": {
+    "name": "WEIGHT KIT FOR PIPE SUPPORT",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 12.0,
+    "consumer_price": 21.0,
+    "total_in_usa": 15.48,
+    "cost_in_usa_usd": 17.8,
+    "final_cost_usa": 19.58,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 24.58,
+      "Ref_Price": 24.15,
+      "Sell_price": 31.95,
+      "Reference_percent": 32.3
+    }
+  },
+  "2012-291": {
+    "name": "STICKERS",
+    "espanol": null,
+    "qty_for_bag": 6,
+    "dealer_price": 7.3,
+    "consumer_price": 13.5,
+    "total_in_usa": 9.42,
+    "cost_in_usa_usd": 10.83,
+    "final_cost_usa": 11.91,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 16.91,
+      "Ref_Price": 15.52,
+      "Sell_price": 21.98,
+      "Reference_percent": 41.62
+    }
+  },
+  "2012-292": {
+    "name": "FIXING UPRIGHT SPECIAL M5X16 mm",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 3.5,
+    "consumer_price": 6.5,
+    "total_in_usa": 4.52,
+    "cost_in_usa_usd": 5.19,
+    "final_cost_usa": 5.71,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 10.71,
+      "Ref_Price": 7.47,
+      "Sell_price": 13.92,
+      "Reference_percent": 86.35
+    }
+  },
+  "2012-293": {
+    "name": "FIXING UPRIGHT SPECIAL M5X18 mm",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 3.5,
+    "consumer_price": 6.5,
+    "total_in_usa": 4.52,
+    "cost_in_usa_usd": 5.19,
+    "final_cost_usa": 5.71,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 10.71,
+      "Ref_Price": 7.47,
+      "Sell_price": 13.92,
+      "Reference_percent": 86.35
+    }
+  },
+  "2012-294": {
+    "name": "FIXING UPRIGHT SPECIAL M5X25 mm",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 3.5,
+    "consumer_price": 6.5,
+    "total_in_usa": 4.52,
+    "cost_in_usa_usd": 5.19,
+    "final_cost_usa": 5.71,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 10.71,
+      "Ref_Price": 7.47,
+      "Sell_price": 13.92,
+      "Reference_percent": 86.35
+    }
+  },
+  "2012-300": {
+    "name": "SHORT CAR FOR MECATECH ENGINE (WITH DOUBLE SERVO RADIO TRAY)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 1900.0,
+    "consumer_price": 2700.0,
+    "total_in_usa": 2451.0,
+    "cost_in_usa_usd": 2818.65,
+    "final_cost_usa": 3100.51,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 3105.51,
+      "Ref_Price": 3105.0,
+      "Sell_price": 4037.16,
+      "Reference_percent": 30.02
+    }
+  },
+  "2012-301": {
+    "name": "SHORT CAR FOR MECATECH ENGINE (WITH SINGLE SERVO RADIO TRAY)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 1900.0,
+    "consumer_price": 2700.0,
+    "total_in_usa": 2451.0,
+    "cost_in_usa_usd": 2818.65,
+    "final_cost_usa": 3100.51,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 3105.51,
+      "Ref_Price": 3105.0,
+      "Sell_price": 4037.16,
+      "Reference_percent": 30.02
+    }
+  },
+  "2012-302": {
+    "name": "CONVERSION KIT CHASSIS FOR MECATECH ENGINE",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 284.0,
+    "consumer_price": 492.0,
+    "total_in_usa": 366.36,
+    "cost_in_usa_usd": 421.31,
+    "final_cost_usa": 463.45,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 468.45,
+      "Ref_Price": 565.8,
+      "Sell_price": 608.99,
+      "Reference_percent": 7.63
+    }
+  },
+  "2012-303": {
+    "name": "PERFORMANCE KIT FOR MECATECH ENGINE CAR",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 201.5,
+    "consumer_price": 350.0,
+    "total_in_usa": 259.94,
+    "cost_in_usa_usd": 298.93,
+    "final_cost_usa": 328.82,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 333.82,
+      "Ref_Price": 402.5,
+      "Sell_price": 433.97,
+      "Reference_percent": 7.82
+    }
+  },
+  "2012-304": {
+    "name": "NEW CENTRAL WEIGHT FOR MECATECH ENGINE CHASSIS",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 21.5,
+    "consumer_price": 40.0,
+    "total_in_usa": 27.73,
+    "cost_in_usa_usd": 31.9,
+    "final_cost_usa": 35.08,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 40.08,
+      "Ref_Price": 46.0,
+      "Sell_price": 52.1,
+      "Reference_percent": 13.26
+    }
+  },
+  "2012-305": {
+    "name": "SPACER REAR MOUNT FOR MECATECH ENGINE CHASSIS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 22.0,
+    "consumer_price": 39.0,
+    "total_in_usa": 28.38,
+    "cost_in_usa_usd": 32.64,
+    "final_cost_usa": 35.9,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 40.9,
+      "Ref_Price": 44.85,
+      "Sell_price": 53.17,
+      "Reference_percent": 18.55
+    }
+  },
+  "2012-306": {
+    "name": "REAR AXLE MOUNT LH FOR MECATECH ENGINE CAR",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 46.0,
+    "consumer_price": 80.0,
+    "total_in_usa": 59.34,
+    "cost_in_usa_usd": 68.24,
+    "final_cost_usa": 75.07,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 80.07,
+      "Ref_Price": 92.0,
+      "Sell_price": 104.09,
+      "Reference_percent": 13.14
+    }
+  },
+  "2012-307": {
+    "name": "REAR AXLE MOUNT RH FOR MECATECH ENGINE CAR",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 46.0,
+    "consumer_price": 80.0,
+    "total_in_usa": 59.34,
+    "cost_in_usa_usd": 68.24,
+    "final_cost_usa": 75.07,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 80.07,
+      "Ref_Price": 92.0,
+      "Sell_price": 104.09,
+      "Reference_percent": 13.14
+    }
+  },
+  "2012-308": {
+    "name": "SHORT CHASSIS PLATE FOR MECATECH ENGINE",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 165.0,
+    "consumer_price": 287.0,
+    "total_in_usa": 212.85,
+    "cost_in_usa_usd": 244.78,
+    "final_cost_usa": 269.26,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 274.26,
+      "Ref_Price": 330.05,
+      "Sell_price": 356.54,
+      "Reference_percent": 8.03
+    }
+  },
+  "2012-309": {
+    "name": "COUNTERSUNK SCREW M5X14",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-310": {
+    "name": "SOCKET HEAD SCREW M4X10",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.8,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.37,
+      "Sell_price": 10.0,
+      "Reference_percent": 128.83
+    }
+  },
+  "2012-311": {
+    "name": "ENGINE BAG",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 42.0,
+    "consumer_price": 60.0,
+    "total_in_usa": 54.18,
+    "cost_in_usa_usd": 62.31,
+    "final_cost_usa": 68.54,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 73.54,
+      "Ref_Price": 69.0,
+      "Sell_price": 95.6,
+      "Reference_percent": 38.55
+    }
+  },
+  "2012-312": {
+    "name": "CARBON REAR SUPPORT FOR PORSCHE GT3",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 17.5,
+    "consumer_price": 30.5,
+    "total_in_usa": 22.57,
+    "cost_in_usa_usd": 25.96,
+    "final_cost_usa": 28.56,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 33.56,
+      "Ref_Price": 35.07,
+      "Sell_price": 43.63,
+      "Reference_percent": 24.41
+    }
+  },
+  "2012-313": {
+    "name": "FLAT REAR ROLL-BAR SHAFT",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 20.5,
+    "consumer_price": 35.5,
+    "total_in_usa": 26.45,
+    "cost_in_usa_usd": 30.41,
+    "final_cost_usa": 33.45,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 38.45,
+      "Ref_Price": 40.82,
+      "Sell_price": 49.99,
+      "Reference_percent": 22.46
+    }
+  },
+  "TW-01": {
+    "name": "T-SHIRT",
+    "espanol": "remera",
+    "qty_for_bag": 1,
+    "dealer_price": 20.0,
+    "consumer_price": 29.0,
+    "total_in_usa": 25.8,
+    "cost_in_usa_usd": 29.67,
+    "final_cost_usa": 32.64,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 37.64,
+      "Ref_Price": 33.35,
+      "Sell_price": 48.93,
+      "Reference_percent": 46.72
+    }
+  },
+  "TW-02": {
+    "name": "HOODIE SWEATSHIRT",
+    "espanol": "buzo ",
+    "qty_for_bag": 1,
+    "dealer_price": 65.0,
+    "consumer_price": 84.0,
+    "total_in_usa": 83.85,
+    "cost_in_usa_usd": 96.43,
+    "final_cost_usa": 106.07,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 111.07,
+      "Ref_Price": 96.6,
+      "Sell_price": 144.39,
+      "Reference_percent": 49.47
+    }
+  },
+  "TW-03": {
+    "name": "WINTER CAP",
+    "espanol": "campera rompevientos",
+    "qty_for_bag": 1,
+    "dealer_price": 30.0,
+    "consumer_price": 39.0,
+    "total_in_usa": 38.7,
+    "cost_in_usa_usd": 44.51,
+    "final_cost_usa": 48.96,
+    "ARG": {
+      "weight": 510.0,
+      "shipping_cost": 33.15,
+      "Costo_In_Arg": 82.11,
+      "Ref_Price": 44.85,
+      "Sell_price": 106.74,
+      "Reference_percent": 137.99
+    }
+  },
+  "TW-04": {
+    "name": "WINTER JACKET",
+    "espanol": "campera de invierno",
+    "qty_for_bag": 1,
+    "dealer_price": 90.0,
+    "consumer_price": 120.0,
+    "total_in_usa": 116.1,
+    "cost_in_usa_usd": 133.51,
+    "final_cost_usa": 146.87,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 151.87,
+      "Ref_Price": 138.0,
+      "Sell_price": 197.43,
+      "Reference_percent": 43.07
+    }
+  },
+  "TW-06": {
+    "name": "FLEECE",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 44.0,
+    "consumer_price": 57.0,
+    "total_in_usa": 56.76,
+    "cost_in_usa_usd": 65.27,
+    "final_cost_usa": 71.8,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 76.8,
+      "Ref_Price": 65.55,
+      "Sell_price": 99.84,
+      "Reference_percent": 52.31
+    }
+  },
+  "TW-07": {
+    "name": "LIGHT JACKET",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 70.0,
+    "consumer_price": 92.0,
+    "total_in_usa": 90.3,
+    "cost_in_usa_usd": 103.84,
+    "final_cost_usa": 114.23,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 119.23,
+      "Ref_Price": 105.8,
+      "Sell_price": 155.0,
+      "Reference_percent": 46.5
+    }
+  },
+  "TW-08": {
+    "name": "TOWEL",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 25.0,
+    "consumer_price": 32.5,
+    "total_in_usa": 32.25,
+    "cost_in_usa_usd": 37.09,
+    "final_cost_usa": 40.8,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 45.8,
+      "Ref_Price": 37.38,
+      "Sell_price": 59.54,
+      "Reference_percent": 59.28
+    }
+  },
+  "TW-09": {
+    "name": "BERMUDA SHORT",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 59.0,
+    "consumer_price": 75.0,
+    "total_in_usa": 76.11,
+    "cost_in_usa_usd": 87.53,
+    "final_cost_usa": 96.28,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 101.28,
+      "Ref_Price": 86.25,
+      "Sell_price": 131.66,
+      "Reference_percent": 52.65
+    }
+  },
+  "TW-10": {
+    "name": "SET UP BOARD",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 119.0,
+    "consumer_price": 130.0,
+    "total_in_usa": 153.51,
+    "cost_in_usa_usd": 176.54,
+    "final_cost_usa": 194.19,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 199.19,
+      "Ref_Price": 149.5,
+      "Sell_price": 258.95,
+      "Reference_percent": 73.21
+    }
+  },
+  "TW-11": {
+    "name": "CUSTOMIZABLE SET UP BOARD",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 149.0,
+    "consumer_price": 160.0,
+    "total_in_usa": 192.21,
+    "cost_in_usa_usd": 221.04,
+    "final_cost_usa": 243.15,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 248.15,
+      "Ref_Price": 184.0,
+      "Sell_price": 322.6,
+      "Reference_percent": 75.33
+    }
+  },
+  "2009": {
+    "name": "KLÍK SHOCKS KIT",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 143.0,
+    "consumer_price": 218.0,
+    "total_in_usa": 184.47,
+    "cost_in_usa_usd": 212.14,
+    "final_cost_usa": 233.35,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 238.35,
+      "Ref_Price": 250.7,
+      "Sell_price": 309.86,
+      "Reference_percent": 23.6
+    }
+  },
+  "2011": {
+    "name": "SILICON SHOCKS KIT",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 115.5,
+    "consumer_price": 175.0,
+    "total_in_usa": 149.0,
+    "cost_in_usa_usd": 171.34,
+    "final_cost_usa": 188.48,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 193.48,
+      "Ref_Price": 201.25,
+      "Sell_price": 251.52,
+      "Reference_percent": 24.98
+    }
+  },
+  "2019": {
+    "name": "VARIABLE FLOW SHOCKS KIT",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 115.5,
+    "consumer_price": 175.0,
+    "total_in_usa": 149.0,
+    "cost_in_usa_usd": 171.34,
+    "final_cost_usa": 188.48,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 193.48,
+      "Ref_Price": 201.25,
+      "Sell_price": 251.52,
+      "Reference_percent": 24.98
+    }
+  },
+  "2019-10": {
+    "name": "STANDARD TO VARIABLE FLOW KIT",
+    "espanol": "kit de transformacion",
+    "qty_for_bag": 2,
+    "dealer_price": 66.0,
+    "consumer_price": 105.0,
+    "total_in_usa": 85.14,
+    "cost_in_usa_usd": 97.91,
+    "final_cost_usa": 107.7,
+    "ARG": {
+      "weight": 60.0,
+      "shipping_cost": 3.9,
+      "Costo_In_Arg": 111.6,
+      "Ref_Price": 120.75,
+      "Sell_price": 145.08,
+      "Reference_percent": 20.15
+    }
+  },
+  "2019-11": {
+    "name": "VARIABLE FLOW SHOCKS BODY ONLY",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 33.0,
+    "consumer_price": 57.0,
+    "total_in_usa": 42.57,
+    "cost_in_usa_usd": 48.96,
+    "final_cost_usa": 53.85,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 58.85,
+      "Ref_Price": 65.55,
+      "Sell_price": 76.51,
+      "Reference_percent": 16.72
+    }
+  },
+  "2019-12": {
+    "name": "VARIABLE FLOW PISTO",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-00": {
+    "name": "SPRING SOFT GREEN 2.4",
+    "espanol": "resorte verde",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-01": {
+    "name": "SPRING SOFT ORANGE 2.5",
+    "espanol": "resorte anaranja",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-02": {
+    "name": "SPRING SOFT BLUE 2.6",
+    "espanol": "resorte azul",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-03": {
+    "name": "SPRING MEDIUM RED 2.7",
+    "espanol": "resorte rojo",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-04": {
+    "name": "SPRING HARD YELLOW 2.8",
+    "espanol": "resorte amarillo",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-05": {
+    "name": "KIT WITH 6 SPRINGS 2BLUE,2RED,2YELLOW",
+    "espanol": null,
+    "qty_for_bag": 6,
+    "dealer_price": 27.5,
+    "consumer_price": 47.85,
+    "total_in_usa": 35.48,
+    "cost_in_usa_usd": 40.8,
+    "final_cost_usa": 44.88,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 49.88,
+      "Ref_Price": 55.03,
+      "Sell_price": 64.84,
+      "Reference_percent": 17.83
+    }
+  },
+  "2009-06W5": {
+    "name": "BOTTLE OIL FOR KLÍK SHOCKS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-06W2,5": {
+    "name": "BOTTLE OIL FOR KLÍK SHOCKS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-06W7,5": {
+    "name": "BOTTLE OIL FOR KLÍK SHOCKS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-06W10": {
+    "name": "BOTTLE OIL FOR KLICK SHOCKS",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-07": {
+    "name": "SPRING WHITE 2.9",
+    "espanol": "resorte blanco",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-08": {
+    "name": "SPRING SILVER 3.0",
+    "espanol": "resorte gris",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-09": {
+    "name": "SPRING BLACK 2.3",
+    "espanol": "resorte negro",
+    "qty_for_bag": 2,
+    "dealer_price": 9.35,
+    "consumer_price": 17.2,
+    "total_in_usa": 12.06,
+    "cost_in_usa_usd": 13.87,
+    "final_cost_usa": 15.26,
+    "ARG": {
+      "weight": 80.0,
+      "shipping_cost": 5.2,
+      "Costo_In_Arg": 20.46,
+      "Ref_Price": 19.78,
+      "Sell_price": 26.6,
+      "Reference_percent": 34.48
+    }
+  },
+  "2009-11": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 53.0,
+    "consumer_price": 92.0,
+    "total_in_usa": 68.37,
+    "cost_in_usa_usd": 78.63,
+    "final_cost_usa": 86.49,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 91.49,
+      "Ref_Price": 105.8,
+      "Sell_price": 118.94,
+      "Reference_percent": 12.42
+    }
+  },
+  "2009-12": {
+    "name": "Sin nombre",
+    "espanol": "bujes de amortiguador para montaje",
+    "qty_for_bag": 4,
+    "dealer_price": 3.2,
+    "consumer_price": 5.9,
+    "total_in_usa": 4.13,
+    "cost_in_usa_usd": 4.75,
+    "final_cost_usa": 5.22,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 10.22,
+      "Ref_Price": 6.79,
+      "Sell_price": 13.29,
+      "Reference_percent": 95.73
+    }
+  },
+  "2009-13": {
+    "name": "Sin nombre",
+    "espanol": "tornillos para cargar",
+    "qty_for_bag": 4,
+    "dealer_price": 4.2,
+    "consumer_price": 7.7,
+    "total_in_usa": 5.42,
+    "cost_in_usa_usd": 6.23,
+    "final_cost_usa": 6.85,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 7.5,
+      "Ref_Price": 8.85,
+      "Sell_price": 9.75,
+      "Reference_percent": 10.17
+    }
+  },
+  "2009-14": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.55,
+    "consumer_price": 2.85,
+    "total_in_usa": 2.0,
+    "cost_in_usa_usd": 2.3,
+    "final_cost_usa": 2.53,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.53,
+      "Ref_Price": 3.28,
+      "Sell_price": 9.79,
+      "Reference_percent": 198.48
+    }
+  },
+  "2009-15": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.8,
+    "consumer_price": 10.5,
+    "total_in_usa": 7.48,
+    "cost_in_usa_usd": 8.6,
+    "final_cost_usa": 9.46,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 14.46,
+      "Ref_Price": 12.07,
+      "Sell_price": 18.8,
+      "Reference_percent": 55.76
+    }
+  },
+  "2009-16": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 2.1,
+    "consumer_price": 3.85,
+    "total_in_usa": 2.71,
+    "cost_in_usa_usd": 3.12,
+    "final_cost_usa": 3.43,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.43,
+      "Ref_Price": 4.43,
+      "Sell_price": 10.96,
+      "Reference_percent": 147.4
+    }
+  },
+  "2009-17": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 4,
+    "dealer_price": 1.45,
+    "consumer_price": 2.7,
+    "total_in_usa": 1.87,
+    "cost_in_usa_usd": 2.15,
+    "final_cost_usa": 2.37,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.37,
+      "Ref_Price": 3.1,
+      "Sell_price": 9.58,
+      "Reference_percent": 209.03
+    }
+  },
+  "2009-18": {
+    "name": "Sin nombre",
+    "espanol": "piston plastico de compensacion",
+    "qty_for_bag": 1,
+    "dealer_price": 2.3,
+    "consumer_price": 4.2,
+    "total_in_usa": 2.97,
+    "cost_in_usa_usd": 3.41,
+    "final_cost_usa": 3.75,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.75,
+      "Ref_Price": 4.83,
+      "Sell_price": 11.38,
+      "Reference_percent": 135.61
+    }
+  },
+  "2009-19": {
+    "name": "Sin nombre",
+    "espanol": "valvula interna de compensacion",
+    "qty_for_bag": 1,
+    "dealer_price": 4.0,
+    "consumer_price": 7.35,
+    "total_in_usa": 5.16,
+    "cost_in_usa_usd": 5.93,
+    "final_cost_usa": 6.53,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 11.53,
+      "Ref_Price": 8.45,
+      "Sell_price": 14.99,
+      "Reference_percent": 77.4
+    }
+  },
+  "2009-20": {
+    "name": "Sin nombre",
+    "espanol": "resorte interno de compensacion",
+    "qty_for_bag": 2,
+    "dealer_price": 1.2,
+    "consumer_price": 2.2,
+    "total_in_usa": 1.55,
+    "cost_in_usa_usd": 1.78,
+    "final_cost_usa": 1.96,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 6.96,
+      "Ref_Price": 2.53,
+      "Sell_price": 9.05,
+      "Reference_percent": 257.71
+    }
+  },
+  "2009-21": {
+    "name": "Sin nombre",
+    "espanol": "oring de 2do cuerpo",
+    "qty_for_bag": 2,
+    "dealer_price": 1.45,
+    "consumer_price": 2.7,
+    "total_in_usa": 1.87,
+    "cost_in_usa_usd": 2.15,
+    "final_cost_usa": 2.37,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 3.02,
+      "Ref_Price": 3.1,
+      "Sell_price": 3.93,
+      "Reference_percent": 26.77
+    }
+  },
+  "2009-22": {
+    "name": "Sin nombre",
+    "espanol": "cuerpo de compensacion",
+    "qty_for_bag": 1,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.05,
+      "Ref_Price": 16.9,
+      "Sell_price": 23.47,
+      "Reference_percent": 38.88
+    }
+  },
+  "2009-23": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 18.15,
+    "consumer_price": 31.5,
+    "total_in_usa": 23.41,
+    "cost_in_usa_usd": 26.93,
+    "final_cost_usa": 29.62,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 34.62,
+      "Ref_Price": 36.22,
+      "Sell_price": 45.01,
+      "Reference_percent": 24.27
+    }
+  },
+  "2009-24": {
+    "name": "Sin nombre",
+    "espanol": "oring de rosca de compresion",
+    "qty_for_bag": 2,
+    "dealer_price": 1.65,
+    "consumer_price": 3.0,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 3.34,
+      "Ref_Price": 3.45,
+      "Sell_price": 4.34,
+      "Reference_percent": 25.8
+    }
+  },
+  "2009-25": {
+    "name": "Sin nombre",
+    "espanol": "rosca de compresion espiral",
+    "qty_for_bag": 1,
+    "dealer_price": 4.4,
+    "consumer_price": 8.0,
+    "total_in_usa": 5.68,
+    "cost_in_usa_usd": 6.53,
+    "final_cost_usa": 7.18,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 12.18,
+      "Ref_Price": 9.2,
+      "Sell_price": 15.83,
+      "Reference_percent": 72.07
+    }
+  },
+  "2009-26": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 1.65,
+    "consumer_price": 3.0,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 3.45,
+      "Sell_price": 10.0,
+      "Reference_percent": 189.86
+    }
+  },
+  "2009-27": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-28": {
+    "name": "ASSEMBLED",
+    "espanol": "cuerpo ingerior con oring completo",
+    "qty_for_bag": 1,
+    "dealer_price": 21.0,
+    "consumer_price": 36.5,
+    "total_in_usa": 27.09,
+    "cost_in_usa_usd": 31.15,
+    "final_cost_usa": 34.27,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 39.27,
+      "Ref_Price": 41.97,
+      "Sell_price": 51.05,
+      "Reference_percent": 21.63
+    }
+  },
+  "2009-29": {
+    "name": "Sin nombre",
+    "espanol": "oring de cuerpo inferior",
+    "qty_for_bag": 2,
+    "dealer_price": 1.65,
+    "consumer_price": 3.0,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 3.34,
+      "Ref_Price": 3.45,
+      "Sell_price": 4.34,
+      "Reference_percent": 25.8
+    }
+  },
+  "2009-30": {
+    "name": "Sin nombre",
+    "espanol": "oring pequeños de cuerpo inferior (rojos)",
+    "qty_for_bag": 2,
+    "dealer_price": 1.4,
+    "consumer_price": 2.6,
+    "total_in_usa": 1.81,
+    "cost_in_usa_usd": 2.08,
+    "final_cost_usa": 2.28,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 2.93,
+      "Ref_Price": 2.99,
+      "Sell_price": 3.81,
+      "Reference_percent": 27.42
+    }
+  },
+  "2009-31": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 8.25,
+    "consumer_price": 15.2,
+    "total_in_usa": 10.64,
+    "cost_in_usa_usd": 12.24,
+    "final_cost_usa": 13.46,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.46,
+      "Ref_Price": 17.48,
+      "Sell_price": 24.0,
+      "Reference_percent": 37.3
+    }
+  },
+  "2009-32": {
+    "name": "Sin nombre",
+    "espanol": "cazoleta de amortiguador",
+    "qty_for_bag": 2,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 9.13,
+      "Ref_Price": 10.58,
+      "Sell_price": 11.87,
+      "Reference_percent": 12.19
+    }
+  },
+  "2009-33": {
+    "name": "Sin nombre",
+    "espanol": "tuerca de soporte inferior",
+    "qty_for_bag": 2,
+    "dealer_price": 1.1,
+    "consumer_price": 2.0,
+    "total_in_usa": 1.42,
+    "cost_in_usa_usd": 1.63,
+    "final_cost_usa": 1.8,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 6.8,
+      "Ref_Price": 2.3,
+      "Sell_price": 8.84,
+      "Reference_percent": 284.35
+    }
+  },
+  "2009-34": {
+    "name": "Sin nombre",
+    "espanol": "extremo amortiguador CORTO",
+    "qty_for_bag": 2,
+    "dealer_price": 6.6,
+    "consumer_price": 12.0,
+    "total_in_usa": 8.51,
+    "cost_in_usa_usd": 9.79,
+    "final_cost_usa": 10.77,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 11.74,
+      "Ref_Price": 13.8,
+      "Sell_price": 15.26,
+      "Reference_percent": 10.58
+    }
+  },
+  "2009-35": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 6.6,
+    "consumer_price": 12.0,
+    "total_in_usa": 8.51,
+    "cost_in_usa_usd": 9.79,
+    "final_cost_usa": 10.77,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 15.77,
+      "Ref_Price": 13.8,
+      "Sell_price": 20.5,
+      "Reference_percent": 48.55
+    }
+  },
+  "2009-36": {
+    "name": "LONG SHOCK SHAFT END",
+    "espanol": "extremo de amortiguaodr largo",
+    "qty_for_bag": 2,
+    "dealer_price": 6.6,
+    "consumer_price": 12.0,
+    "total_in_usa": 8.51,
+    "cost_in_usa_usd": 9.79,
+    "final_cost_usa": 10.77,
+    "ARG": {
+      "weight": 15.0,
+      "shipping_cost": 0.97,
+      "Costo_In_Arg": 11.74,
+      "Ref_Price": 13.8,
+      "Sell_price": 15.26,
+      "Reference_percent": 10.58
+    }
+  },
+  "2009-39": {
+    "name": "Sin nombre",
+    "espanol": "Cuerpo de amoriguador",
+    "qty_for_bag": 1,
+    "dealer_price": 33.0,
+    "consumer_price": 57.5,
+    "total_in_usa": 42.57,
+    "cost_in_usa_usd": 48.96,
+    "final_cost_usa": 53.85,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 58.85,
+      "Ref_Price": 66.12,
+      "Sell_price": 76.51,
+      "Reference_percent": 15.71
+    }
+  },
+  "2009-41": {
+    "name": "PISTON 1,4 HOLE",
+    "espanol": "pistones de amortiguador 1,4",
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-42": {
+    "name": "GOLD COATED SHOCK ROD",
+    "espanol": "vastago DORADO",
+    "qty_for_bag": 1,
+    "dealer_price": 8.25,
+    "consumer_price": 15.0,
+    "total_in_usa": 10.64,
+    "cost_in_usa_usd": 12.24,
+    "final_cost_usa": 13.46,
+    "ARG": {
+      "weight": 20.0,
+      "shipping_cost": 1.3,
+      "Costo_In_Arg": 14.76,
+      "Ref_Price": 17.25,
+      "Sell_price": 19.19,
+      "Reference_percent": 11.25
+    }
+  },
+  "2009-43": {
+    "name": "PISTON 1,5 HOLE",
+    "espanol": "PISTON DE 1,5",
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-44": {
+    "name": "PISTON 1,8 HOLE",
+    "espanol": "PISTON DE 1,8",
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2009-2000": {
+    "name": "SILICON OIL BOTTLE VISCOSITIES 2000",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.0,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 14.95,
+      "Sell_price": 22.41,
+      "Reference_percent": 49.9
+    }
+  },
+  "2009-3000": {
+    "name": "SILICON OIL BOTTLE VISCOSITIES 3000",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.0,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 14.95,
+      "Sell_price": 22.41,
+      "Reference_percent": 49.9
+    }
+  },
+  "2009-4000": {
+    "name": "SILICON OIL BOTTLE VISCOSITIES 4000",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.0,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 14.95,
+      "Sell_price": 22.41,
+      "Reference_percent": 49.9
+    }
+  },
+  "2009-5000": {
+    "name": "SILICON OIL BOTTLE VISCOSITIES 5000",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.0,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 14.95,
+      "Sell_price": 22.41,
+      "Reference_percent": 49.9
+    }
+  },
+  "2009-6000": {
+    "name": "SILICON OIL BOTTLE VISCOSITIES 6000",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.0,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 14.95,
+      "Sell_price": 22.41,
+      "Reference_percent": 49.9
+    }
+  },
+  "2009-7000": {
+    "name": "SILICON OIL BOTTLE VISCOSITIES 7000",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.0,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 14.95,
+      "Sell_price": 22.41,
+      "Reference_percent": 49.9
+    }
+  },
+  "2009-8000": {
+    "name": "SILICON OIL BOTTLE VISCOSITIES 8000",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.0,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 14.95,
+      "Sell_price": 22.41,
+      "Reference_percent": 49.9
+    }
+  },
+  "2020-03": {
+    "name": "CLUTCH ADJUSTING TOOL",
+    "espanol": "herramienta de ajuste",
+    "qty_for_bag": 1,
+    "dealer_price": 20.0,
+    "consumer_price": 35.0,
+    "total_in_usa": 25.8,
+    "cost_in_usa_usd": 29.67,
+    "final_cost_usa": 32.64,
+    "ARG": {
+      "weight": 125.0,
+      "shipping_cost": 8.12,
+      "Costo_In_Arg": 40.76,
+      "Ref_Price": 40.25,
+      "Sell_price": 52.99,
+      "Reference_percent": 31.65
+    }
+  },
+  "2020-04": {
+    "name": "TOOL TO PRELOAD CLUTCH ADJUSTMENT",
+    "espanol": "herramienta para desanclar ",
+    "qty_for_bag": 1,
+    "dealer_price": 12.0,
+    "consumer_price": 21.0,
+    "total_in_usa": 15.48,
+    "cost_in_usa_usd": 17.8,
+    "final_cost_usa": 19.58,
+    "ARG": {
+      "weight": 35.0,
+      "shipping_cost": 2.27,
+      "Costo_In_Arg": 21.85,
+      "Ref_Price": 24.15,
+      "Sell_price": 28.41,
+      "Reference_percent": 17.64
+    }
+  },
+  "2020-05": {
+    "name": "REPLACEMENT SHOES MIX 1 BIMATERIAL 2 ALLUMINIUM",
+    "espanol": "zapatas 2 alu + 1 carbomo",
+    "qty_for_bag": 3,
+    "dealer_price": 31.0,
+    "consumer_price": 54.0,
+    "total_in_usa": 39.99,
+    "cost_in_usa_usd": 45.99,
+    "final_cost_usa": 50.59,
+    "ARG": {
+      "weight": 40.0,
+      "shipping_cost": 2.6,
+      "Costo_In_Arg": 53.19,
+      "Ref_Price": 62.1,
+      "Sell_price": 69.15,
+      "Reference_percent": 11.35
+    }
+  },
+  "2020-07": {
+    "name": "SPARE SPRINGS 2,4 mm",
+    "espanol": "resortes 2.4",
+    "qty_for_bag": 3,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": 18.0,
+      "shipping_cost": 1.17,
+      "Costo_In_Arg": 10.15,
+      "Ref_Price": 11.5,
+      "Sell_price": 13.2,
+      "Reference_percent": 14.78
+    }
+  },
+  "2020-08": {
+    "name": "CLUTCH BODY (for Mecatech, Genius, S88R, FBX)",
+    "espanol": "cuerpo de embrague para meca",
+    "qty_for_bag": 1,
+    "dealer_price": 25.5,
+    "consumer_price": 45.0,
+    "total_in_usa": 32.9,
+    "cost_in_usa_usd": 37.83,
+    "final_cost_usa": 41.61,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 46.61,
+      "Ref_Price": 51.75,
+      "Sell_price": 60.59,
+      "Reference_percent": 17.08
+    }
+  },
+  "2020-09": {
+    "name": "CLUTCH BODY (for RS5, Harm, FG)",
+    "espanol": "cuerpo de embrague rs5",
+    "qty_for_bag": 1,
+    "dealer_price": 25.5,
+    "consumer_price": 45.0,
+    "total_in_usa": 32.9,
+    "cost_in_usa_usd": 37.83,
+    "final_cost_usa": 41.61,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 46.61,
+      "Ref_Price": 51.75,
+      "Sell_price": 60.59,
+      "Reference_percent": 17.08
+    }
+  },
+  "2020-10": {
+    "name": "REPLACEMENT SHOES 3 ALLUMINIUM",
+    "espanol": "3 zapatas de aluminio",
+    "qty_for_bag": 3,
+    "dealer_price": 31.0,
+    "consumer_price": 54.0,
+    "total_in_usa": 39.99,
+    "cost_in_usa_usd": 45.99,
+    "final_cost_usa": 50.59,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 55.59,
+      "Ref_Price": 62.1,
+      "Sell_price": 72.27,
+      "Reference_percent": 16.38
+    }
+  },
+  "2020-11": {
+    "name": "SPARE SPRINGS 2,5 mm",
+    "espanol": null,
+    "qty_for_bag": 3,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "2020-12": {
+    "name": "CARBON PLATE",
+    "espanol": "tapa de carbono",
+    "qty_for_bag": 1,
+    "dealer_price": 8.0,
+    "consumer_price": 14.8,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.05,
+      "Ref_Price": 17.02,
+      "Sell_price": 23.47,
+      "Reference_percent": 37.9
+    }
+  },
+  "2020-13": {
+    "name": "SCREWS M3x8",
+    "espanol": "tornillos",
+    "qty_for_bag": 6,
+    "dealer_price": 2.0,
+    "consumer_price": 4.0,
+    "total_in_usa": 2.58,
+    "cost_in_usa_usd": 2.97,
+    "final_cost_usa": 3.26,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.26,
+      "Ref_Price": 4.6,
+      "Sell_price": 10.74,
+      "Reference_percent": 133.48
+    }
+  },
+  "2020-14": {
+    "name": "PRELOAD CAM",
+    "espanol": "cuerpo para posiciones",
+    "qty_for_bag": 1,
+    "dealer_price": 18.0,
+    "consumer_price": 31.5,
+    "total_in_usa": 23.22,
+    "cost_in_usa_usd": 26.7,
+    "final_cost_usa": 29.37,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 34.37,
+      "Ref_Price": 36.22,
+      "Sell_price": 44.68,
+      "Reference_percent": 23.36
+    }
+  },
+  "2020-15": {
+    "name": "RETAINING BUSH AND SCREW",
+    "espanol": "cono y tornillo para otros autos",
+    "qty_for_bag": 2,
+    "dealer_price": 3.5,
+    "consumer_price": 6.5,
+    "total_in_usa": 4.52,
+    "cost_in_usa_usd": 5.19,
+    "final_cost_usa": 5.71,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 10.71,
+      "Ref_Price": 7.47,
+      "Sell_price": 13.92,
+      "Reference_percent": 86.35
+    }
+  },
+  "2020-16": {
+    "name": "EJECTOR PIN",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 8.1,
+    "consumer_price": 15.0,
+    "total_in_usa": 10.45,
+    "cost_in_usa_usd": 12.02,
+    "final_cost_usa": 13.22,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.22,
+      "Ref_Price": 17.25,
+      "Sell_price": 23.69,
+      "Reference_percent": 37.33
+    }
+  },
+  "2020-17": {
+    "name": "CLUTCH MIX SHOES (for Mecatech, Genius, S88R, FBX)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 85.5,
+    "consumer_price": 145.0,
+    "total_in_usa": 110.3,
+    "cost_in_usa_usd": 126.84,
+    "final_cost_usa": 139.52,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 144.52,
+      "Ref_Price": 166.75,
+      "Sell_price": 187.88,
+      "Reference_percent": 12.67
+    }
+  },
+  "2020-18": {
+    "name": "CLUTCH BIMATERIAL SHOES (for Mecatech, Genius, S88R, FBX)",
+    "espanol": "Embregue completo bi mat",
+    "qty_for_bag": 1,
+    "dealer_price": 85.5,
+    "consumer_price": 145.0,
+    "total_in_usa": 110.3,
+    "cost_in_usa_usd": 126.84,
+    "final_cost_usa": 139.52,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 144.52,
+      "Ref_Price": 166.75,
+      "Sell_price": 187.88,
+      "Reference_percent": 12.67
+    }
+  },
+  "2020-19": {
+    "name": "CLUTCH BIMATERIAL SHOES (for RS5, Harm, FG)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 85.5,
+    "consumer_price": 145.0,
+    "total_in_usa": 110.3,
+    "cost_in_usa_usd": 126.84,
+    "final_cost_usa": 139.52,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 144.52,
+      "Ref_Price": 166.75,
+      "Sell_price": 187.88,
+      "Reference_percent": 12.67
+    }
+  },
+  "2020-20": {
+    "name": "BIMATERIAL SHOES, COMPLETE REPLACEMENT",
+    "espanol": "zapatas bimetal",
+    "qty_for_bag": 3,
+    "dealer_price": 31.0,
+    "consumer_price": 54.0,
+    "total_in_usa": 39.99,
+    "cost_in_usa_usd": 45.99,
+    "final_cost_usa": 50.59,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 55.59,
+      "Ref_Price": 62.1,
+      "Sell_price": 72.27,
+      "Reference_percent": 16.38
+    }
+  },
+  "2020-22": {
+    "name": "CLUTCH MIX SHOES (for RS5, Harm, FG)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 85.5,
+    "consumer_price": 145.0,
+    "total_in_usa": 110.3,
+    "cost_in_usa_usd": 126.84,
+    "final_cost_usa": 139.52,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 144.52,
+      "Ref_Price": 166.75,
+      "Sell_price": 187.88,
+      "Reference_percent": 12.67
+    }
+  },
+  "2020-23": {
+    "name": "CLUTCH BIMATERIAL SHOES (for Mecatech TOP GUN engine)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 88.0,
+    "consumer_price": 149.0,
+    "total_in_usa": 113.52,
+    "cost_in_usa_usd": 130.55,
+    "final_cost_usa": 143.6,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 148.6,
+      "Ref_Price": 171.35,
+      "Sell_price": 193.18,
+      "Reference_percent": 12.74
+    }
+  },
+  "2020-24": {
+    "name": "CLUTCH MIX SHOES (for Mecatech TOP GUN engine)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 88.0,
+    "consumer_price": 149.0,
+    "total_in_usa": 113.52,
+    "cost_in_usa_usd": 130.55,
+    "final_cost_usa": 143.6,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 148.6,
+      "Ref_Price": 171.35,
+      "Sell_price": 193.18,
+      "Reference_percent": 12.74
+    }
+  },
+  "2020-25": {
+    "name": "CLUTCH BODY TOP GUN (for Mecatech TOP GUN engine)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 28.5,
+    "consumer_price": 49.5,
+    "total_in_usa": 36.77,
+    "cost_in_usa_usd": 42.28,
+    "final_cost_usa": 46.51,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 51.51,
+      "Ref_Price": 56.92,
+      "Sell_price": 66.96,
+      "Reference_percent": 17.64
+    }
+  },
+  "2020-26": {
+    "name": "PRELOAD CAM TOP GUN (for Mecatech TOP GUN engine)",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 18.0,
+    "consumer_price": 31.5,
+    "total_in_usa": 23.22,
+    "cost_in_usa_usd": 26.7,
+    "final_cost_usa": 29.37,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 34.37,
+      "Ref_Price": 36.22,
+      "Sell_price": 44.68,
+      "Reference_percent": 23.36
+    }
+  },
+  "2020-27": {
+    "name": "Rain spare springs silver",
+    "espanol": null,
+    "qty_for_bag": 3,
+    "dealer_price": 5.5,
+    "consumer_price": 10.0,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 11.5,
+      "Sell_price": 18.17,
+      "Reference_percent": 58.0
+    }
+  },
+  "1001-F": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 198.0,
+    "consumer_price": 315.0,
+    "total_in_usa": 255.42,
+    "cost_in_usa_usd": 293.73,
+    "final_cost_usa": 323.11,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 328.11,
+      "Ref_Price": 362.25,
+      "Sell_price": 426.54,
+      "Reference_percent": 17.75
+    }
+  },
+  "1001-R": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 198.0,
+    "consumer_price": 315.0,
+    "total_in_usa": 255.42,
+    "cost_in_usa_usd": 293.73,
+    "final_cost_usa": 323.11,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 328.11,
+      "Ref_Price": 362.25,
+      "Sell_price": 426.54,
+      "Reference_percent": 17.75
+    }
+  },
+  "1000-LH (LEFT)": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 99.0,
+    "consumer_price": 158.0,
+    "total_in_usa": 127.71,
+    "cost_in_usa_usd": 146.87,
+    "final_cost_usa": 161.55,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 166.55,
+      "Ref_Price": 218.04,
+      "Sell_price": 216.52,
+      "Reference_percent": -0.7
+    }
+  },
+  "1000-RH (RIGHT)": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 99.0,
+    "consumer_price": 158.0,
+    "total_in_usa": 127.71,
+    "cost_in_usa_usd": 146.87,
+    "final_cost_usa": 161.55,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 166.55,
+      "Ref_Price": 218.04,
+      "Sell_price": 216.52,
+      "Reference_percent": -0.7
+    }
+  },
+  "1000-01": {
+    "name": "Sin nombre",
+    "espanol": "PERNO DE BOMBA",
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.0,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 7.69,
+      "Ref_Price": 4.14,
+      "Sell_price": 10.0,
+      "Reference_percent": 141.55
+    }
+  },
+  "1000-02": {
+    "name": "Sin nombre",
+    "espanol": "PALANCA DE ACCION DE BOMBA",
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.1,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": 5.0,
+      "shipping_cost": 0.33,
+      "Costo_In_Arg": 9.31,
+      "Ref_Price": 13.94,
+      "Sell_price": 12.1,
+      "Reference_percent": -13.2
+    }
+  },
+  "1000-03": {
+    "name": "Sin nombre",
+    "espanol": "ENCASTRE DE PALANCA",
+    "qty_for_bag": 1,
+    "dealer_price": 5.5,
+    "consumer_price": 10.1,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.98,
+      "Ref_Price": 13.94,
+      "Sell_price": 18.17,
+      "Reference_percent": 30.34
+    }
+  },
+  "1000-04": {
+    "name": "Sin nombre",
+    "espanol": "FUELLE DE BOMBA",
+    "qty_for_bag": 2,
+    "dealer_price": 2.2,
+    "consumer_price": 4.0,
+    "total_in_usa": 2.84,
+    "cost_in_usa_usd": 3.26,
+    "final_cost_usa": 3.59,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 4.24,
+      "Ref_Price": 5.52,
+      "Sell_price": 5.51,
+      "Reference_percent": -0.18
+    }
+  },
+  "1000-05": {
+    "name": "Sin nombre",
+    "espanol": "PISTON DE FRENO DE BOMBA",
+    "qty_for_bag": 1,
+    "dealer_price": 16.5,
+    "consumer_price": 28.7,
+    "total_in_usa": 21.29,
+    "cost_in_usa_usd": 24.48,
+    "final_cost_usa": 26.93,
+    "ARG": {
+      "weight": 11.0,
+      "shipping_cost": 0.71,
+      "Costo_In_Arg": 27.64,
+      "Ref_Price": 39.61,
+      "Sell_price": 35.93,
+      "Reference_percent": -9.29
+    }
+  },
+  "1000-06": {
+    "name": "Sin nombre",
+    "espanol": "RESORTE DE FRENO",
+    "qty_for_bag": 2,
+    "dealer_price": 2.3,
+    "consumer_price": 4.2,
+    "total_in_usa": 2.97,
+    "cost_in_usa_usd": 3.41,
+    "final_cost_usa": 3.75,
+    "ARG": {
+      "weight": 11.0,
+      "shipping_cost": 0.71,
+      "Costo_In_Arg": 4.46,
+      "Ref_Price": 5.8,
+      "Sell_price": 5.8,
+      "Reference_percent": 0.0
+    }
+  },
+  "1000-07": {
+    "name": "Sin nombre",
+    "espanol": "PERNO DE PIVOT",
+    "qty_for_bag": 4,
+    "dealer_price": 1.65,
+    "consumer_price": 3.0,
+    "total_in_usa": 2.13,
+    "cost_in_usa_usd": 2.45,
+    "final_cost_usa": 2.69,
+    "ARG": {
+      "weight": 11.0,
+      "shipping_cost": 0.71,
+      "Costo_In_Arg": 3.4,
+      "Ref_Price": 4.14,
+      "Sell_price": 4.42,
+      "Reference_percent": 6.76
+    }
+  },
+  "1000-08": {
+    "name": "Sin nombre",
+    "espanol": "CUERPO DE BOMBA",
+    "qty_for_bag": 1,
+    "dealer_price": 45.0,
+    "consumer_price": 78.3,
+    "total_in_usa": 58.05,
+    "cost_in_usa_usd": 66.76,
+    "final_cost_usa": 73.43,
+    "ARG": {
+      "weight": 150.0,
+      "shipping_cost": 9.75,
+      "Costo_In_Arg": 83.18,
+      "Ref_Price": 108.05,
+      "Sell_price": 108.13,
+      "Reference_percent": 0.07
+    }
+  },
+  "1000-09": {
+    "name": "Sin nombre",
+    "espanol": "MEMBRANA",
+    "qty_for_bag": 2,
+    "dealer_price": 5.5,
+    "consumer_price": 10.1,
+    "total_in_usa": 7.1,
+    "cost_in_usa_usd": 8.16,
+    "final_cost_usa": 8.98,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 9.63,
+      "Ref_Price": 13.94,
+      "Sell_price": 12.52,
+      "Reference_percent": -10.19
+    }
+  },
+  "1000-10": {
+    "name": "Sin nombre",
+    "espanol": "TAPA DE BOMBA",
+    "qty_for_bag": 1,
+    "dealer_price": 13.2,
+    "consumer_price": 23.0,
+    "total_in_usa": 17.03,
+    "cost_in_usa_usd": 19.58,
+    "final_cost_usa": 21.54,
+    "ARG": {
+      "weight": 12.0,
+      "shipping_cost": 0.78,
+      "Costo_In_Arg": 22.32,
+      "Ref_Price": 31.74,
+      "Sell_price": 29.02,
+      "Reference_percent": -8.57
+    }
+  },
+  "1000-11": {
+    "name": "Sin nombre",
+    "espanol": "CEGER DE PISTON ",
+    "qty_for_bag": 2,
+    "dealer_price": 1.1,
+    "consumer_price": 2.0,
+    "total_in_usa": 1.42,
+    "cost_in_usa_usd": 1.63,
+    "final_cost_usa": 1.8,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 6.8,
+      "Ref_Price": 2.76,
+      "Sell_price": 8.84,
+      "Reference_percent": 220.29
+    }
+  },
+  "1000-12": {
+    "name": "Sin nombre",
+    "espanol": "TORNILLOS DE BOMBA",
+    "qty_for_bag": 8,
+    "dealer_price": 2.75,
+    "consumer_price": 5.0,
+    "total_in_usa": 3.55,
+    "cost_in_usa_usd": 4.08,
+    "final_cost_usa": 4.49,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 9.49,
+      "Ref_Price": 6.9,
+      "Sell_price": 12.34,
+      "Reference_percent": 78.84
+    }
+  },
+  "1000-13": {
+    "name": "Sin nombre",
+    "espanol": "PURGADOR",
+    "qty_for_bag": 2,
+    "dealer_price": 8.25,
+    "consumer_price": 15.2,
+    "total_in_usa": 10.64,
+    "cost_in_usa_usd": 12.24,
+    "final_cost_usa": 13.46,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.46,
+      "Ref_Price": 20.98,
+      "Sell_price": 24.0,
+      "Reference_percent": 14.39
+    }
+  },
+  "1000-14": {
+    "name": "Sin nombre",
+    "espanol": "RACKOR DE FRENO",
+    "qty_for_bag": 2,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.05,
+      "Ref_Price": 20.29,
+      "Sell_price": 23.47,
+      "Reference_percent": 15.67
+    }
+  },
+  "1000-15": {
+    "name": "Sin nombre",
+    "espanol": "ALOJAMIENTO DE PERNO DE PIVOT",
+    "qty_for_bag": 1,
+    "dealer_price": 9.0,
+    "consumer_price": 16.5,
+    "total_in_usa": 11.61,
+    "cost_in_usa_usd": 13.35,
+    "final_cost_usa": 14.69,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 19.69,
+      "Ref_Price": 22.77,
+      "Sell_price": 25.6,
+      "Reference_percent": 12.43
+    }
+  },
+  "1000-30-RH": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 65.0,
+    "consumer_price": 113.0,
+    "total_in_usa": 83.85,
+    "cost_in_usa_usd": 96.43,
+    "final_cost_usa": 106.07,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 111.07,
+      "Ref_Price": 155.94,
+      "Sell_price": 144.39,
+      "Reference_percent": -7.41
+    }
+  },
+  "1000-31-LH": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 65.0,
+    "consumer_price": 113.0,
+    "total_in_usa": 83.85,
+    "cost_in_usa_usd": 96.43,
+    "final_cost_usa": 106.07,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 111.07,
+      "Ref_Price": 155.94,
+      "Sell_price": 144.39,
+      "Reference_percent": -7.41
+    }
+  },
+  "1000-32": {
+    "name": "Sin nombre",
+    "espanol": "tornillo que agarra pieza donde aprieta caliper",
+    "qty_for_bag": 8,
+    "dealer_price": 2.2,
+    "consumer_price": 4.0,
+    "total_in_usa": 2.84,
+    "cost_in_usa_usd": 3.26,
+    "final_cost_usa": 3.59,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.59,
+      "Ref_Price": 5.52,
+      "Sell_price": 11.17,
+      "Reference_percent": 102.36
+    }
+  },
+  "1000-33": {
+    "name": "Sin nombre",
+    "espanol": "tornillo de caliper",
+    "qty_for_bag": 8,
+    "dealer_price": 2.2,
+    "consumer_price": 4.0,
+    "total_in_usa": 2.84,
+    "cost_in_usa_usd": 3.26,
+    "final_cost_usa": 3.59,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.59,
+      "Ref_Price": 5.52,
+      "Sell_price": 11.17,
+      "Reference_percent": 102.36
+    }
+  },
+  "1000-34": {
+    "name": "Sin nombre",
+    "espanol": "reten de piston",
+    "qty_for_bag": 1,
+    "dealer_price": 2.4,
+    "consumer_price": 4.4,
+    "total_in_usa": 3.1,
+    "cost_in_usa_usd": 3.56,
+    "final_cost_usa": 3.92,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 4.57,
+      "Ref_Price": 6.07,
+      "Sell_price": 5.94,
+      "Reference_percent": -2.14
+    }
+  },
+  "1000-35": {
+    "name": "Sin nombre",
+    "espanol": "piston de caliper ",
+    "qty_for_bag": 1,
+    "dealer_price": 4.4,
+    "consumer_price": 8.0,
+    "total_in_usa": 5.68,
+    "cost_in_usa_usd": 6.53,
+    "final_cost_usa": 7.18,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 12.18,
+      "Ref_Price": 11.04,
+      "Sell_price": 15.83,
+      "Reference_percent": 43.39
+    }
+  },
+  "1000-36": {
+    "name": "Sin nombre",
+    "espanol": "oring de piston",
+    "qty_for_bag": 4,
+    "dealer_price": 2.75,
+    "consumer_price": 5.0,
+    "total_in_usa": 3.55,
+    "cost_in_usa_usd": 4.08,
+    "final_cost_usa": 4.49,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 5.14,
+      "Ref_Price": 6.9,
+      "Sell_price": 6.68,
+      "Reference_percent": -3.19
+    }
+  },
+  "1000-37": {
+    "name": "Sin nombre",
+    "espanol": "perno de caliper",
+    "qty_for_bag": 4,
+    "dealer_price": 1.1,
+    "consumer_price": 2.0,
+    "total_in_usa": 1.42,
+    "cost_in_usa_usd": 1.63,
+    "final_cost_usa": 1.8,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 6.8,
+      "Ref_Price": 2.76,
+      "Sell_price": 8.84,
+      "Reference_percent": 220.29
+    }
+  },
+  "1000-38": {
+    "name": "Sin nombre",
+    "espanol": "pastilla de freno ",
+    "qty_for_bag": 4,
+    "dealer_price": 16.5,
+    "consumer_price": 28.7,
+    "total_in_usa": 21.29,
+    "cost_in_usa_usd": 24.48,
+    "final_cost_usa": 26.93,
+    "ARG": {
+      "weight": 26.0,
+      "shipping_cost": 1.69,
+      "Costo_In_Arg": 28.62,
+      "Ref_Price": 39.61,
+      "Sell_price": 37.21,
+      "Reference_percent": -6.06
+    }
+  },
+  "1000-39": {
+    "name": "Sin nombre",
+    "espanol": "resorte de caliper",
+    "qty_for_bag": 8,
+    "dealer_price": 4.2,
+    "consumer_price": 7.7,
+    "total_in_usa": 5.42,
+    "cost_in_usa_usd": 6.23,
+    "final_cost_usa": 6.85,
+    "ARG": {
+      "weight": 8.0,
+      "shipping_cost": 0.52,
+      "Costo_In_Arg": 7.37,
+      "Ref_Price": 10.63,
+      "Sell_price": 9.58,
+      "Reference_percent": -9.88
+    }
+  },
+  "1000-40": {
+    "name": "Sin nombre",
+    "espanol": "disco de freno viejo",
+    "qty_for_bag": 2,
+    "dealer_price": 14.3,
+    "consumer_price": 25.0,
+    "total_in_usa": 18.45,
+    "cost_in_usa_usd": 21.21,
+    "final_cost_usa": 23.34,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 28.34,
+      "Ref_Price": 34.5,
+      "Sell_price": 36.84,
+      "Reference_percent": 6.78
+    }
+  },
+  "1000-41": {
+    "name": "Sin nombre",
+    "espanol": "tapa de caliper",
+    "qty_for_bag": 1,
+    "dealer_price": 18.15,
+    "consumer_price": 31.5,
+    "total_in_usa": 23.41,
+    "cost_in_usa_usd": 26.93,
+    "final_cost_usa": 29.62,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 34.62,
+      "Ref_Price": 43.47,
+      "Sell_price": 45.01,
+      "Reference_percent": 3.54
+    }
+  },
+  "1000-42": {
+    "name": "Sin nombre",
+    "espanol": "tornillo de tapa de caliper",
+    "qty_for_bag": 8,
+    "dealer_price": 2.2,
+    "consumer_price": 4.0,
+    "total_in_usa": 2.84,
+    "cost_in_usa_usd": 3.26,
+    "final_cost_usa": 3.59,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.59,
+      "Ref_Price": 5.52,
+      "Sell_price": 11.17,
+      "Reference_percent": 102.36
+    }
+  },
+  "1000-43": {
+    "name": "PLASTIC T CONNECTOR",
+    "espanol": "CONECTOR T DE PLASTICO , DIVISOR DE FRENO",
+    "qty_for_bag": 1,
+    "dealer_price": 6.0,
+    "consumer_price": 11.0,
+    "total_in_usa": 7.74,
+    "cost_in_usa_usd": 8.9,
+    "final_cost_usa": 9.79,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 14.79,
+      "Ref_Price": 15.18,
+      "Sell_price": 19.23,
+      "Reference_percent": 26.68
+    }
+  },
+  "1000-50-F": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 20.35,
+    "consumer_price": 35.5,
+    "total_in_usa": 26.25,
+    "cost_in_usa_usd": 30.19,
+    "final_cost_usa": 33.21,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 38.21,
+      "Ref_Price": 48.99,
+      "Sell_price": 49.67,
+      "Reference_percent": 1.39
+    }
+  },
+  "1000-51-R": {
+    "name": "Sin nombre",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 20.35,
+    "consumer_price": 35.5,
+    "total_in_usa": 26.25,
+    "cost_in_usa_usd": 30.19,
+    "final_cost_usa": 33.21,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 38.21,
+      "Ref_Price": 48.99,
+      "Sell_price": 49.67,
+      "Reference_percent": 1.39
+    }
+  },
+  "1000-52": {
+    "name": "PLASTIC CONNECTOR 45°",
+    "espanol": "CONECTOR DE PLASTICO 45",
+    "qty_for_bag": 2,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.05,
+      "Ref_Price": 20.29,
+      "Sell_price": 23.47,
+      "Reference_percent": 15.67
+    }
+  },
+  "1000-53": {
+    "name": "GREEN OIL BOTTLE",
+    "espanol": "liquido de frenO VERDE",
+    "qty_for_bag": 1,
+    "dealer_price": 5.0,
+    "consumer_price": 9.2,
+    "total_in_usa": 6.45,
+    "cost_in_usa_usd": 7.42,
+    "final_cost_usa": 8.16,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 13.16,
+      "Ref_Price": 12.7,
+      "Sell_price": 17.11,
+      "Reference_percent": 34.72
+    }
+  },
+  "1000-54": {
+    "name": "TUBE 1 METER",
+    "espanol": "Manguera de freno 1 metro",
+    "qty_for_bag": 1,
+    "dealer_price": 2.2,
+    "consumer_price": 4.0,
+    "total_in_usa": 2.84,
+    "cost_in_usa_usd": 3.26,
+    "final_cost_usa": 3.59,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 8.59,
+      "Ref_Price": 5.52,
+      "Sell_price": 11.17,
+      "Reference_percent": 102.36
+    }
+  },
+  "1000-55": {
+    "name": "REAR STEEL CONNECTOR",
+    "espanol": null,
+    "qty_for_bag": 2,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.05,
+      "Ref_Price": 20.29,
+      "Sell_price": 23.47,
+      "Reference_percent": 15.67
+    }
+  },
+  "1000-59": {
+    "name": "NEW BRAKE PADS (2,4mm)",
+    "espanol": "pastillas de freno nuevas de 2,4",
+    "qty_for_bag": 4,
+    "dealer_price": 20.0,
+    "consumer_price": 35.0,
+    "total_in_usa": 25.8,
+    "cost_in_usa_usd": 29.67,
+    "final_cost_usa": 32.64,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 37.64,
+      "Ref_Price": 48.3,
+      "Sell_price": 48.93,
+      "Reference_percent": 1.3
+    }
+  },
+  "1000-60": {
+    "name": "COVER PLATE FOR 2,4mm PADS",
+    "espanol": "covertor de pastilla de freno de 2,4",
+    "qty_for_bag": 1,
+    "dealer_price": 20.0,
+    "consumer_price": 35.0,
+    "total_in_usa": 25.8,
+    "cost_in_usa_usd": 29.67,
+    "final_cost_usa": 32.64,
+    "ARG": {
+      "weight": 16.0,
+      "shipping_cost": 1.04,
+      "Costo_In_Arg": 33.68,
+      "Ref_Price": 48.3,
+      "Sell_price": 43.78,
+      "Reference_percent": -9.36
+    }
+  },
+  "1000-62": {
+    "name": "MEMBRANE MASTER CYLINDER DOT5 SILICON",
+    "espanol": "membrana para dot 4",
+    "qty_for_bag": 2,
+    "dealer_price": 8.0,
+    "consumer_price": 14.7,
+    "total_in_usa": 10.32,
+    "cost_in_usa_usd": 11.87,
+    "final_cost_usa": 13.05,
+    "ARG": {
+      "weight": 10.0,
+      "shipping_cost": 0.65,
+      "Costo_In_Arg": 13.7,
+      "Ref_Price": 20.29,
+      "Sell_price": 17.81,
+      "Reference_percent": -12.22
+    }
+  },
+  "1000-63": {
+    "name": "CONVERSION KIT FOR DOT5 SILICON",
+    "espanol": "kit de conversion dot 4",
+    "qty_for_bag": 1,
+    "dealer_price": 64.0,
+    "consumer_price": 111.0,
+    "total_in_usa": 82.56,
+    "cost_in_usa_usd": 94.94,
+    "final_cost_usa": 104.44,
+    "ARG": {
+      "weight": 16.0,
+      "shipping_cost": 1.04,
+      "Costo_In_Arg": 105.48,
+      "Ref_Price": 153.18,
+      "Sell_price": 137.12,
+      "Reference_percent": -10.48
+    }
+  },
+  "1000-65": {
+    "name": "RECOVERY SPACER",
+    "espanol": "Chapita companza uso de disco",
+    "qty_for_bag": 4,
+    "dealer_price": 8.25,
+    "consumer_price": 15.2,
+    "total_in_usa": 10.64,
+    "cost_in_usa_usd": 12.24,
+    "final_cost_usa": 13.46,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 18.46,
+      "Ref_Price": 20.98,
+      "Sell_price": 24.0,
+      "Reference_percent": 14.39
+    }
+  },
+  "1000-66": {
+    "name": "BOTTLE DOT5 SILICON",
+    "espanol": null,
+    "qty_for_bag": 1,
+    "dealer_price": 7.5,
+    "consumer_price": 13.8,
+    "total_in_usa": 9.68,
+    "cost_in_usa_usd": 11.13,
+    "final_cost_usa": 12.24,
+    "ARG": {
+      "weight": null,
+      "shipping_cost": 5.0,
+      "Costo_In_Arg": 17.24,
+      "Ref_Price": 19.04,
+      "Sell_price": 22.41,
+      "Reference_percent": 17.7
+    }
+  }
+}
