@@ -1,0 +1,3 @@
+Fecha,Numero_Pedido,Cliente,Codigo_Pieza,Nombre_Pieza,Precio_Unitario,Cantidad,Precio_Total,Estado_Pedido,Comentarios,EstadoVisualizacion
+2025-11-24 16:22:42,PED001,Marcelo Iglesias,1000-38,pastilla de freno ,37.21,1,37.21,PENDIENTE,,Visible
+2025-11-24 16:23:14,PED002,Marcelo Iglesias,1000-40,disco de freno viejo,36.84,1,36.84,PAGADO,,Visible

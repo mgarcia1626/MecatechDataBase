@@ -36,19 +36,28 @@ from datetime import datetime
 class SalesManager:
     def __init__(self):
         self.base_dir = base_project_dir
-        self.csv_path = self.base_dir / "DataBase" / "Generated" / "ventas_pagos.csv"
+        self.pedidos_path = self.base_dir / "DataBase" / "Generated" / "pedidos.csv"
+        self.pagos_path = self.base_dir / "DataBase" / "Generated" / "pagos.csv"
         self.clients_path = self.base_dir / "DataBase" / "Generated" / "clientes.json"
         self.products_path = self.base_dir / "DataBase" / "Generated" / "mecatech_database.json"
         
-        self.csv_path.parent.mkdir(parents=True, exist_ok=True)
-        self._init_csv()
+        self.pedidos_path.parent.mkdir(parents=True, exist_ok=True)
+        self._init_pedidos_csv()
+        self._init_pagos_csv()
         self._load_clients()
         self._load_products()
         
-    def _init_csv(self):
-        if not self.csv_path.exists():
-            headers = ['Fecha', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 'Precio_Venta', 'Tipo_Operacion', 'Numero_Pedido', 'Comentarios']
-            with open(self.csv_path, 'w', newline='', encoding='utf-8') as f:
+    def _init_pedidos_csv(self):
+        if not self.pedidos_path.exists():
+            headers = ['Fecha', 'Numero_Pedido', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 'Precio_Venta', 'Estado_Pedido', 'Comentarios']
+            with open(self.pedidos_path, 'w', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                writer.writerow(headers)
+                
+    def _init_pagos_csv(self):
+        if not self.pagos_path.exists():
+            headers = ['Fecha', 'Numero_Pago', 'Cliente', 'Numero_Pedido_Ref', 'Codigo_Pieza_Ref', 'Monto_Pago', 'Comentarios']
+            with open(self.pagos_path, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 writer.writerow(headers)
                 
@@ -102,13 +111,39 @@ class SalesManager:
         arg_data = product.get('ARG', {})
         return float(arg_data.get('Sell_price', 0.0))
     
-    def generate_order_number(self):
-        """Genera un número de pedido automático basado en la fecha y contador."""
-        df = self.load_transactions()
-        if df.empty:
+    def generate_pedido_number(self):
+        """Genera un número de pedido automático."""
+        try:
+            df = self.load_pedidos()
+            if df.empty:
+                return "PED001"
+            
+            # Obtener el último número de pedido
+            last_orders = df['Numero_Pedido'].str.extract(r'PED(\d+)').astype(int)
+            if not last_orders.empty:
+                next_num = last_orders[0].max() + 1
+                return f"PED{next_num:03d}"
+            else:
+                return "PED001"
+        except:
             return "PED001"
-        
-        # Obtener el último número de pedido
+    
+    def generate_pago_number(self):
+        """Genera un número de pago automático."""
+        try:
+            df = self.load_pagos()
+            if df.empty:
+                return "PAG001"
+            
+            # Obtener el último número de pago
+            last_payments = df['Numero_Pago'].str.extract(r'PAG(\d+)').astype(int)
+            if not last_payments.empty:
+                next_num = last_payments[0].max() + 1
+                return f"PAG{next_num:03d}"
+            else:
+                return "PAG001"
+        except:
+            return "PAG001"
         if 'Numero_Pedido' in df.columns:
             pedidos = df['Numero_Pedido'].dropna()
             if not pedidos.empty:
@@ -128,94 +163,163 @@ class SalesManager:
         
         return "PED001"
     
-    def add_transaction(self, cliente, tipo_operacion, codigo_pieza="", precio_venta=None, comentarios="", numero_pedido=None):
+    def add_pedido(self, cliente, codigo_pieza, precio_venta=None, comentarios="", numero_pedido=None):
+        """Agrega un pedido al CSV de pedidos."""
         try:
             fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
-            # Generar número de pedido automáticamente si no se proporciona
             if numero_pedido is None:
-                numero_pedido = self.generate_order_number()
+                numero_pedido = self.generate_pedido_number()
             
-            # Determinar nombre y precio
-            nombre_pieza = ""
-            precio_final = precio_venta if precio_venta is not None else 0.0
-            comentarios_final = comentarios
+            product = self.products_data.get(codigo_pieza, {})
+            spanish_name = product.get('espanol', '')
+            english_name = product.get('name', '')
+            nombre_pieza = spanish_name if spanish_name else english_name
             
-            if tipo_operacion == 'compra':
-                product = self.products_data.get(codigo_pieza, {})
-                spanish_name = product.get('espanol', '')
-                english_name = product.get('name', '')
-                nombre_pieza = spanish_name if spanish_name else english_name
-                if precio_venta is None:
-                    precio_final = self.get_product_sell_price(codigo_pieza)
-            elif tipo_operacion == 'pago':
-                nombre_pieza = "PAGO"
-                precio_final = -abs(precio_final)
-            elif tipo_operacion == 'compra-venta':
-                product = self.products_data.get(codigo_pieza, {})
-                spanish_name = product.get('espanol', '')
-                english_name = product.get('name', '')
-                nombre_pieza = spanish_name if spanish_name else english_name
-                precio_final = 0.0
-                # Agregar descripción especial para compra-venta
-                comentarios_final = f"Pago asociado a numero de pedido {numero_pedido}"
-                if comentarios:
-                    comentarios_final += f" - {comentarios}"
+            if precio_venta is None:
+                precio_final = self.get_product_sell_price(codigo_pieza)
+            else:
+                precio_final = precio_venta
             
-            row = [fecha_actual, cliente, codigo_pieza, nombre_pieza, precio_final, tipo_operacion, numero_pedido, comentarios_final]
+            row = [fecha_actual, numero_pedido, cliente, codigo_pieza, nombre_pieza, precio_final, 'PENDIENTE', comentarios]
             
-            with open(self.csv_path, 'a', newline='', encoding='utf-8') as f:
+            with open(self.pedidos_path, 'a', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 writer.writerow(row)
             
             return True, numero_pedido
         except Exception as e:
-            st.error(f"Error: {e}")
+            st.error(f"Error al agregar pedido: {e}")
             return False, None
     
-    def load_transactions(self):
+    def add_pago(self, cliente, monto_pago, numero_pedido_ref="", codigo_pieza_ref="", comentarios="", numero_pago=None):
+        """Agrega un pago al CSV de pagos."""
         try:
-            if self.csv_path.exists():
-                return pd.read_csv(self.csv_path)
+            fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
+            if numero_pago is None:
+                numero_pago = self.generate_pago_number()
+            
+            row = [fecha_actual, numero_pago, cliente, numero_pedido_ref, codigo_pieza_ref, monto_pago, comentarios]
+            
+            with open(self.pagos_path, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                writer.writerow(row)
+            
+            return True, numero_pago
+        except Exception as e:
+            st.error(f"Error al agregar pago: {e}")
+            return False, None
+    
+    def add_pago_inmediato(self, cliente, codigo_pieza, precio_venta=None, comentarios=""):
+        """Agrega un pedido y su pago inmediatamente."""
+        try:
+            # Primero crear el pedido
+            success_pedido, numero_pedido = self.add_pedido(cliente, codigo_pieza, precio_venta, comentarios)
+            
+            if success_pedido:
+                # Luego crear el pago asociado
+                precio_final = precio_venta if precio_venta is not None else self.get_product_sell_price(codigo_pieza)
+                comentarios_pago = f"Pago inmediato para pedido {numero_pedido}"
+                if comentarios:
+                    comentarios_pago += f" - {comentarios}"
+                
+                success_pago, numero_pago = self.add_pago(cliente, precio_final, numero_pedido, codigo_pieza, comentarios_pago)
+                
+                if success_pago:
+                    # Actualizar estado del pedido a PAGADO
+                    self.update_pedido_estado(numero_pedido, 'PAGADO')
+                    return True, numero_pedido, numero_pago
+                
+            return False, None, None
+        except Exception as e:
+            st.error(f"Error en pago inmediato: {e}")
+            return False, None, None
+    
+    def update_pedido_estado(self, numero_pedido, nuevo_estado):
+        """Actualiza el estado de un pedido."""
+        try:
+            df = self.load_pedidos()
+            if not df.empty:
+                df.loc[df['Numero_Pedido'] == numero_pedido, 'Estado_Pedido'] = nuevo_estado
+                df.to_csv(self.pedidos_path, index=False)
+                return True
+        except Exception as e:
+            st.error(f"Error al actualizar estado: {e}")
+        return False
+    
+    def load_pedidos(self):
+        try:
+            if self.pedidos_path.exists():
+                return pd.read_csv(self.pedidos_path)
             else:
-                return pd.DataFrame(columns=['Fecha', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 'Precio_Venta', 'Tipo_Operacion', 'Numero_Pedido', 'Comentarios'])
+                return pd.DataFrame(columns=['Fecha', 'Numero_Pedido', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 'Precio_Venta', 'Estado_Pedido', 'Comentarios'])
+        except:
+            return pd.DataFrame()
+    
+    def load_pagos(self):
+        try:
+            if self.pagos_path.exists():
+                return pd.read_csv(self.pagos_path)
+            else:
+                return pd.DataFrame(columns=['Fecha', 'Numero_Pago', 'Cliente', 'Numero_Pedido_Ref', 'Codigo_Pieza_Ref', 'Monto_Pago', 'Comentarios'])
         except:
             return pd.DataFrame()
     
     def get_all_balances(self):
-        df = self.load_transactions()
-        if df.empty:
+        df_pedidos = self.load_pedidos()
+        df_pagos = self.load_pagos()
+        
+        if df_pedidos.empty and df_pagos.empty:
             return {}
         
         balances = {}
-        for cliente in df['Cliente'].unique():
-            client_data = df[df['Cliente'] == cliente]
-            compras = client_data[client_data['Tipo_Operacion'] == 'compra']['Precio_Venta'].sum()
-            pagos = abs(client_data[client_data['Tipo_Operacion'] == 'pago']['Precio_Venta'].sum())
-            balance = compras - pagos
+        
+        # Obtener todos los clientes únicos
+        clientes_pedidos = set(df_pedidos['Cliente'].unique()) if not df_pedidos.empty else set()
+        clientes_pagos = set(df_pagos['Cliente'].unique()) if not df_pagos.empty else set()
+        all_clients = clientes_pedidos.union(clientes_pagos)
+        
+        for cliente in all_clients:
+            # Calcular total de pedidos
+            pedidos_cliente = df_pedidos[df_pedidos['Cliente'] == cliente]['Precio_Venta'].sum() if not df_pedidos.empty else 0
+            
+            # Calcular total de pagos
+            pagos_cliente = df_pagos[df_pagos['Cliente'] == cliente]['Monto_Pago'].sum() if not df_pagos.empty else 0
+            
+            balance = pedidos_cliente - pagos_cliente
             
             balances[cliente] = {
-                "compras": round(compras, 2),
-                "pagos": round(pagos, 2),
+                "pedidos": round(pedidos_cliente, 2),
+                "pagos": round(pagos_cliente, 2),
                 "balance": round(balance, 2)
             }
         return balances
     
     def get_statistics(self):
-        df = self.load_transactions()
-        if df.empty:
-            return {"total_transactions": 0, "total_sales": 0.0, "total_payments": 0.0, "net_balance": 0.0, "unique_clients": 0, "unique_products": 0}
+        df_pedidos = self.load_pedidos()
+        df_pagos = self.load_pagos()
         
-        total_sales = df[df['Tipo_Operacion'] == 'compra']['Precio_Venta'].sum()
-        total_payments = abs(df[df['Tipo_Operacion'] == 'pago']['Precio_Venta'].sum())
+        total_pedidos = len(df_pedidos) if not df_pedidos.empty else 0
+        total_pagos_count = len(df_pagos) if not df_pagos.empty else 0
+        total_transactions = total_pedidos + total_pagos_count
+        
+        total_sales = df_pedidos['Precio_Venta'].sum() if not df_pedidos.empty else 0.0
+        total_payments = df_pagos['Monto_Pago'].sum() if not df_pagos.empty else 0.0
+        
+        unique_clients_pedidos = set(df_pedidos['Cliente'].unique()) if not df_pedidos.empty else set()
+        unique_clients_pagos = set(df_pagos['Cliente'].unique()) if not df_pagos.empty else set()
+        unique_clients = len(unique_clients_pedidos.union(unique_clients_pagos))
+        
+        unique_products = len(df_pedidos['Codigo_Pieza'].unique()) if not df_pedidos.empty else 0
         
         return {
-            "total_transactions": len(df),
+            "total_transactions": total_transactions,
             "total_sales": round(total_sales, 2),
             "total_payments": round(total_payments, 2),
             "net_balance": round(total_sales - total_payments, 2),
-            "unique_clients": df['Cliente'].nunique(),
-            "unique_products": df[df['Codigo_Pieza'] != '']['Codigo_Pieza'].nunique()
+            "unique_clients": unique_clients,
+            "unique_products": unique_products
         }
 
 def init_session_state():
@@ -260,16 +364,10 @@ def main():
         st.metric("👥 Clientes Únicos", stats['unique_clients'])
         st.metric("📦 Productos Únicos", stats['unique_products'])
     
-    # Tabs principales
-    tab1, tab2, tab3, tab4 = st.tabs([
-        "➕ Nueva Transacción", 
-        "📋 Ver Transacciones", 
-        "💰 Balances por Cliente",
-        "🔍 Buscar Productos"
-    ])
+    # Interfaz principal simplificada
     
     with tab1:
-        st.subheader("➕ Registrar Nueva Transacción")
+        st.subheader("🛒 Registrar Nuevo Pedido")
         
         col1, col2 = st.columns([1, 2])
         
