@@ -419,6 +419,95 @@ class SalesManager:
             print(f"❌ Error eliminando pago: {e}")
             return False
 
+    def agregar_cliente(self, nombre, password="0000"):
+        """Agrega un nuevo cliente al archivo clientes.json."""
+        try:
+            # Verificar si el cliente ya existe
+            nombres_existentes = [c["nombre"].lower() for c in self.clients_data["clientes"]]
+            if nombre.lower() in nombres_existentes:
+                return False, "El cliente ya existe"
+            
+            # Agregar nuevo cliente
+            nuevo_cliente = {
+                "nombre": nombre,
+                "password": password
+            }
+            
+            self.clients_data["clientes"].append(nuevo_cliente)
+            
+            # Guardar el archivo actualizado
+            with open(self.clients_path, 'w', encoding='utf-8') as f:
+                json.dump(self.clients_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Cliente '{nombre}' agregado exitosamente"
+            
+        except Exception as e:
+            return False, str(e)
+
+    def agregar_producto(self, codigo, nombre_ingles, nombre_espanol="", precio_venta=0.0, peso=None):
+        """Agrega un nuevo producto al archivo mecatech_database.json."""
+        try:
+            # Verificar si el producto ya existe
+            if codigo in self.products_data:
+                return False, f"El producto con código '{codigo}' ya existe"
+            
+            # Crear estructura del producto
+            nuevo_producto = {
+                "name": nombre_ingles,
+                "espanol": nombre_espanol if nombre_espanol else None,
+                "qty_for_bag": 1,
+                "dealer_price": 0.0,
+                "consumer_price": 0.0,
+                "total_in_usa": 0.0,
+                "cost_in_usa_usd": 0.0,
+                "final_cost_usa": 0.0,
+                "ARG": {
+                    "weight": peso,
+                    "shipping_cost": 5.0,
+                    "Costo_In_Arg": 0.0,
+                    "Ref_Price": 0.0,
+                    "Sell_price": precio_venta,
+                    "Reference_percent": 0.0
+                }
+            }
+            
+            # Agregar el producto al diccionario
+            self.products_data[codigo] = nuevo_producto
+            
+            # Guardar el archivo actualizado
+            with open(self.products_path, 'w', encoding='utf-8') as f:
+                json.dump(self.products_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Producto '{codigo}' agregado exitosamente"
+            
+        except Exception as e:
+            return False, str(e)
+
+    def obtener_estadisticas_administracion(self):
+        """Obtiene estadísticas para la sección de administración."""
+        try:
+            total_clientes = len(self.get_client_names())
+            total_productos = len(self.products_data)
+            
+            # Productos con y sin nombre en español
+            productos_con_espanol = sum(1 for p in self.products_data.values() if p.get('espanol'))
+            productos_sin_espanol = total_productos - productos_con_espanol
+            
+            return {
+                "total_clientes": total_clientes,
+                "total_productos": total_productos,
+                "productos_con_espanol": productos_con_espanol,
+                "productos_sin_espanol": productos_sin_espanol
+            }
+            
+        except Exception as e:
+            return {
+                "total_clientes": 0,
+                "total_productos": 0,
+                "productos_con_espanol": 0,
+                "productos_sin_espanol": 0
+            }
+
 def init_session_state():
     """Inicializa variables del estado de sesión."""
     if 'sales_manager' not in st.session_state:
@@ -508,7 +597,7 @@ def main():
         st.metric("📦 Productos Únicos", stats['unique_products'])
     
     # Tabs para separar funcionalidades
-    tab1, tab2, tab3 = st.tabs(["🏪 Operaciones", "📊 Visualización por Cliente", "✏️ Edición de Cliente"])
+    tab1, tab2, tab3, tab4 = st.tabs(["🏪 Operaciones", "📊 Visualización por Cliente", "✏️ Edición de Cliente", "⚙️ Administración"])
     
     # TAB 1: OPERACIONES (Pedido, Pago, Pago Inmediato)
     with tab1:
@@ -1131,6 +1220,165 @@ def main():
                     st.info("📄 No hay pagos para este cliente")
         else:
             st.info("👆 Selecciona un cliente para editar sus registros")
+    
+    # Pestaña 4: Administración
+    with tab4:
+        st.subheader("⚙️ Administración de Sistema")
+        
+        # Estadísticas generales
+        stats_admin = st.session_state.sales_manager.obtener_estadisticas_administracion()
+        
+        col_stats1, col_stats2, col_stats3, col_stats4 = st.columns(4)
+        
+        with col_stats1:
+            st.metric("👥 Total Clientes", stats_admin['total_clientes'])
+        
+        with col_stats2:
+            st.metric("📦 Total Productos", stats_admin['total_productos'])
+        
+        with col_stats3:
+            st.metric("🇪🇸 Con Traducción", stats_admin['productos_con_espanol'])
+        
+        with col_stats4:
+            st.metric("🇺🇸 Solo Inglés", stats_admin['productos_sin_espanol'])
+        
+        st.markdown("---")
+        
+        # Formularios en dos columnas
+        col_clientes, col_productos = st.columns(2)
+        
+        with col_clientes:
+            st.subheader("👥 Agregar Nuevo Cliente")
+            
+            with st.form("form_nuevo_cliente"):
+                nombre_cliente = st.text_input(
+                    "📝 Nombre del Cliente",
+                    placeholder="Ej: Juan Pérez",
+                    help="Ingrese el nombre completo del cliente"
+                )
+                
+                password_cliente = st.text_input(
+                    "🔐 Contraseña",
+                    value="0000",
+                    help="Contraseña por defecto es '0000'"
+                )
+                
+                submit_cliente = st.form_submit_button("✅ Agregar Cliente", type="primary", use_container_width=True)
+                
+                if submit_cliente:
+                    if nombre_cliente.strip():
+                        success, message = st.session_state.sales_manager.agregar_cliente(
+                            nombre_cliente.strip(),
+                            password_cliente.strip()
+                        )
+                        
+                        if success:
+                            st.success(f"✅ {message}")
+                            # Recargar datos de clientes
+                            st.session_state.sales_manager._load_clients()
+                            st.rerun()
+                        else:
+                            st.error(f"❌ {message}")
+                    else:
+                        st.error("❌ El nombre del cliente es obligatorio")
+            
+            # Lista de clientes existentes
+            st.subheader("📋 Clientes Existentes")
+            clientes_existentes = st.session_state.sales_manager.get_client_names()
+            
+            if clientes_existentes:
+                with st.expander(f"Ver {len(clientes_existentes)} clientes"):
+                    for i, cliente in enumerate(clientes_existentes, 1):
+                        st.write(f"{i}. {cliente}")
+            else:
+                st.info("No hay clientes registrados")
+        
+        with col_productos:
+            st.subheader("📦 Agregar Nuevo Producto")
+            
+            with st.form("form_nuevo_producto"):
+                codigo_producto = st.text_input(
+                    "🔢 Código del Producto",
+                    placeholder="Ej: 2024-001",
+                    help="Código único del producto"
+                )
+                
+                nombre_ingles = st.text_input(
+                    "🇺🇸 Nombre en Inglés",
+                    placeholder="Ej: Brake Pad Set",
+                    help="Nombre del producto en inglés"
+                )
+                
+                nombre_espanol = st.text_input(
+                    "🇪🇸 Nombre en Español",
+                    placeholder="Ej: Pastillas de freno",
+                    help="Traducción al español (opcional)"
+                )
+                
+                col_precio, col_peso = st.columns(2)
+                
+                with col_precio:
+                    precio_venta = st.number_input(
+                        "💰 Precio de Venta",
+                        min_value=0.0,
+                        step=0.01,
+                        format="%.2f",
+                        help="Precio de venta en pesos argentinos"
+                    )
+                
+                with col_peso:
+                    peso = st.number_input(
+                        "⚖️ Peso (kg)",
+                        min_value=0.0,
+                        step=0.1,
+                        format="%.2f",
+                        help="Peso del producto en kilogramos (opcional)"
+                    )
+                
+                submit_producto = st.form_submit_button("✅ Agregar Producto", type="primary", use_container_width=True)
+                
+                if submit_producto:
+                    if codigo_producto.strip() and nombre_ingles.strip():
+                        success, message = st.session_state.sales_manager.agregar_producto(
+                            codigo_producto.strip().upper(),
+                            nombre_ingles.strip(),
+                            nombre_espanol.strip() if nombre_espanol.strip() else "",
+                            precio_venta,
+                            peso if peso > 0 else None
+                        )
+                        
+                        if success:
+                            st.success(f"✅ {message}")
+                            # Recargar datos de productos
+                            st.session_state.sales_manager._load_products()
+                            st.rerun()
+                        else:
+                            st.error(f"❌ {message}")
+                    else:
+                        st.error("❌ El código y nombre en inglés son obligatorios")
+            
+            # Búsqueda de productos existentes
+            st.subheader("🔍 Buscar Productos Existentes")
+            
+            buscar_producto = st.text_input(
+                "Buscar producto",
+                placeholder="Ingrese código o nombre...",
+                key="buscar_producto_admin"
+            )
+            
+            if buscar_producto:
+                resultados = st.session_state.sales_manager.search_products_by_name(buscar_producto)
+                
+                if resultados:
+                    st.write(f"**📋 {len(resultados)} resultado(s) encontrado(s):**")
+                    
+                    for codigo, nombre_esp, nombre_ing in resultados[:10]:  # Mostrar solo 10 resultados
+                        precio = st.session_state.sales_manager.get_product_sell_price(codigo)
+                        nombre_display = nombre_esp if nombre_esp else nombre_ing
+                        
+                        st.write(f"• **{codigo}:** {nombre_display} - ${precio:,.2f}")
+                else:
+                    st.info("No se encontraron productos con ese criterio")
 
 if __name__ == "__main__":
     main()

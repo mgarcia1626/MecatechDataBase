@@ -513,6 +513,98 @@ class SalesManager:
             print(f"❌ Error eliminando pago: {e}")
             return False
 
+    def agregar_cliente(self, nombre: str, password: str = "0000") -> bool:
+        """Agrega un nuevo cliente al archivo clientes.json."""
+        try:
+            # Verificar si el cliente ya existe
+            if self.validate_client(nombre):
+                return False, "El cliente ya existe"
+            
+            # Agregar nuevo cliente
+            nuevo_cliente = {
+                "nombre": nombre,
+                "password": password
+            }
+            
+            self.clients_data["clientes"].append(nuevo_cliente)
+            
+            # Guardar el archivo actualizado
+            with open(self.clients_path, 'w', encoding='utf-8') as f:
+                json.dump(self.clients_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Cliente '{nombre}' agregado exitosamente"
+            
+        except Exception as e:
+            print(f"❌ Error agregando cliente: {e}")
+            return False, str(e)
+
+    def agregar_producto(self, codigo: str, nombre_ingles: str, nombre_espanol: str = "", 
+                        precio_venta: float = 0.0, peso: float = None) -> Tuple[bool, str]:
+        """Agrega un nuevo producto al archivo mecatech_database.json."""
+        try:
+            # Verificar si el producto ya existe
+            if codigo in self.products_data:
+                return False, f"El producto con código '{codigo}' ya existe"
+            
+            # Crear estructura del producto
+            nuevo_producto = {
+                "name": nombre_ingles,
+                "espanol": nombre_espanol if nombre_espanol else None,
+                "qty_for_bag": 1,
+                "dealer_price": 0.0,
+                "consumer_price": 0.0,
+                "total_in_usa": 0.0,
+                "cost_in_usa_usd": 0.0,
+                "final_cost_usa": 0.0,
+                "ARG": {
+                    "weight": peso,
+                    "shipping_cost": 5.0,
+                    "Costo_In_Arg": 0.0,
+                    "Ref_Price": 0.0,
+                    "Sell_price": precio_venta,
+                    "Reference_percent": 0.0
+                }
+            }
+            
+            # Agregar el producto al diccionario
+            self.products_data[codigo] = nuevo_producto
+            
+            # Guardar el archivo actualizado
+            with open(self.products_path, 'w', encoding='utf-8') as f:
+                json.dump(self.products_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Producto '{codigo}' agregado exitosamente"
+            
+        except Exception as e:
+            print(f"❌ Error agregando producto: {e}")
+            return False, str(e)
+
+    def obtener_estadisticas_administracion(self) -> Dict:
+        """Obtiene estadísticas para la sección de administración."""
+        try:
+            total_clientes = len(self.get_client_names())
+            total_productos = len(self.products_data)
+            
+            # Productos con y sin nombre en español
+            productos_con_espanol = sum(1 for p in self.products_data.values() if p.get('espanol'))
+            productos_sin_espanol = total_productos - productos_con_espanol
+            
+            return {
+                "total_clientes": total_clientes,
+                "total_productos": total_productos,
+                "productos_con_espanol": productos_con_espanol,
+                "productos_sin_espanol": productos_sin_espanol
+            }
+            
+        except Exception as e:
+            print(f"❌ Error obteniendo estadísticas: {e}")
+            return {
+                "total_clientes": 0,
+                "total_productos": 0,
+                "productos_con_espanol": 0,
+                "productos_sin_espanol": 0
+            }
+
 def main():
     """Función de prueba del sistema."""
     print("🏪 SISTEMA DE GESTIÓN DE PEDIDOS Y PAGOS (V2)")

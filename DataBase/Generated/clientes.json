@@ -151,6 +151,10 @@
     {
       "nombre": "Diego Boim",
       "password": "0000"
+    },
+    {
+      "nombre": "Sergio Garcia",
+      "password": "1234"
     }
   ]
 }
