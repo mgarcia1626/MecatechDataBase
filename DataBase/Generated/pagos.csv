@@ -1,0 +1,3 @@
+Fecha,Numero_Pago,Cliente,Numero_Pedido_Ref,Codigo_Pieza_Ref,Monto_Pago,Comentarios,EstadoVisualizacion
+2025-11-24 16:22:50,PAG001,Marcelo Iglesias,PED001,1000-38,37.21,,Visible
+2025-11-24 16:23:14,PAG002,Marcelo Iglesias,PED002,1000-40,36.84,Pago inmediato para pedido PED002,Visible

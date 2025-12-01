@@ -1,6 +1,0 @@
-Fecha,Cliente,Codigo_Pieza,Nombre_Pieza,Precio_Venta,Tipo_Operacion,Numero_Pedido,Comentarios
-2025-11-23 14:27:01,Raul Alfajeme,2012-33,,0.0,compra,PED001,
-2025-11-23 14:27:19,Raul Alfajeme,1000-40,disco de freno viejo,36.84,compra,PED002,
-2025-11-23 15:55:27,Marcelo Fileni,,PAGO,-200.0,pago,PED003,
-2025-11-23 16:05:32,Claudio Makoveck,2012-101,campana,0.0,compra-venta,PED004,Pago asociado a numero de pedido PED004
-2025-11-23 16:11:00,Claudio Makoveck,2012-65,rotula plastica de barra trasera y brazo de direccion,0.0,compra-venta,PED005,Pago asociado a numero de pedido PED005

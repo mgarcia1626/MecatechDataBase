@@ -1,7 +1,7 @@
 """
 Sistema de Gestión de Ventas y Pagos para MecatechDataBase.
 
-Este módulo maneja las transacciones de ventas y pagos usando CSV como almacenamiento,
+Este módulo maneja las transacciones de ventas y pagos usando CSV separados como almacenamiento,
 con validaciones automáticas de clientes y productos.
 """
 
@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Tuple, Union
 
 class SalesManager:
     """
-    Clase para manejar ventas y pagos en formato CSV.
+    Clase para manejar ventas y pagos en formatos CSV separados.
     """
     
     def __init__(self):
@@ -23,20 +23,22 @@ class SalesManager:
         current_dir = Path(__file__).parent
         base_dir = current_dir.parent.parent
         
-        # Archivos de datos
-        self.csv_path = base_dir / "DataBase" / "Generated" / "ventas_pagos.csv"
-        self.clients_path = base_dir / "DataBase" / "Inputs" / "clientes.json"
+        # Archivos de datos - ahora separados
+        self.pedidos_path = base_dir / "DataBase" / "Generated" / "pedidos.csv"
+        self.pagos_path = base_dir / "DataBase" / "Generated" / "pagos.csv"
+        self.clients_path = base_dir / "DataBase" / "Generated" / "clientes.json"
         self.products_path = base_dir / "DataBase" / "Generated" / "mecatech_database.json"
         
         # Crear directorio si no existe
-        self.csv_path.parent.mkdir(parents=True, exist_ok=True)
+        self.pedidos_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Cargar datos
         self.clients_data = self._load_clients()
         self.products_data = self._load_products()
         
-        # Crear CSV si no existe
-        self._init_csv()
+        # Crear CSVs si no existen
+        self._init_pedidos_csv()
+        self._init_pagos_csv()
     
     def _load_clients(self) -> Dict:
         """Carga la lista de clientes."""
@@ -60,19 +62,33 @@ class SalesManager:
             print(f"❌ Error cargando productos: {e}")
             return {}
     
-    def _init_csv(self):
-        """Inicializa el archivo CSV con encabezados si no existe."""
-        if not self.csv_path.exists():
+    def _init_pedidos_csv(self):
+        """Inicializa el archivo CSV de pedidos con encabezados si no existe."""
+        if not self.pedidos_path.exists():
             headers = [
-                'Fecha', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 
-                'Precio_Venta', 'Tipo_Operacion', 'Comentarios'
+                'Fecha', 'Numero_Pedido', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 
+                'Precio_Unitario', 'Cantidad', 'Precio_Total', 'Estado_Pedido', 'Comentarios', 'EstadoVisualizacion'
             ]
             
-            with open(self.csv_path, 'w', newline='', encoding='utf-8') as f:
+            with open(self.pedidos_path, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 writer.writerow(headers)
             
-            print(f"✅ Archivo CSV inicializado: {self.csv_path}")
+            print(f"✅ Archivo pedidos.csv inicializado: {self.pedidos_path}")
+
+    def _init_pagos_csv(self):
+        """Inicializa el archivo CSV de pagos con encabezados si no existe."""
+        if not self.pagos_path.exists():
+            headers = [
+                'Fecha', 'Numero_Pago', 'Cliente', 'Numero_Pedido_Ref', 
+                'Codigo_Pieza_Ref', 'Monto_Pago', 'Comentarios', 'EstadoVisualizacion'
+            ]
+            
+            with open(self.pagos_path, 'w', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                writer.writerow(headers)
+            
+            print(f"✅ Archivo pagos.csv inicializado: {self.pagos_path}")
     
     def get_client_names(self) -> List[str]:
         """Retorna lista de nombres de clientes disponibles."""
@@ -138,175 +154,623 @@ class SalesManager:
         
         arg_data = product.get('ARG', {})
         return float(arg_data.get('Sell_price', 0.0))
-    
-    def add_transaction(self, cliente: str, tipo_operacion: str, 
-                       codigo_pieza: str = "", precio_venta: float = None, 
-                       comentarios: str = "") -> bool:
-        """
-        Agrega una nueva transacción al CSV.
-        
-        Args:
-            cliente: Nombre del cliente
-            tipo_operacion: 'compra', 'pago', o 'compra-venta'
-            codigo_pieza: Código de la pieza (opcional para pagos)
-            precio_venta: Precio de venta (se calcula automáticamente si no se proporciona)
-            comentarios: Comentarios adicionales
-            
-        Returns:
-            True si se agregó exitosamente, False en caso contrario
-        """
+
+    def _get_next_pedido_number(self) -> str:
+        """Genera el siguiente número de pedido."""
         try:
-            # Validar cliente
+            df = pd.read_csv(self.pedidos_path)
+            if df.empty:
+                return "PED001"
+            
+            # Extraer números y encontrar el máximo
+            pedido_numbers = df['Numero_Pedido'].str.extract(r'PED(\d+)')[0].astype(int)
+            next_num = pedido_numbers.max() + 1
+            return f"PED{next_num:03d}"
+        except:
+            return "PED001"
+
+    def _get_next_pago_number(self) -> str:
+        """Genera el siguiente número de pago."""
+        try:
+            df = pd.read_csv(self.pagos_path)
+            if df.empty:
+                return "PAG001"
+            
+            # Extraer números y encontrar el máximo
+            pago_numbers = df['Numero_Pago'].str.extract(r'PAG(\d+)')[0].astype(int)
+            next_num = pago_numbers.max() + 1
+            return f"PAG{next_num:03d}"
+        except:
+            return "PAG001"
+
+    def load_pedidos(self) -> pd.DataFrame:
+        """Carga los pedidos desde el CSV."""
+        try:
+            if self.pedidos_path.exists():
+                return pd.read_csv(self.pedidos_path)
+            return pd.DataFrame()
+        except Exception as e:
+            print(f"❌ Error cargando pedidos: {e}")
+            return pd.DataFrame()
+
+    def load_pagos(self) -> pd.DataFrame:
+        """Carga los pagos desde el CSV."""
+        try:
+            if self.pagos_path.exists():
+                return pd.read_csv(self.pagos_path)
+            return pd.DataFrame()
+        except Exception as e:
+            print(f"❌ Error cargando pagos: {e}")
+            return pd.DataFrame()
+    
+    def add_pedido(self, cliente: str, codigo_pieza: str, precio_unitario: float, 
+                   comentarios: str = "", cantidad: int = 1) -> Tuple[bool, str]:
+        """Agrega un nuevo pedido individual."""
+        try:
             if not self.validate_client(cliente):
-                print(f"❌ Cliente '{cliente}' no existe en la base de datos")
-                return False
+                return False, "Cliente no existe"
             
-            # Validar código de pieza para compras
-            if tipo_operacion in ['compra', 'compra-venta'] and not codigo_pieza:
-                print(f"❌ Se requiere código de pieza para operación '{tipo_operacion}'")
-                return False
+            if not self.validate_product_code(codigo_pieza):
+                return False, "Código de producto no existe"
             
-            # Variables para la transacción
-            nombre_pieza = ""
-            precio_final = 0.0
+            numero_pedido = self._get_next_pedido_number()
+            fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            nombre_pieza = self.get_product_display_name(codigo_pieza)
+            precio_total = precio_unitario * cantidad
             
-            # Procesar según tipo de operación
-            if tipo_operacion == 'compra':
+            row = [
+                fecha_actual,
+                numero_pedido,
+                cliente,
+                codigo_pieza,
+                nombre_pieza,
+                precio_unitario,
+                cantidad,
+                precio_total,
+                "Pendiente",
+                comentarios,
+                "Visible"
+            ]
+            
+            with open(self.pedidos_path, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                writer.writerow(row)
+            
+            return True, numero_pedido
+            
+        except Exception as e:
+            print(f"❌ Error agregando pedido: {e}")
+            return False, str(e)
+
+    def add_pedido_multiple(self, cliente: str, items: List[Dict], comentarios: str = "") -> Tuple[bool, str]:
+        """Agrega un pedido con múltiples productos."""
+        try:
+            if not self.validate_client(cliente):
+                return False, "Cliente no existe"
+            
+            numero_pedido = self._get_next_pedido_number()
+            fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
+            rows = []
+            for item in items:
+                codigo_pieza = item['codigo']
+                cantidad = item['cantidad']
+                precio_unitario = item['precio_unitario']
+                
                 if not self.validate_product_code(codigo_pieza):
-                    print(f"❌ Código de pieza '{codigo_pieza}' no existe")
-                    return False
+                    continue
                 
                 nombre_pieza = self.get_product_display_name(codigo_pieza)
-                precio_final = precio_venta if precio_venta is not None else self.get_product_sell_price(codigo_pieza)
-            
-            elif tipo_operacion == 'pago':
-                # Para pagos, el precio debe ser negativo
-                precio_final = -abs(precio_venta) if precio_venta is not None else 0.0
-                nombre_pieza = "PAGO"
-            
-            elif tipo_operacion == 'compra-venta':
-                if not self.validate_product_code(codigo_pieza):
-                    print(f"❌ Código de pieza '{codigo_pieza}' no existe")
-                    return False
+                precio_total = precio_unitario * cantidad
                 
-                nombre_pieza = self.get_product_display_name(codigo_pieza)
-                precio_final = 0.0  # Compra-venta no afecta el total
+                rows.append([
+                    fecha_actual,
+                    numero_pedido,
+                    cliente,
+                    codigo_pieza,
+                    nombre_pieza,
+                    precio_unitario,
+                    cantidad,
+                    precio_total,
+                    "Pendiente",
+                    comentarios,
+                    "Visible"
+                ])
             
-            else:
-                print(f"❌ Tipo de operación '{tipo_operacion}' no válido")
-                return False
+            if not rows:
+                return False, "No hay productos válidos"
             
-            # Crear registro
+            with open(self.pedidos_path, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                for row in rows:
+                    writer.writerow(row)
+            
+            return True, numero_pedido
+            
+        except Exception as e:
+            print(f"❌ Error agregando pedido múltiple: {e}")
+            return False, str(e)
+
+    def add_pago(self, cliente: str, monto: float, numero_pedido_ref: str = "", 
+                 codigo_pieza_ref: str = "", comentarios: str = "") -> Tuple[bool, str]:
+        """Agrega un nuevo pago."""
+        try:
+            if not self.validate_client(cliente):
+                return False, "Cliente no existe"
+            
+            numero_pago = self._get_next_pago_number()
             fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
             row = [
                 fecha_actual,
+                numero_pago,
                 cliente,
-                codigo_pieza,
-                nombre_pieza,
-                precio_final,
-                tipo_operacion,
-                comentarios
+                numero_pedido_ref,
+                codigo_pieza_ref,
+                monto,
+                comentarios,
+                "Visible"
             ]
             
-            # Agregar al CSV
-            with open(self.csv_path, 'a', newline='', encoding='utf-8') as f:
+            with open(self.pagos_path, 'a', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 writer.writerow(row)
             
-            print(f"✅ Transacción agregada: {tipo_operacion} - {cliente} - ${precio_final}")
-            return True
+            return True, numero_pago
             
         except Exception as e:
-            print(f"❌ Error agregando transacción: {e}")
-            return False
-    
-    def load_transactions(self) -> pd.DataFrame:
-        """Carga todas las transacciones desde el CSV."""
+            print(f"❌ Error agregando pago: {e}")
+            return False, str(e)
+
+    def add_pago_inmediato(self, cliente: str, items: List[Dict], comentarios: str = "") -> Tuple[bool, str, str]:
+        """Crea un pedido y lo paga inmediatamente."""
         try:
-            if self.csv_path.exists():
-                df = pd.read_csv(self.csv_path)
-                return df
+            # Crear pedido primero
+            success_pedido, numero_pedido = self.add_pedido_multiple(cliente, items, comentarios)
+            
+            if not success_pedido:
+                return False, "", ""
+            
+            # Calcular total del pedido
+            total_pedido = sum(item['precio_unitario'] * item['cantidad'] for item in items)
+            
+            # Crear pago
+            success_pago, numero_pago = self.add_pago(
+                cliente, 
+                total_pedido, 
+                numero_pedido, 
+                items[0]['codigo'] if items else "",
+                f"Pago inmediato - {comentarios}"
+            )
+            
+            if success_pago:
+                return True, numero_pedido, numero_pago
             else:
-                return pd.DataFrame(columns=[
-                    'Fecha', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 
-                    'Precio_Venta', 'Tipo_Operacion', 'Comentarios'
-                ])
+                return False, numero_pedido, ""
+                
         except Exception as e:
-            print(f"❌ Error cargando transacciones: {e}")
-            return pd.DataFrame()
-    
-    def get_client_balance(self, cliente: str) -> Dict[str, float]:
-        """
-        Calcula el balance de un cliente específico.
-        
-        Returns:
-            Dict con compras, pagos y balance total
-        """
-        df = self.load_transactions()
-        
-        if df.empty:
-            return {"compras": 0.0, "pagos": 0.0, "balance": 0.0}
-        
-        client_transactions = df[df['Cliente'].str.lower() == cliente.lower()]
-        
-        compras = client_transactions[
-            client_transactions['Tipo_Operacion'] == 'compra'
-        ]['Precio_Venta'].sum()
-        
-        pagos = abs(client_transactions[
-            client_transactions['Tipo_Operacion'] == 'pago'
-        ]['Precio_Venta'].sum())
-        
-        balance = compras - pagos
-        
-        return {
-            "compras": round(compras, 2),
-            "pagos": round(pagos, 2),
-            "balance": round(balance, 2)
-        }
-    
-    def get_all_balances(self) -> Dict[str, Dict[str, float]]:
-        """Obtiene balances de todos los clientes."""
-        df = self.load_transactions()
-        
-        if df.empty:
-            return {}
-        
-        balances = {}
-        for cliente in df['Cliente'].unique():
-            balances[cliente] = self.get_client_balance(cliente)
-        
-        return balances
+            print(f"❌ Error en pago inmediato: {e}")
+            return False, "", str(e)
     
     def get_statistics(self) -> Dict:
-        """Obtiene estadísticas generales."""
-        df = self.load_transactions()
+        """Obtiene estadísticas generales del nuevo sistema."""
+        df_pedidos = self.load_pedidos()
+        df_pagos = self.load_pagos()
         
-        if df.empty:
-            return {
-                "total_transactions": 0,
-                "total_sales": 0.0,
-                "total_payments": 0.0,
-                "unique_clients": 0,
-                "unique_products": 0
-            }
+        total_pedidos = len(df_pedidos) if not df_pedidos.empty else 0
+        total_pagos = len(df_pagos) if not df_pagos.empty else 0
+        total_sales = df_pedidos['Precio_Total'].sum() if not df_pedidos.empty else 0.0
+        total_payments = df_pagos['Monto_Pago'].sum() if not df_pagos.empty else 0.0
         
-        total_sales = df[df['Tipo_Operacion'] == 'compra']['Precio_Venta'].sum()
-        total_payments = abs(df[df['Tipo_Operacion'] == 'pago']['Precio_Venta'].sum())
+        unique_clients_pedidos = df_pedidos['Cliente'].nunique() if not df_pedidos.empty else 0
+        unique_clients_pagos = df_pagos['Cliente'].nunique() if not df_pagos.empty else 0
+        unique_clients = max(unique_clients_pedidos, unique_clients_pagos)
         
         return {
-            "total_transactions": len(df),
+            "total_transactions": total_pedidos + total_pagos,
+            "total_pedidos": total_pedidos,
+            "total_pagos": total_pagos,
             "total_sales": round(total_sales, 2),
             "total_payments": round(total_payments, 2),
             "net_balance": round(total_sales - total_payments, 2),
-            "unique_clients": df['Cliente'].nunique(),
-            "unique_products": df[df['Codigo_Pieza'] != '']['Codigo_Pieza'].nunique()
+            "unique_clients": unique_clients,
+            "unique_products": df_pedidos['Codigo_Pieza'].nunique() if not df_pedidos.empty else 0
         }
+    
+    def get_client_pedidos(self, cliente: str, incluir_ocultos: bool = False) -> pd.DataFrame:
+        """Obtiene todos los pedidos de un cliente específico."""
+        df_pedidos = self.load_pedidos()
+        if df_pedidos.empty:
+            return pd.DataFrame()
+        
+        # Filtrar por cliente
+        df_filtrado = df_pedidos[df_pedidos['Cliente'] == cliente]
+        
+        # Filtrar por estado de visualización si no se incluyen ocultos
+        if not incluir_ocultos and 'EstadoVisualizacion' in df_filtrado.columns:
+            df_filtrado = df_filtrado[df_filtrado['EstadoVisualizacion'] == 'Visible']
+        
+        return df_filtrado.sort_values('Fecha', ascending=False)
+    
+    def get_client_pagos(self, cliente: str, incluir_ocultos: bool = False) -> pd.DataFrame:
+        """Obtiene todos los pagos de un cliente específico."""
+        df_pagos = self.load_pagos()
+        if df_pagos.empty:
+            return pd.DataFrame()
+        
+        # Filtrar por cliente
+        df_filtrado = df_pagos[df_pagos['Cliente'] == cliente]
+        
+        # Filtrar por estado de visualización si no se incluyen ocultos
+        if not incluir_ocultos and 'EstadoVisualizacion' in df_filtrado.columns:
+            df_filtrado = df_filtrado[df_filtrado['EstadoVisualizacion'] == 'Visible']
+        
+        return df_filtrado.sort_values('Fecha', ascending=False)
+    
+    def get_client_balance(self, cliente: str) -> Dict[str, float]:
+        """Calcula el balance de un cliente específico."""
+        df_pedidos = self.get_client_pedidos(cliente)
+        df_pagos = self.get_client_pagos(cliente)
+        
+        # Total de pedidos (deuda)
+        total_deuda = df_pedidos['Precio_Total'].sum() if not df_pedidos.empty else 0.0
+        
+        # Total de pagos
+        total_pagos = df_pagos['Monto_Pago'].sum() if not df_pagos.empty else 0.0
+        
+        # Balance (positivo = debe dinero, negativo = tiene crédito)
+        balance = total_deuda - total_pagos
+        
+        return {
+            "total_deuda": round(total_deuda, 2),
+            "total_pagos": round(total_pagos, 2),
+            "balance": round(balance, 2)
+        }
+    
+    def ocultar_pedido(self, numero_pedido: str) -> bool:
+        """Oculta un pedido cambiando su EstadoVisualizacion a 'Oculto'."""
+        try:
+            df = self.load_pedidos()
+            if df.empty:
+                return False
+            
+            # Buscar el registro y cambiar el estado
+            mask = df['Numero_Pedido'] == numero_pedido
+            if not mask.any():
+                return False
+            
+            df.loc[mask, 'EstadoVisualizacion'] = 'Oculto'
+            
+            # Guardar el archivo actualizado
+            df.to_csv(self.pedidos_path, index=False)
+            return True
+            
+        except Exception as e:
+            print(f"❌ Error ocultando pedido: {e}")
+            return False
+    
+    def ocultar_pago(self, numero_pago: str) -> bool:
+        """Oculta un pago cambiando su EstadoVisualizacion a 'Oculto'."""
+        try:
+            df = self.load_pagos()
+            if df.empty:
+                return False
+            
+            # Buscar el registro y cambiar el estado
+            mask = df['Numero_Pago'] == numero_pago
+            if not mask.any():
+                return False
+            
+            df.loc[mask, 'EstadoVisualizacion'] = 'Oculto'
+            
+            # Guardar el archivo actualizado
+            df.to_csv(self.pagos_path, index=False)
+            return True
+            
+        except Exception as e:
+            print(f"❌ Error ocultando pago: {e}")
+            return False
+    
+    def agregar_producto_mejorado(self, codigo: str, espanol: str, final_cost_usa: float, 
+                                 weight: int = None, precio_venta_manual: float = None) -> tuple[bool, str]:
+        """
+        Agrega un nuevo producto con los campos simplificados y cálculo automático.
+        
+        Args:
+            codigo: Código único del producto
+            espanol: Nombre en español
+            final_cost_usa: Costo final en USD
+            weight: Peso en gramos (opcional)
+            precio_venta_manual: Precio de venta manual (opcional)
+        
+        Returns:
+            Tuple (success, message)
+        """
+        try:
+            # Verificar que el código no exista
+            if codigo in self.products_data:
+                return False, f"El producto con código '{codigo}' ya existe"
+            
+            # Importar las funciones de cálculo de la base de datos
+            from ..DataBaseBuild.DataBase import MecatechDatabase
+            db = MecatechDatabase()
+            
+            # Calcular costo de envío
+            shipping_cost = db.calculate_shipping_cost(weight)
+            
+            # Calcular costo total en Argentina
+            costo_in_arg = db.calculate_costo_in_arg(shipping_cost, final_cost_usa)
+            
+            # Calcular precio de venta
+            if precio_venta_manual and precio_venta_manual > 0:
+                sell_price = precio_venta_manual
+            else:
+                sell_price = db.calculate_sell_price(costo_in_arg)
+            
+            # Crear estructura del producto
+            nuevo_producto = {
+                "name": espanol,  # Usar español como nombre principal
+                "espanol": espanol,
+                "qty_for_bag": 1,
+                "dealer_price": 0.0,  # No usado en productos manuales
+                "consumer_price": 0.0,  # No usado en productos manuales
+                "total_in_usa": 0.0,  # No usado en productos manuales
+                "cost_in_usa_usd": 0.0,  # No usado en productos manuales
+                "final_cost_usa": final_cost_usa,
+                "ARG": {
+                    "weight": weight,
+                    "shipping_cost": shipping_cost,
+                    "Costo_In_Arg": costo_in_arg,
+                    "Ref_Price": 0.0,  # No calculado para productos manuales
+                    "Sell_price": sell_price,
+                    "Reference_percent": 0.0  # No calculado para productos manuales
+                }
+            }
+            
+            # Agregar al diccionario en memoria
+            self.products_data[codigo] = nuevo_producto
+            
+            # Guardar en archivo JSON
+            with open(self.products_path, 'w', encoding='utf-8') as f:
+                json.dump(self.products_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Producto '{codigo}' agregado exitosamente. Precio calculado: ${sell_price:.2f}"
+            
+        except Exception as e:
+            return False, f"Error agregando producto: {str(e)}"
+    
+    def actualizar_todos_precios(self) -> tuple[bool, str]:
+        """
+        Actualiza todos los precios de los productos usando las variables de entorno actuales.
+        
+        Returns:
+            Tuple (success, message)
+        """
+        try:
+            # Importar las funciones de cálculo de la base de datos
+            from ..DataBaseBuild.DataBase import MecatechDatabase
+            db = MecatechDatabase()
+            
+            productos_actualizados = 0
+            
+            # Recalcular precios para todos los productos
+            for codigo, producto in self.products_data.items():
+                try:
+                    # Solo actualizar productos que tienen final_cost_usa válido
+                    final_cost_usa = producto.get('final_cost_usa', 0)
+                    if final_cost_usa <= 0:
+                        continue
+                    
+                    # Obtener peso
+                    arg_data = producto.get('ARG', {})
+                    weight = arg_data.get('weight')
+                    
+                    # Recalcular costo de envío
+                    shipping_cost = db.calculate_shipping_cost(weight)
+                    
+                    # Recalcular costo total en Argentina
+                    costo_in_arg = db.calculate_costo_in_arg(shipping_cost, final_cost_usa)
+                    
+                    # Recalcular precio de venta
+                    sell_price = db.calculate_sell_price(costo_in_arg)
+                    
+                    # Actualizar valores en la estructura ARG
+                    self.products_data[codigo]['ARG'].update({
+                        'shipping_cost': shipping_cost,
+                        'Costo_In_Arg': costo_in_arg,
+                        'Sell_price': sell_price
+                    })
+                    
+                    productos_actualizados += 1
+                    
+                except Exception as e:
+                    print(f"⚠️ Error actualizando producto {codigo}: {e}")
+                    continue
+            
+            # Guardar archivo actualizado
+            with open(self.products_path, 'w', encoding='utf-8') as f:
+                json.dump(self.products_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Actualizados {productos_actualizados} productos exitosamente"
+            
+        except Exception as e:
+            return False, f"Error actualizando precios: {str(e)}"
+    
+    def eliminar_pedido(self, numero_pedido: str) -> bool:
+        """Elimina permanentemente un pedido de la base de datos."""
+        try:
+            df = self.load_pedidos()
+            if df.empty:
+                return False
+            
+            # Filtrar para eliminar el registro
+            df_filtrado = df[df['Numero_Pedido'] != numero_pedido]
+            
+            if len(df_filtrado) == len(df):
+                return False  # No se encontró el registro
+            
+            # Guardar el archivo actualizado
+            df_filtrado.to_csv(self.pedidos_path, index=False)
+            return True
+            
+        except Exception as e:
+            print(f"❌ Error eliminando pedido: {e}")
+            return False
+    
+    def eliminar_pago(self, numero_pago: str) -> bool:
+        """Elimina permanentemente un pago de la base de datos."""
+        try:
+            df = self.load_pagos()
+            if df.empty:
+                return False
+            
+            # Filtrar para eliminar el registro
+            df_filtrado = df[df['Numero_Pago'] != numero_pago]
+            
+            if len(df_filtrado) == len(df):
+                return False  # No se encontró el registro
+            
+            # Guardar el archivo actualizado
+            df_filtrado.to_csv(self.pagos_path, index=False)
+            return True
+            
+        except Exception as e:
+            print(f"❌ Error eliminando pago: {e}")
+            return False
+
+    def agregar_cliente(self, nombre: str, password: str = "0000") -> bool:
+        """Agrega un nuevo cliente al archivo clientes.json."""
+        try:
+            # Verificar si el cliente ya existe
+            if self.validate_client(nombre):
+                return False, "El cliente ya existe"
+            
+            # Agregar nuevo cliente
+            nuevo_cliente = {
+                "nombre": nombre,
+                "password": password
+            }
+            
+            self.clients_data["clientes"].append(nuevo_cliente)
+            
+            # Guardar el archivo actualizado
+            with open(self.clients_path, 'w', encoding='utf-8') as f:
+                json.dump(self.clients_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Cliente '{nombre}' agregado exitosamente"
+            
+        except Exception as e:
+            print(f"❌ Error agregando cliente: {e}")
+            return False, str(e)
+
+    def agregar_producto(self, codigo: str, nombre_ingles: str = "", nombre_espanol: str = "", 
+                        precio_venta: float = 0.0, peso: float = None, final_cost_usa: float = 0.0) -> Tuple[bool, str]:
+        """Agrega un nuevo producto al archivo mecatech_database.json."""
+        try:
+            # Verificar si el producto ya existe
+            if codigo in self.products_data:
+                return False, f"El producto con código '{codigo}' ya existe"
+            
+            # Si se proporciona final_cost_usa, calcular automáticamente
+            if final_cost_usa > 0:
+                # Importar las funciones de cálculo de la base de datos
+                from ..DataBaseBuild.DataBase import MecatechDatabase
+                db = MecatechDatabase()
+                
+                # Calcular costo de envío
+                shipping_cost = db.calculate_shipping_cost(peso)
+                
+                # Calcular costo total en Argentina
+                costo_in_arg = db.calculate_costo_in_arg(shipping_cost, final_cost_usa)
+                
+                # Calcular precio de venta si no se especificó
+                if precio_venta <= 0:
+                    precio_venta = db.calculate_sell_price(costo_in_arg)
+                
+                # Crear estructura del producto con cálculos
+                nuevo_producto = {
+                    "name": nombre_espanol or nombre_ingles,  # Priorizar español
+                    "espanol": nombre_espanol if nombre_espanol else None,
+                    "qty_for_bag": 1,
+                    "dealer_price": 0.0,  # No usado en productos manuales
+                    "consumer_price": 0.0,  # No usado en productos manuales
+                    "total_in_usa": 0.0,  # No usado en productos manuales
+                    "cost_in_usa_usd": 0.0,  # No usado en productos manuales
+                    "final_cost_usa": final_cost_usa,
+                    "ARG": {
+                        "weight": peso,
+                        "shipping_cost": shipping_cost,
+                        "Costo_In_Arg": costo_in_arg,
+                        "Ref_Price": 0.0,  # No calculado para productos manuales
+                        "Sell_price": precio_venta,
+                        "Reference_percent": 0.0  # No calculado para productos manuales
+                    }
+                }
+                mensaje_extra = f" Precio calculado: ${precio_venta:.2f}"
+            else:
+                # Crear estructura básica sin cálculos automáticos
+                nuevo_producto = {
+                    "name": nombre_ingles or nombre_espanol,
+                    "espanol": nombre_espanol if nombre_espanol else None,
+                    "qty_for_bag": 1,
+                    "dealer_price": 0.0,
+                    "consumer_price": 0.0,
+                    "total_in_usa": 0.0,
+                    "cost_in_usa_usd": 0.0,
+                    "final_cost_usa": 0.0,
+                    "ARG": {
+                        "weight": peso,
+                        "shipping_cost": 5.0,
+                        "Costo_In_Arg": 0.0,
+                        "Ref_Price": 0.0,
+                        "Sell_price": precio_venta,
+                        "Reference_percent": 0.0
+                    }
+                }
+                mensaje_extra = ""
+            
+            # Agregar el producto al diccionario
+            self.products_data[codigo] = nuevo_producto
+            
+            # Guardar el archivo actualizado
+            with open(self.products_path, 'w', encoding='utf-8') as f:
+                json.dump(self.products_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Producto '{codigo}' agregado exitosamente.{mensaje_extra}"
+            
+        except Exception as e:
+            print(f"❌ Error agregando producto: {e}")
+            return False, str(e)
+
+    def obtener_estadisticas_administracion(self) -> Dict:
+        """Obtiene estadísticas para la sección de administración."""
+        try:
+            total_clientes = len(self.get_client_names())
+            total_productos = len(self.products_data)
+            
+            # Productos con y sin nombre en español
+            productos_con_espanol = sum(1 for p in self.products_data.values() if p.get('espanol'))
+            productos_sin_espanol = total_productos - productos_con_espanol
+            
+            return {
+                "total_clientes": total_clientes,
+                "total_productos": total_productos,
+                "productos_con_espanol": productos_con_espanol,
+                "productos_sin_espanol": productos_sin_espanol
+            }
+            
+        except Exception as e:
+            print(f"❌ Error obteniendo estadísticas: {e}")
+            return {
+                "total_clientes": 0,
+                "total_productos": 0,
+                "productos_con_espanol": 0,
+                "productos_sin_espanol": 0
+            }
 
 def main():
     """Función de prueba del sistema."""
-    print("🏪 SISTEMA DE GESTIÓN DE VENTAS Y PAGOS")
+    print("🏪 SISTEMA DE GESTIÓN DE PEDIDOS Y PAGOS (V2)")
     print("=" * 50)
     
     # Crear instancia
@@ -328,12 +792,15 @@ def main():
     
     # Mostrar estadísticas
     stats = sales_manager.get_statistics()
-    print(f"\n📈 ESTADÍSTICAS:")
-    print(f"   Transacciones: {stats['total_transactions']}")
+    print(f"\n📈 ESTADÍSTICAS DEL NUEVO SISTEMA:")
+    print(f"   Total transacciones: {stats['total_transactions']}")
+    print(f"   Total pedidos: {stats['total_pedidos']}")
+    print(f"   Total pagos: {stats['total_pagos']}")
     print(f"   Ventas totales: ${stats['total_sales']}")
     print(f"   Pagos totales: ${stats['total_payments']}")
+    print(f"   Balance neto: ${stats['net_balance']}")
     
-    print(f"\n✅ Sistema inicializado correctamente")
+    print(f"\n✅ Sistema de pedidos y pagos inicializado correctamente")
 
 if __name__ == "__main__":
     main()
