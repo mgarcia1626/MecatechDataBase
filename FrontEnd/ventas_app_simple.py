@@ -510,8 +510,10 @@ class SalesManager:
 
 def init_session_state():
     """Inicializa variables del estado de sesión."""
-    if 'sales_manager' not in st.session_state:
+    if 'sales_manager' not in st.session_state or 'force_reload' in st.session_state:
         st.session_state.sales_manager = SalesManager()
+        if 'force_reload' in st.session_state:
+            del st.session_state.force_reload
     
     if 'carrito_pedido' not in st.session_state:
         st.session_state.carrito_pedido = []
@@ -524,6 +526,13 @@ def init_session_state():
         
     if 'selected_product' not in st.session_state:
         st.session_state.selected_product = None
+    
+    # Verificar que SalesManager tenga los métodos necesarios
+    required_methods = ['agregar_producto_mejorado', 'actualizar_todos_precios']
+    for method in required_methods:
+        if not hasattr(st.session_state.sales_manager, method):
+            st.session_state.sales_manager = SalesManager()
+            break
 
 def search_products(search_term):
     """Búsqueda de productos y almacenamiento en session state."""
@@ -597,7 +606,7 @@ def main():
         st.metric("📦 Productos Únicos", stats['unique_products'])
     
     # Tabs para separar funcionalidades
-    tab1, tab2, tab3, tab4 = st.tabs(["🏪 Operaciones", "📊 Visualización por Cliente", "✏️ Edición de Cliente", "⚙️ Administración"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["🏪 Operaciones", "📊 Visualización por Cliente", "✏️ Edición de Cliente", "💰 Lista de Precios", "⚙️ Administración"])
     
     # TAB 1: OPERACIONES (Pedido, Pago, Pago Inmediato)
     with tab1:
@@ -687,6 +696,54 @@ def main():
                             add_to_cart(code, display_name, precio, cantidad)
                             st.success(f"✅ {display_name} agregado al carrito")
                             st.rerun()
+            
+            # Sección para elementos personalizados (sin código de producto)
+            st.markdown("---")
+            st.subheader("📝 Agregar Elemento Personalizado")
+            st.info("💡 Para elementos como 'Deudas Previas', 'Servicios', 'Descuentos', etc.")
+            
+            col_custom_desc, col_custom_price, col_custom_qty, col_custom_add = st.columns([3, 1, 1, 1])
+            
+            with col_custom_desc:
+                descripcion_custom = st.text_input(
+                    "Descripción del elemento",
+                    placeholder="Ej: Deuda previa, Servicio técnico, Descuento...",
+                    key="descripcion_custom"
+                )
+            
+            with col_custom_price:
+                precio_custom = st.number_input(
+                    "Precio USD",
+                    min_value=0.0,
+                    value=0.0,
+                    step=0.01,
+                    key="precio_custom"
+                )
+            
+            with col_custom_qty:
+                cantidad_custom = st.number_input(
+                    "Cantidad",
+                    min_value=1,
+                    value=1,
+                    step=1,
+                    key="cantidad_custom"
+                )
+            
+            with col_custom_add:
+                st.write("")  # Espaciado para alinear
+                if st.button("➕ Agregar", key="add_custom"):
+                    if descripcion_custom.strip() and precio_custom > 0:
+                        # Generar código personalizado para elementos sin código
+                        codigo_custom = f"CUSTOM-{len(st.session_state.carrito_pedido) + 1:03d}"
+                        add_to_cart(codigo_custom, descripcion_custom.strip(), precio_custom, cantidad_custom)
+                        st.success(f"✅ {descripcion_custom.strip()} agregado al carrito")
+                        # Limpiar campos después de agregar
+                        st.session_state.descripcion_custom = ""
+                        st.session_state.precio_custom = 0.0
+                        st.session_state.cantidad_custom = 1
+                        st.rerun()
+                    else:
+                        st.error("❌ Complete la descripción y el precio")
             
             # Mostrar carrito
             st.markdown("---")
@@ -1221,8 +1278,106 @@ def main():
         else:
             st.info("👆 Selecciona un cliente para editar sus registros")
     
-    # Pestaña 4: Administración
+    # Pestaña 4: Lista de Precios
     with tab4:
+        st.subheader("💰 Lista de Precios")
+        
+        # Búsqueda en la lista de precios
+        col_buscar, col_stats = st.columns([2, 1])
+        
+        with col_buscar:
+            buscar_precio = st.text_input(
+                "🔍 Buscar por código o nombre en español",
+                placeholder="Ingrese código de producto o nombre...",
+                key="buscar_lista_precios"
+            )
+        
+        with col_stats:
+            # Estadísticas rápidas de productos
+            total_productos = len(st.session_state.sales_manager.products_data)
+            productos_con_espanol = sum(1 for p in st.session_state.sales_manager.products_data.values() if p.get('espanol'))
+            
+            st.metric("📦 Total Productos", total_productos)
+            st.metric("🇪🇸 Con Español", productos_con_espanol)
+        
+        st.markdown("---")
+        
+        # Mostrar resultados de búsqueda o lista completa
+        if buscar_precio:
+            # Buscar productos manualmente en products_data
+            productos_filtrados = {}
+            buscar_lower = buscar_precio.lower()
+            
+            for codigo, producto in st.session_state.sales_manager.products_data.items():
+                nombre_esp = producto.get('espanol', '').lower() if producto.get('espanol') else ''
+                codigo_lower = codigo.lower()
+                
+                if buscar_lower in codigo_lower or buscar_lower in nombre_esp:
+                    productos_filtrados[codigo] = producto
+            
+            if productos_filtrados:
+                st.write(f"**📋 {len(productos_filtrados)} resultado(s) encontrado(s):**")
+                
+                # Crear DataFrame para mostrar resultados
+                data_resultados = []
+                for codigo, producto in productos_filtrados.items():
+                    nombre_esp = producto.get('espanol', '')
+                    nombre_ing = producto.get('name', '')
+                    nombre_display = nombre_esp if nombre_esp else nombre_ing
+                    precio = st.session_state.sales_manager.get_product_sell_price(codigo)
+                    
+                    data_resultados.append({
+                        'Código': codigo,
+                        'Nombre': nombre_display,
+                        'Precio (USD)': f"${precio:,.2f}"
+                    })
+                
+                df_resultados = pd.DataFrame(data_resultados)
+                
+                # Mostrar tabla
+                st.dataframe(df_resultados, use_container_width=True, hide_index=True)
+                
+                # Opción de descarga
+                if len(df_resultados) > 0:
+                    csv_data = df_resultados.to_csv(index=False)
+                    st.download_button(
+                        label="📥 Descargar resultados como CSV",
+                        data=csv_data,
+                        file_name=f"busqueda_precios_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                        mime="text/csv"
+                    )
+            else:
+                st.info("No se encontraron productos con ese criterio de búsqueda")
+        else:
+            st.info("💡 Ingrese un término de búsqueda para ver productos específicos")
+            
+            # Mostrar algunos productos de ejemplo
+            st.subheader("🎯 Productos de Ejemplo")
+            
+            # Tomar una muestra de productos para mostrar
+            sample_products = list(st.session_state.sales_manager.products_data.items())[:10]
+            
+            if sample_products:
+                data_ejemplo = []
+                for codigo, producto in sample_products:
+                    precio = st.session_state.sales_manager.get_product_sell_price(codigo)
+                    nombre_esp = producto.get('espanol', '')
+                    nombre_ing = producto.get('name', '')
+                    nombre_display = nombre_esp if nombre_esp else nombre_ing
+                    
+                    data_ejemplo.append({
+                        'Código': codigo,
+                        'Nombre': nombre_display,
+                        'Precio (USD)': f"${precio:,.2f}"
+                    })
+                
+                df_ejemplo = pd.DataFrame(data_ejemplo)
+                st.dataframe(df_ejemplo, use_container_width=True, hide_index=True)
+                
+                st.info("💡 Esto es solo una muestra. Use el buscador para encontrar productos específicos.")
+    
+    # Pestaña 5: Administración
+    with tab5:
         st.subheader("⚙️ Administración de Sistema")
         
         # Estadísticas generales
@@ -1294,7 +1449,23 @@ def main():
                 st.info("No hay clientes registrados")
         
         with col_productos:
-            st.subheader("📦 Agregar Nuevo Producto")
+            col_titulo, col_reload = st.columns([3, 1])
+            
+            with col_titulo:
+                st.subheader("📦 Agregar Nuevo Producto")
+            
+            with col_reload:
+                if st.button("🔄 Recargar Sistema", help="Reinicia SalesManager para cargar nuevos métodos"):
+                    # Forzar recarga importando nuevamente
+                    import importlib
+                    import sys
+                    if 'Functions.SalesManager.SalesManager' in sys.modules:
+                        importlib.reload(sys.modules['Functions.SalesManager.SalesManager'])
+                    
+                    from Functions.SalesManager.SalesManager import SalesManager
+                    st.session_state.sales_manager = SalesManager()
+                    st.success("✅ Sistema recargado correctamente")
+                    st.rerun()
             
             with st.form("form_nuevo_producto"):
                 codigo_producto = st.text_input(
@@ -1303,49 +1474,99 @@ def main():
                     help="Código único del producto"
                 )
                 
-                nombre_ingles = st.text_input(
-                    "🇺🇸 Nombre en Inglés",
-                    placeholder="Ej: Brake Pad Set",
-                    help="Nombre del producto en inglés"
-                )
-                
                 nombre_espanol = st.text_input(
                     "🇪🇸 Nombre en Español",
                     placeholder="Ej: Pastillas de freno",
-                    help="Traducción al español (opcional)"
+                    help="Nombre del producto en español"
                 )
                 
-                col_precio, col_peso = st.columns(2)
+                col_costo, col_peso = st.columns(2)
                 
-                with col_precio:
-                    precio_venta = st.number_input(
-                        "💰 Precio de Venta",
+                with col_costo:
+                    final_cost_usa = st.number_input(
+                        "💵 Costo Final USA ($)",
                         min_value=0.0,
                         step=0.01,
                         format="%.2f",
-                        help="Precio de venta en pesos argentinos"
+                        help="Costo final en dólares estadounidenses"
                     )
                 
                 with col_peso:
-                    peso = st.number_input(
-                        "⚖️ Peso (kg)",
-                        min_value=0.0,
-                        step=0.1,
-                        format="%.2f",
-                        help="Peso del producto en kilogramos (opcional)"
+                    peso_gramos = st.number_input(
+                        "⚖️ Peso (gramos)",
+                        min_value=0,
+                        step=1,
+                        help="Peso del producto en gramos (opcional para calcular envío)"
                     )
                 
-                submit_producto = st.form_submit_button("✅ Agregar Producto", type="primary", use_container_width=True)
+                col_precio, col_auto = st.columns(2)
+                
+                with col_precio:
+                    precio_venta_manual = st.number_input(
+                        "💰 Precio de Venta (opcional)",
+                        min_value=0.0,
+                        step=0.01,
+                        format="%.2f",
+                        help="Si no se completa, se calculará automáticamente"
+                    )
+                
+                with col_auto:
+                    calcular_automatico = st.checkbox(
+                        "🤖 Calcular precio automáticamente",
+                        value=True,
+                        help="Usar las fórmulas de la base de datos para calcular el precio"
+                    )
+                    
+                    # Mostrar vista previa del cálculo si hay datos suficientes
+                    if calcular_automatico and final_cost_usa > 0:
+                        try:
+                            # Importar para cálculo de vista previa
+                            import sys
+                            import os
+                            sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'Functions', 'DataBaseBuild'))
+                            from DataBase import MecatechDatabase
+                            
+                            db = MecatechDatabase()
+                            shipping_cost = db.calculate_shipping_cost(peso_gramos if peso_gramos > 0 else None)
+                            costo_in_arg = db.calculate_costo_in_arg(shipping_cost, final_cost_usa)
+                            precio_calculado = db.calculate_sell_price(costo_in_arg)
+                            
+                            st.info(f"💡 Precio calculado: ${precio_calculado:.2f}")
+                        except:
+                            pass
+                
+                col_submit, col_update = st.columns([1, 1])
+                
+                with col_submit:
+                    submit_producto = st.form_submit_button("✅ Agregar Producto", type="primary", use_container_width=True)
+                
+                with col_update:
+                    update_all = st.form_submit_button("🔄 Actualizar Todos los Precios", type="secondary", use_container_width=True)
                 
                 if submit_producto:
-                    if codigo_producto.strip() and nombre_ingles.strip():
-                        success, message = st.session_state.sales_manager.agregar_producto(
-                            codigo_producto.strip().upper(),
-                            nombre_ingles.strip(),
-                            nombre_espanol.strip() if nombre_espanol.strip() else "",
-                            precio_venta,
-                            peso if peso > 0 else None
+                    if codigo_producto.strip() and nombre_espanol.strip() and final_cost_usa > 0:
+                        # Determinar el precio de venta
+                        if calcular_automatico or precio_venta_manual <= 0:
+                            # Usar el cálculo automático de SalesManager
+                            precio_final = None  # SalesManager calculará automáticamente
+                        else:
+                            precio_final = precio_venta_manual
+                        
+                        # Forzar recarga del SalesManager para obtener método actualizado
+                        from Functions.SalesManager.SalesManager import SalesManager
+                        sales_manager_temp = SalesManager()
+                        
+                        success, message = sales_manager_temp.agregar_producto(
+                            codigo=codigo_producto.strip().upper(),
+                            nombre_espanol=nombre_espanol.strip(),
+                            final_cost_usa=final_cost_usa,
+                            peso=peso_gramos if peso_gramos > 0 else None,
+                            precio_venta=precio_final if precio_final else 0.0
                         )
+                        
+                        # Actualizar la instancia en session state
+                        if success:
+                            st.session_state.sales_manager = sales_manager_temp
                         
                         if success:
                             st.success(f"✅ {message}")
@@ -1355,7 +1576,28 @@ def main():
                         else:
                             st.error(f"❌ {message}")
                     else:
-                        st.error("❌ El código y nombre en inglés son obligatorios")
+                        st.error("❌ El código, nombre en español y costo final USA son obligatorios")
+                
+                if update_all:
+                    # Ejecutar el script de actualización de la base de datos
+                    with st.spinner("🔄 Actualizando todos los precios desde la base de datos..."):
+                        try:
+                            import subprocess
+                            import os
+                            
+                            # Ejecutar el script DataBase.py
+                            script_path = os.path.join(os.path.dirname(__file__), '..', 'Functions', 'DataBaseBuild', 'DataBase.py')
+                            result = subprocess.run(['python', script_path], capture_output=True, text=True)
+                            
+                            if result.returncode == 0:
+                                st.success("✅ Todos los precios han sido actualizados desde la base de datos")
+                                # Recargar productos
+                                st.session_state.sales_manager._load_products()
+                                st.rerun()
+                            else:
+                                st.error(f"❌ Error ejecutando actualización: {result.stderr}")
+                        except Exception as e:
+                            st.error(f"❌ Error: {str(e)}")
             
             # Búsqueda de productos existentes
             st.subheader("🔍 Buscar Productos Existentes")

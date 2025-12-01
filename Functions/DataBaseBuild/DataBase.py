@@ -470,7 +470,8 @@ class MecatechDatabase:
     
     def save_to_json(self, output_path: str = None) -> str:
         """
-        Guarda la base de datos en formato JSON.
+        Guarda la base de datos en formato JSON de forma incremental.
+        Actualiza solo los productos del Excel y preserva productos agregados manualmente.
         
         Args:
             output_path: Ruta donde guardar (opcional)
@@ -483,10 +484,43 @@ class MecatechDatabase:
             output_dir.mkdir(exist_ok=True)
             output_path = output_dir / "mecatech_database.json"
         
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(self.pieces_data, f, indent=2, ensure_ascii=False)
+        # Cargar datos existentes si el archivo ya existe
+        existing_data = {}
+        if Path(output_path).exists():
+            try:
+                with open(output_path, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                print(f"📂 Cargando {len(existing_data)} productos existentes")
+            except Exception as e:
+                print(f"⚠️ Error cargando archivo existente: {e}")
+                existing_data = {}
         
-        print(f"💾 Base de datos guardada en: {output_path}")
+        # Combinar datos: actualizar existentes y preservar los que no están en el Excel
+        updated_count = 0
+        preserved_count = 0
+        
+        # Actualizar productos del Excel
+        for code, piece_data in self.pieces_data.items():
+            if code in existing_data:
+                existing_data[code] = piece_data  # Actualizar existente
+                updated_count += 1
+            else:
+                existing_data[code] = piece_data  # Agregar nuevo
+        
+        # Contar productos preservados (que no están en self.pieces_data)
+        for code in existing_data:
+            if code not in self.pieces_data:
+                preserved_count += 1
+        
+        # Guardar datos combinados
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(existing_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"💾 Base de datos actualizada en: {output_path}")
+        print(f"🔄 Productos actualizados/nuevos: {updated_count}")
+        print(f"📦 Productos preservados: {preserved_count}")
+        print(f"📊 Total de productos: {len(existing_data)}")
+        
         return str(output_path)
     
     def load_from_json(self, json_path: str) -> Dict[str, Dict[str, Any]]:

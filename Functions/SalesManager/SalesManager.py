@@ -471,6 +471,131 @@ class SalesManager:
             print(f"❌ Error ocultando pago: {e}")
             return False
     
+    def agregar_producto_mejorado(self, codigo: str, espanol: str, final_cost_usa: float, 
+                                 weight: int = None, precio_venta_manual: float = None) -> tuple[bool, str]:
+        """
+        Agrega un nuevo producto con los campos simplificados y cálculo automático.
+        
+        Args:
+            codigo: Código único del producto
+            espanol: Nombre en español
+            final_cost_usa: Costo final en USD
+            weight: Peso en gramos (opcional)
+            precio_venta_manual: Precio de venta manual (opcional)
+        
+        Returns:
+            Tuple (success, message)
+        """
+        try:
+            # Verificar que el código no exista
+            if codigo in self.products_data:
+                return False, f"El producto con código '{codigo}' ya existe"
+            
+            # Importar las funciones de cálculo de la base de datos
+            from ..DataBaseBuild.DataBase import MecatechDatabase
+            db = MecatechDatabase()
+            
+            # Calcular costo de envío
+            shipping_cost = db.calculate_shipping_cost(weight)
+            
+            # Calcular costo total en Argentina
+            costo_in_arg = db.calculate_costo_in_arg(shipping_cost, final_cost_usa)
+            
+            # Calcular precio de venta
+            if precio_venta_manual and precio_venta_manual > 0:
+                sell_price = precio_venta_manual
+            else:
+                sell_price = db.calculate_sell_price(costo_in_arg)
+            
+            # Crear estructura del producto
+            nuevo_producto = {
+                "name": espanol,  # Usar español como nombre principal
+                "espanol": espanol,
+                "qty_for_bag": 1,
+                "dealer_price": 0.0,  # No usado en productos manuales
+                "consumer_price": 0.0,  # No usado en productos manuales
+                "total_in_usa": 0.0,  # No usado en productos manuales
+                "cost_in_usa_usd": 0.0,  # No usado en productos manuales
+                "final_cost_usa": final_cost_usa,
+                "ARG": {
+                    "weight": weight,
+                    "shipping_cost": shipping_cost,
+                    "Costo_In_Arg": costo_in_arg,
+                    "Ref_Price": 0.0,  # No calculado para productos manuales
+                    "Sell_price": sell_price,
+                    "Reference_percent": 0.0  # No calculado para productos manuales
+                }
+            }
+            
+            # Agregar al diccionario en memoria
+            self.products_data[codigo] = nuevo_producto
+            
+            # Guardar en archivo JSON
+            with open(self.products_path, 'w', encoding='utf-8') as f:
+                json.dump(self.products_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Producto '{codigo}' agregado exitosamente. Precio calculado: ${sell_price:.2f}"
+            
+        except Exception as e:
+            return False, f"Error agregando producto: {str(e)}"
+    
+    def actualizar_todos_precios(self) -> tuple[bool, str]:
+        """
+        Actualiza todos los precios de los productos usando las variables de entorno actuales.
+        
+        Returns:
+            Tuple (success, message)
+        """
+        try:
+            # Importar las funciones de cálculo de la base de datos
+            from ..DataBaseBuild.DataBase import MecatechDatabase
+            db = MecatechDatabase()
+            
+            productos_actualizados = 0
+            
+            # Recalcular precios para todos los productos
+            for codigo, producto in self.products_data.items():
+                try:
+                    # Solo actualizar productos que tienen final_cost_usa válido
+                    final_cost_usa = producto.get('final_cost_usa', 0)
+                    if final_cost_usa <= 0:
+                        continue
+                    
+                    # Obtener peso
+                    arg_data = producto.get('ARG', {})
+                    weight = arg_data.get('weight')
+                    
+                    # Recalcular costo de envío
+                    shipping_cost = db.calculate_shipping_cost(weight)
+                    
+                    # Recalcular costo total en Argentina
+                    costo_in_arg = db.calculate_costo_in_arg(shipping_cost, final_cost_usa)
+                    
+                    # Recalcular precio de venta
+                    sell_price = db.calculate_sell_price(costo_in_arg)
+                    
+                    # Actualizar valores en la estructura ARG
+                    self.products_data[codigo]['ARG'].update({
+                        'shipping_cost': shipping_cost,
+                        'Costo_In_Arg': costo_in_arg,
+                        'Sell_price': sell_price
+                    })
+                    
+                    productos_actualizados += 1
+                    
+                except Exception as e:
+                    print(f"⚠️ Error actualizando producto {codigo}: {e}")
+                    continue
+            
+            # Guardar archivo actualizado
+            with open(self.products_path, 'w', encoding='utf-8') as f:
+                json.dump(self.products_data, f, indent=2, ensure_ascii=False)
+            
+            return True, f"Actualizados {productos_actualizados} productos exitosamente"
+            
+        except Exception as e:
+            return False, f"Error actualizando precios: {str(e)}"
+    
     def eliminar_pedido(self, numero_pedido: str) -> bool:
         """Elimina permanentemente un pedido de la base de datos."""
         try:
@@ -538,33 +663,71 @@ class SalesManager:
             print(f"❌ Error agregando cliente: {e}")
             return False, str(e)
 
-    def agregar_producto(self, codigo: str, nombre_ingles: str, nombre_espanol: str = "", 
-                        precio_venta: float = 0.0, peso: float = None) -> Tuple[bool, str]:
+    def agregar_producto(self, codigo: str, nombre_ingles: str = "", nombre_espanol: str = "", 
+                        precio_venta: float = 0.0, peso: float = None, final_cost_usa: float = 0.0) -> Tuple[bool, str]:
         """Agrega un nuevo producto al archivo mecatech_database.json."""
         try:
             # Verificar si el producto ya existe
             if codigo in self.products_data:
                 return False, f"El producto con código '{codigo}' ya existe"
             
-            # Crear estructura del producto
-            nuevo_producto = {
-                "name": nombre_ingles,
-                "espanol": nombre_espanol if nombre_espanol else None,
-                "qty_for_bag": 1,
-                "dealer_price": 0.0,
-                "consumer_price": 0.0,
-                "total_in_usa": 0.0,
-                "cost_in_usa_usd": 0.0,
-                "final_cost_usa": 0.0,
-                "ARG": {
-                    "weight": peso,
-                    "shipping_cost": 5.0,
-                    "Costo_In_Arg": 0.0,
-                    "Ref_Price": 0.0,
-                    "Sell_price": precio_venta,
-                    "Reference_percent": 0.0
+            # Si se proporciona final_cost_usa, calcular automáticamente
+            if final_cost_usa > 0:
+                # Importar las funciones de cálculo de la base de datos
+                from ..DataBaseBuild.DataBase import MecatechDatabase
+                db = MecatechDatabase()
+                
+                # Calcular costo de envío
+                shipping_cost = db.calculate_shipping_cost(peso)
+                
+                # Calcular costo total en Argentina
+                costo_in_arg = db.calculate_costo_in_arg(shipping_cost, final_cost_usa)
+                
+                # Calcular precio de venta si no se especificó
+                if precio_venta <= 0:
+                    precio_venta = db.calculate_sell_price(costo_in_arg)
+                
+                # Crear estructura del producto con cálculos
+                nuevo_producto = {
+                    "name": nombre_espanol or nombre_ingles,  # Priorizar español
+                    "espanol": nombre_espanol if nombre_espanol else None,
+                    "qty_for_bag": 1,
+                    "dealer_price": 0.0,  # No usado en productos manuales
+                    "consumer_price": 0.0,  # No usado en productos manuales
+                    "total_in_usa": 0.0,  # No usado en productos manuales
+                    "cost_in_usa_usd": 0.0,  # No usado en productos manuales
+                    "final_cost_usa": final_cost_usa,
+                    "ARG": {
+                        "weight": peso,
+                        "shipping_cost": shipping_cost,
+                        "Costo_In_Arg": costo_in_arg,
+                        "Ref_Price": 0.0,  # No calculado para productos manuales
+                        "Sell_price": precio_venta,
+                        "Reference_percent": 0.0  # No calculado para productos manuales
+                    }
                 }
-            }
+                mensaje_extra = f" Precio calculado: ${precio_venta:.2f}"
+            else:
+                # Crear estructura básica sin cálculos automáticos
+                nuevo_producto = {
+                    "name": nombre_ingles or nombre_espanol,
+                    "espanol": nombre_espanol if nombre_espanol else None,
+                    "qty_for_bag": 1,
+                    "dealer_price": 0.0,
+                    "consumer_price": 0.0,
+                    "total_in_usa": 0.0,
+                    "cost_in_usa_usd": 0.0,
+                    "final_cost_usa": 0.0,
+                    "ARG": {
+                        "weight": peso,
+                        "shipping_cost": 5.0,
+                        "Costo_In_Arg": 0.0,
+                        "Ref_Price": 0.0,
+                        "Sell_price": precio_venta,
+                        "Reference_percent": 0.0
+                    }
+                }
+                mensaje_extra = ""
             
             # Agregar el producto al diccionario
             self.products_data[codigo] = nuevo_producto
@@ -573,7 +736,7 @@ class SalesManager:
             with open(self.products_path, 'w', encoding='utf-8') as f:
                 json.dump(self.products_data, f, indent=2, ensure_ascii=False)
             
-            return True, f"Producto '{codigo}' agregado exitosamente"
+            return True, f"Producto '{codigo}' agregado exitosamente.{mensaje_extra}"
             
         except Exception as e:
             print(f"❌ Error agregando producto: {e}")
