@@ -33,6 +33,7 @@ for path in paths_to_add:
         sys.path.append(path)
 
 # ── Supabase connection ───────────────────────────────────────────────────────
+_supabase_error = ""
 try:
     from supabase import create_client
     _SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
@@ -43,9 +44,11 @@ try:
     else:
         _supabase = None
         USE_SUPABASE = False
-except Exception:
+        _supabase_error = f"Variables vacías — URL={repr(_SUPABASE_URL[:20] if _SUPABASE_URL else '')}, KEY={repr(_SUPABASE_KEY[:10] if _SUPABASE_KEY else '')}"
+except Exception as e:
     _supabase = None
     USE_SUPABASE = False
+    _supabase_error = str(e)
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -567,6 +570,8 @@ def main():
             st.success("🟢 Supabase conectado")
         else:
             st.warning("🟡 Modo local (CSV/JSON)")
+            if _supabase_error:
+                st.error(f"Error Supabase: {_supabase_error}")
         st.subheader("📊 Estadísticas Generales")
         stats = st.session_state.sales_manager.get_statistics()
         
