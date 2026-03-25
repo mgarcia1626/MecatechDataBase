@@ -19,7 +19,6 @@ def load_database():
     # Intentar diferentes rutas posibles
     possible_paths = [
         parent_dir / "DataBase" / "Generated" / "mecatech_database.json",
-        Path("c:/Users/Matias Garcia/OneDrive - UTN.BA/Repo Nuevo/Mecatech_DataBase/MecatechDataBase/DataBase/Generated/mecatech_database.json"),
         current_dir.parent / "DataBase" / "Generated" / "mecatech_database.json"
     ]
     
