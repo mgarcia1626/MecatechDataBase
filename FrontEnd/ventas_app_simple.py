@@ -2,11 +2,14 @@
 Aplicación Streamlit para Gestión de Ventas y Pagos - MecatechDataBase.
 
 Interfaz web simplificada para registrar pedidos, pagos y pagos inmediatos.
+Backend: Supabase (cuando SUPABASE_URL y SUPABASE_KEY están configurados)
+         CSV/JSON local (fallback para desarrollo local)
 """
 
 import streamlit as st
 import pandas as pd
 import sys
+import os
 from pathlib import Path
 from datetime import datetime
 import csv
@@ -29,44 +32,75 @@ for path in paths_to_add:
     if path not in sys.path:
         sys.path.append(path)
 
+# ── Supabase connection ───────────────────────────────────────────────────────
+try:
+    from supabase import create_client
+    _SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
+    _SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "")
+    if _SUPABASE_URL and _SUPABASE_KEY:
+        _supabase = create_client(_SUPABASE_URL, _SUPABASE_KEY)
+        USE_SUPABASE = True
+    else:
+        _supabase = None
+        USE_SUPABASE = False
+except Exception:
+    _supabase = None
+    USE_SUPABASE = False
+# ─────────────────────────────────────────────────────────────────────────────
+
+
 class SalesManager:
     def __init__(self):
         self.base_dir = base_project_dir
+        # Local file paths (used as fallback when Supabase is not configured)
         self.pedidos_path = self.base_dir / "DataBase" / "Generated" / "pedidos.csv"
         self.pagos_path = self.base_dir / "DataBase" / "Generated" / "pagos.csv"
         self.clients_path = self.base_dir / "DataBase" / "Generated" / "clientes.json"
         self.products_path = self.base_dir / "DataBase" / "Generated" / "mecatech_database.json"
-        
-        self.pedidos_path.parent.mkdir(parents=True, exist_ok=True)
-        self._init_pedidos_csv()
-        self._init_pagos_csv()
+
+        if not USE_SUPABASE:
+            self.pedidos_path.parent.mkdir(parents=True, exist_ok=True)
+            self._init_pedidos_csv()
+            self._init_pagos_csv()
+
         self._load_clients()
         self._load_products()
-        
+
+    # ── Init CSV (local fallback only) ────────────────────────────────────────
     def _init_pedidos_csv(self):
         if not self.pedidos_path.exists():
-            headers = ['Fecha', 'Numero_Pedido', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza', 'Precio_Unitario', 'Cantidad', 'Precio_Total', 'Estado_Pedido', 'Comentarios', 'EstadoVisualizacion']
+            headers = ['Fecha', 'Numero_Pedido', 'Cliente', 'Codigo_Pieza', 'Nombre_Pieza',
+                       'Precio_Unitario', 'Cantidad', 'Precio_Total', 'Estado_Pedido',
+                       'Comentarios', 'EstadoVisualizacion']
             with open(self.pedidos_path, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                writer.writerow(headers)
-                
+                csv.writer(f).writerow(headers)
+
     def _init_pagos_csv(self):
         if not self.pagos_path.exists():
-            headers = ['Fecha', 'Numero_Pago', 'Cliente', 'Numero_Pedido_Ref', 'Codigo_Pieza_Ref', 'Monto_Pago', 'Comentarios', 'EstadoVisualizacion']
+            headers = ['Fecha', 'Numero_Pago', 'Cliente', 'Numero_Pedido_Ref',
+                       'Codigo_Pieza_Ref', 'Monto_Pago', 'Comentarios', 'EstadoVisualizacion']
             with open(self.pagos_path, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                writer.writerow(headers)
-                
+                csv.writer(f).writerow(headers)
+
+    # ── Load clients ──────────────────────────────────────────────────────────
     def _load_clients(self):
-        try:
-            if self.clients_path.exists():
-                with open(self.clients_path, 'r', encoding='utf-8') as f:
-                    self.clients_data = json.load(f)
-            else:
+        if USE_SUPABASE:
+            try:
+                rows = _supabase.table("clientes").select("*").execute().data
+                self.clients_data = {"clientes": [{"nombre": r["nombre"], "password": r.get("password", "0000")} for r in rows]}
+            except Exception as e:
+                st.warning(f"⚠️ Error cargando clientes desde Supabase: {e}")
                 self.clients_data = {"clientes": []}
-        except:
-            self.clients_data = {"clientes": []}
-            
+        else:
+            try:
+                if self.clients_path.exists():
+                    with open(self.clients_path, 'r', encoding='utf-8') as f:
+                        self.clients_data = json.load(f)
+                else:
+                    self.clients_data = {"clientes": []}
+            except:
+                self.clients_data = {"clientes": []}
+
     def _load_products(self):
         try:
             if self.products_path.exists():
@@ -76,391 +110,350 @@ class SalesManager:
                 self.products_data = {}
         except:
             self.products_data = {}
-    
+
+    # ── Client helpers ────────────────────────────────────────────────────────
     def get_client_names(self):
         return [client["nombre"] for client in self.clients_data["clientes"]]
-    
+
+    # ── Product helpers ───────────────────────────────────────────────────────
     def search_products_by_name(self, search_term):
         results = []
         if not search_term:
             return results
-            
         search_term = search_term.lower()
         for code, product in self.products_data.items():
             name_english = product.get('name', '').lower()
             name_spanish = product.get('espanol', '').lower() if product.get('espanol') else ''
-            
-            if (search_term in name_english or 
-                search_term in name_spanish or 
-                search_term in code.lower()):
-                
-                display_spanish = product.get('espanol', '')
-                display_english = product.get('name', '')
-                results.append((code, display_spanish, display_english))
-        
+            if search_term in name_english or search_term in name_spanish or search_term in code.lower():
+                results.append((code, product.get('espanol', ''), product.get('name', '')))
         return results[:20]
-    
+
     def get_product_sell_price(self, code):
         product = self.products_data.get(code)
         if not product:
             return 0.0
-        arg_data = product.get('ARG', {})
-        return float(arg_data.get('Sell_price', 0.0))
-    
+        return float(product.get('ARG', {}).get('Sell_price', 0.0))
+
+    # ── Number generators ─────────────────────────────────────────────────────
     def generate_pedido_number(self):
-        """Genera un número de pedido automático."""
         try:
             df = self.load_pedidos()
             if df.empty:
                 return "PED001"
-            
-            # Obtener el último número de pedido
-            last_orders = df['Numero_Pedido'].str.extract(r'PED(\d+)').astype(int)
-            if not last_orders.empty:
-                next_num = last_orders[0].max() + 1
-                return f"PED{next_num:03d}"
-            else:
-                return "PED001"
+            nums = df['Numero_Pedido'].str.extract(r'PED(\d+)').dropna().astype(int)
+            return f"PED{nums[0].max() + 1:03d}" if not nums.empty else "PED001"
         except:
             return "PED001"
-    
+
     def generate_pago_number(self):
-        """Genera un número de pago automático."""
         try:
             df = self.load_pagos()
             if df.empty:
                 return "PAG001"
-            
-            # Obtener el último número de pago
-            last_payments = df['Numero_Pago'].str.extract(r'PAG(\d+)').astype(int)
-            if not last_payments.empty:
-                next_num = last_payments[0].max() + 1
-                return f"PAG{next_num:03d}"
-            else:
-                return "PAG001"
+            nums = df['Numero_Pago'].str.extract(r'PAG(\d+)').dropna().astype(int)
+            return f"PAG{nums[0].max() + 1:03d}" if not nums.empty else "PAG001"
         except:
             return "PAG001"
 
+    # ── Load data → DataFrame ─────────────────────────────────────────────────
+    def load_pedidos(self):
+        if USE_SUPABASE:
+            try:
+                rows = _supabase.table("pedidos").select("*").execute().data
+                return pd.DataFrame(rows) if rows else pd.DataFrame()
+            except Exception as e:
+                st.warning(f"⚠️ Error cargando pedidos: {e}")
+                return pd.DataFrame()
+        else:
+            try:
+                return pd.read_csv(self.pedidos_path) if self.pedidos_path.exists() else pd.DataFrame()
+            except:
+                return pd.DataFrame()
+
+    def load_pagos(self):
+        if USE_SUPABASE:
+            try:
+                rows = _supabase.table("pagos").select("*").execute().data
+                return pd.DataFrame(rows) if rows else pd.DataFrame()
+            except Exception as e:
+                st.warning(f"⚠️ Error cargando pagos: {e}")
+                return pd.DataFrame()
+        else:
+            try:
+                return pd.read_csv(self.pagos_path) if self.pagos_path.exists() else pd.DataFrame()
+            except:
+                return pd.DataFrame()
+
+    # ── Add records ───────────────────────────────────────────────────────────
     def add_pedido(self, cliente, codigo_pieza, precio_venta=None, comentarios="", numero_pedido=None):
-        """Agrega un pedido al CSV de pedidos."""
         try:
             fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            
             if numero_pedido is None:
                 numero_pedido = self.generate_pedido_number()
-            
             if precio_venta is None:
                 precio_venta = self.get_product_sell_price(codigo_pieza)
-            
-            product_name = self.products_data.get(codigo_pieza, {}).get('espanol') or \
-                          self.products_data.get(codigo_pieza, {}).get('name', 'Producto no encontrado')
-            
-            row = [fecha_actual, numero_pedido, cliente, codigo_pieza, product_name, precio_venta, 1, precio_venta, "PENDIENTE", comentarios]
-            
-            with open(self.pedidos_path, 'a', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                writer.writerow(row)
-            
+            product_name = (self.products_data.get(codigo_pieza, {}).get('espanol') or
+                            self.products_data.get(codigo_pieza, {}).get('name', 'Producto no encontrado'))
+            record = {
+                "Fecha": fecha_actual, "Numero_Pedido": numero_pedido, "Cliente": cliente,
+                "Codigo_Pieza": codigo_pieza, "Nombre_Pieza": product_name,
+                "Precio_Unitario": precio_venta, "Cantidad": 1, "Precio_Total": precio_venta,
+                "Estado_Pedido": "PENDIENTE", "Comentarios": comentarios, "EstadoVisualizacion": "Visible"
+            }
+            if USE_SUPABASE:
+                _supabase.table("pedidos").insert(record).execute()
+            else:
+                with open(self.pedidos_path, 'a', newline='', encoding='utf-8') as f:
+                    csv.writer(f).writerow(list(record.values()))
             return True, numero_pedido
-            
         except Exception as e:
             st.error(f"Error al agregar pedido: {e}")
             return False, None
-    
+
     def add_pedido_multiple(self, cliente, productos_list, comentarios=""):
-        """Agrega múltiples productos en un solo pedido."""
         try:
             if not productos_list:
                 return False, None
-                
             numero_pedido = self.generate_pedido_number()
             fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            
-            with open(self.pedidos_path, 'a', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                
-                for item in productos_list:
-                    codigo_pieza = item['codigo']
-                    precio_unitario = item['precio_unitario'] 
-                    cantidad = item['cantidad']
-                    subtotal = item['subtotal']
-                    
-                    product_name = self.products_data.get(codigo_pieza, {}).get('espanol') or \
-                                  self.products_data.get(codigo_pieza, {}).get('name', 'Producto no encontrado')
-                    
-                    row = [fecha_actual, numero_pedido, cliente, codigo_pieza, product_name, 
-                          precio_unitario, cantidad, subtotal, "PENDIENTE", comentarios, "Visible"]
-                    writer.writerow(row)
-            
+            records = []
+            for item in productos_list:
+                product_name = (self.products_data.get(item['codigo'], {}).get('espanol') or
+                                self.products_data.get(item['codigo'], {}).get('name', 'Producto no encontrado'))
+                records.append({
+                    "Fecha": fecha_actual, "Numero_Pedido": numero_pedido, "Cliente": cliente,
+                    "Codigo_Pieza": item['codigo'], "Nombre_Pieza": product_name,
+                    "Precio_Unitario": item['precio_unitario'], "Cantidad": item['cantidad'],
+                    "Precio_Total": item['subtotal'], "Estado_Pedido": "PENDIENTE",
+                    "Comentarios": comentarios, "EstadoVisualizacion": "Visible"
+                })
+            if USE_SUPABASE:
+                _supabase.table("pedidos").insert(records).execute()
+            else:
+                with open(self.pedidos_path, 'a', newline='', encoding='utf-8') as f:
+                    w = csv.writer(f)
+                    for r in records:
+                        w.writerow(list(r.values()))
             return True, numero_pedido
-            
         except Exception as e:
             st.error(f"Error al agregar pedido múltiple: {e}")
             return False, None
 
     def add_pago(self, cliente, monto_pago, numero_pedido_ref="", codigo_pieza_ref="", comentarios=""):
-        """Agrega un pago al CSV de pagos."""
         try:
             numero_pago = self.generate_pago_number()
             fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            
-            row = [fecha_actual, numero_pago, cliente, numero_pedido_ref, codigo_pieza_ref, monto_pago, comentarios, "Visible"]
-            
-            with open(self.pagos_path, 'a', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                writer.writerow(row)
-            
+            record = {
+                "Fecha": fecha_actual, "Numero_Pago": numero_pago, "Cliente": cliente,
+                "Numero_Pedido_Ref": numero_pedido_ref, "Codigo_Pieza_Ref": codigo_pieza_ref,
+                "Monto_Pago": monto_pago, "Comentarios": comentarios, "EstadoVisualizacion": "Visible"
+            }
+            if USE_SUPABASE:
+                _supabase.table("pagos").insert(record).execute()
+            else:
+                with open(self.pagos_path, 'a', newline='', encoding='utf-8') as f:
+                    csv.writer(f).writerow(list(record.values()))
             return True, numero_pago
-            
         except Exception as e:
             st.error(f"Error al agregar pago: {e}")
             return False, None
 
     def add_pago_inmediato(self, cliente, codigo_pieza, precio_venta, comentarios=""):
-        """Crea un pedido y un pago inmediato."""
         try:
-            # Crear pedido
             success_pedido, numero_pedido = self.add_pedido(cliente, codigo_pieza, precio_venta, comentarios)
-            
             if success_pedido:
-                # Crear pago inmediato
                 comentarios_pago = f"Pago inmediato para pedido {numero_pedido}"
                 if comentarios:
                     comentarios_pago += f" - {comentarios}"
-                
                 success_pago, numero_pago = self.add_pago(cliente, precio_venta, numero_pedido, codigo_pieza, comentarios_pago)
-                
                 if success_pago:
                     return True, numero_pedido, numero_pago
-            
             return False, None, None
-            
         except Exception as e:
             st.error(f"Error en pago inmediato: {e}")
             return False, None, None
-    
-    def load_pedidos(self):
-        try:
-            if self.pedidos_path.exists():
-                return pd.read_csv(self.pedidos_path)
-            else:
-                return pd.DataFrame()
-        except:
-            return pd.DataFrame()
-    
-    def load_pagos(self):
-        try:
-            if self.pagos_path.exists():
-                return pd.read_csv(self.pagos_path)
-            else:
-                return pd.DataFrame()
-        except:
-            return pd.DataFrame()
-    
+
+    # ── Statistics ────────────────────────────────────────────────────────────
     def get_statistics(self):
         df_pedidos = self.load_pedidos()
         df_pagos = self.load_pagos()
-        
-        total_pedidos = len(df_pedidos) if not df_pedidos.empty else 0
-        total_pagos_count = len(df_pagos) if not df_pagos.empty else 0
-        total_transactions = total_pedidos + total_pagos_count
-        
         total_sales = df_pedidos['Precio_Total'].sum() if not df_pedidos.empty else 0.0
         total_payments = df_pagos['Monto_Pago'].sum() if not df_pagos.empty else 0.0
-        
-        unique_clients_pedidos = set(df_pedidos['Cliente'].unique()) if not df_pedidos.empty else set()
-        unique_clients_pagos = set(df_pagos['Cliente'].unique()) if not df_pagos.empty else set()
-        unique_clients = len(unique_clients_pedidos.union(unique_clients_pagos))
-        
-        unique_products = len(df_pedidos['Codigo_Pieza'].unique()) if not df_pedidos.empty else 0
-        
+        unique_clients = len(
+            (set(df_pedidos['Cliente'].unique()) if not df_pedidos.empty else set()) |
+            (set(df_pagos['Cliente'].unique()) if not df_pagos.empty else set())
+        )
         return {
-            "total_transactions": total_transactions,
+            "total_transactions": len(df_pedidos) + len(df_pagos),
             "total_sales": round(total_sales, 2),
             "total_payments": round(total_payments, 2),
             "net_balance": round(total_sales - total_payments, 2),
             "unique_clients": unique_clients,
-            "unique_products": unique_products
+            "unique_products": len(df_pedidos['Codigo_Pieza'].unique()) if not df_pedidos.empty else 0,
         }
-    
+
+    # ── Client views ──────────────────────────────────────────────────────────
     def get_client_pedidos(self, cliente, incluir_ocultos=False):
-        """Obtiene todos los pedidos de un cliente específico."""
-        df_pedidos = self.load_pedidos()
-        if df_pedidos.empty:
-            return pd.DataFrame()
-        
-        # Filtrar por cliente
-        df_filtrado = df_pedidos[df_pedidos['Cliente'] == cliente]
-        
-        # Filtrar por estado de visualización si no se incluyen ocultos
-        if not incluir_ocultos and 'EstadoVisualizacion' in df_filtrado.columns:
-            df_filtrado = df_filtrado[df_filtrado['EstadoVisualizacion'] == 'Visible']
-        
-        return df_filtrado.sort_values('Fecha', ascending=False)
-    
+        if USE_SUPABASE:
+            try:
+                q = _supabase.table("pedidos").select("*").eq("Cliente", cliente)
+                if not incluir_ocultos:
+                    q = q.eq("EstadoVisualizacion", "Visible")
+                rows = q.execute().data
+                df = pd.DataFrame(rows) if rows else pd.DataFrame()
+                return df.sort_values('Fecha', ascending=False) if not df.empty else df
+            except Exception as e:
+                st.warning(f"⚠️ Error: {e}")
+                return pd.DataFrame()
+        else:
+            df = self.load_pedidos()
+            if df.empty:
+                return df
+            df = df[df['Cliente'] == cliente]
+            if not incluir_ocultos and 'EstadoVisualizacion' in df.columns:
+                df = df[df['EstadoVisualizacion'] == 'Visible']
+            return df.sort_values('Fecha', ascending=False)
+
     def get_client_pagos(self, cliente, incluir_ocultos=False):
-        """Obtiene todos los pagos de un cliente específico."""
-        df_pagos = self.load_pagos()
-        if df_pagos.empty:
-            return pd.DataFrame()
-        
-        # Filtrar por cliente
-        df_filtrado = df_pagos[df_pagos['Cliente'] == cliente]
-        
-        # Filtrar por estado de visualización si no se incluyen ocultos
-        if not incluir_ocultos and 'EstadoVisualizacion' in df_filtrado.columns:
-            df_filtrado = df_filtrado[df_filtrado['EstadoVisualizacion'] == 'Visible']
-        
-        return df_filtrado.sort_values('Fecha', ascending=False)
-    
+        if USE_SUPABASE:
+            try:
+                q = _supabase.table("pagos").select("*").eq("Cliente", cliente)
+                if not incluir_ocultos:
+                    q = q.eq("EstadoVisualizacion", "Visible")
+                rows = q.execute().data
+                df = pd.DataFrame(rows) if rows else pd.DataFrame()
+                return df.sort_values('Fecha', ascending=False) if not df.empty else df
+            except Exception as e:
+                st.warning(f"⚠️ Error: {e}")
+                return pd.DataFrame()
+        else:
+            df = self.load_pagos()
+            if df.empty:
+                return df
+            df = df[df['Cliente'] == cliente]
+            if not incluir_ocultos and 'EstadoVisualizacion' in df.columns:
+                df = df[df['EstadoVisualizacion'] == 'Visible']
+            return df.sort_values('Fecha', ascending=False)
+
     def get_client_balance(self, cliente):
-        """Calcula el balance de un cliente específico."""
         df_pedidos = self.get_client_pedidos(cliente)
         df_pagos = self.get_client_pagos(cliente)
-        
-        # Total de pedidos (deuda)
         total_deuda = df_pedidos['Precio_Total'].sum() if not df_pedidos.empty else 0.0
-        
-        # Total de pagos
         total_pagos = df_pagos['Monto_Pago'].sum() if not df_pagos.empty else 0.0
-        
-        # Balance (positivo = debe dinero, negativo = tiene crédito)
-        balance = total_deuda - total_pagos
-        
         return {
             "total_deuda": round(total_deuda, 2),
             "total_pagos": round(total_pagos, 2),
-            "balance": round(balance, 2)
+            "balance": round(total_deuda - total_pagos, 2),
         }
-    
+
+    # ── Hide / Delete ─────────────────────────────────────────────────────────
     def ocultar_pedido(self, numero_pedido):
-        """Oculta un pedido cambiando su EstadoVisualizacion a 'Oculto'."""
         try:
-            df = self.load_pedidos()
-            if df.empty:
-                return False
-            
-            # Buscar el registro y cambiar el estado
-            mask = df['Numero_Pedido'] == numero_pedido
-            if not mask.any():
-                return False
-            
-            df.loc[mask, 'EstadoVisualizacion'] = 'Oculto'
-            
-            # Guardar el archivo actualizado
-            df.to_csv(self.pedidos_path, index=False)
+            if USE_SUPABASE:
+                _supabase.table("pedidos").update({"EstadoVisualizacion": "Oculto"}).eq("Numero_Pedido", numero_pedido).execute()
+            else:
+                df = self.load_pedidos()
+                df.loc[df['Numero_Pedido'] == numero_pedido, 'EstadoVisualizacion'] = 'Oculto'
+                df.to_csv(self.pedidos_path, index=False)
             return True
-            
         except Exception as e:
             print(f"❌ Error ocultando pedido: {e}")
             return False
-    
+
     def ocultar_pago(self, numero_pago):
-        """Oculta un pago cambiando su EstadoVisualizacion a 'Oculto'."""
         try:
-            df = self.load_pagos()
-            if df.empty:
-                return False
-            
-            # Buscar el registro y cambiar el estado
-            mask = df['Numero_Pago'] == numero_pago
-            if not mask.any():
-                return False
-            
-            df.loc[mask, 'EstadoVisualizacion'] = 'Oculto'
-            
-            # Guardar el archivo actualizado
-            df.to_csv(self.pagos_path, index=False)
+            if USE_SUPABASE:
+                _supabase.table("pagos").update({"EstadoVisualizacion": "Oculto"}).eq("Numero_Pago", numero_pago).execute()
+            else:
+                df = self.load_pagos()
+                df.loc[df['Numero_Pago'] == numero_pago, 'EstadoVisualizacion'] = 'Oculto'
+                df.to_csv(self.pagos_path, index=False)
             return True
-            
         except Exception as e:
             print(f"❌ Error ocultando pago: {e}")
             return False
-    
+
     def eliminar_pedido(self, numero_pedido):
-        """Elimina permanentemente un pedido de la base de datos."""
         try:
-            df = self.load_pedidos()
-            if df.empty:
-                return False
-            
-            # Filtrar para eliminar el registro
-            df_filtrado = df[df['Numero_Pedido'] != numero_pedido]
-            
-            if len(df_filtrado) == len(df):
-                return False  # No se encontró el registro
-            
-            # Guardar el archivo actualizado
-            df_filtrado.to_csv(self.pedidos_path, index=False)
+            if USE_SUPABASE:
+                _supabase.table("pedidos").delete().eq("Numero_Pedido", numero_pedido).execute()
+            else:
+                df = self.load_pedidos()
+                df = df[df['Numero_Pedido'] != numero_pedido]
+                df.to_csv(self.pedidos_path, index=False)
             return True
-            
         except Exception as e:
             print(f"❌ Error eliminando pedido: {e}")
             return False
     
     def eliminar_pago(self, numero_pago):
-        """Elimina permanentemente un pago de la base de datos."""
         try:
-            df = self.load_pagos()
-            if df.empty:
-                return False
-            
-            # Filtrar para eliminar el registro
-            df_filtrado = df[df['Numero_Pago'] != numero_pago]
-            
-            if len(df_filtrado) == len(df):
-                return False  # No se encontró el registro
-            
-            # Guardar el archivo actualizado
-            df_filtrado.to_csv(self.pagos_path, index=False)
+            if USE_SUPABASE:
+                _supabase.table("pagos").delete().eq("Numero_Pago", numero_pago).execute()
+            else:
+                df = self.load_pagos()
+                df = df[df['Numero_Pago'] != numero_pago]
+                df.to_csv(self.pagos_path, index=False)
             return True
-            
         except Exception as e:
             print(f"❌ Error eliminando pago: {e}")
             return False
 
-    def agregar_cliente(self, nombre, password="0000"):
-        """Agrega un nuevo cliente al archivo clientes.json."""
+    def mostrar_pedido(self, numero_pedido):
         try:
-            # Verificar si el cliente ya existe
+            if USE_SUPABASE:
+                _supabase.table("pedidos").update({"EstadoVisualizacion": "Visible"}).eq("Numero_Pedido", numero_pedido).execute()
+            else:
+                df = self.load_pedidos()
+                df.loc[df['Numero_Pedido'] == numero_pedido, 'EstadoVisualizacion'] = 'Visible'
+                df.to_csv(self.pedidos_path, index=False)
+            return True
+        except Exception as e:
+            print(f"❌ Error mostrando pedido: {e}")
+            return False
+
+    def mostrar_pago(self, numero_pago):
+        try:
+            if USE_SUPABASE:
+                _supabase.table("pagos").update({"EstadoVisualizacion": "Visible"}).eq("Numero_Pago", numero_pago).execute()
+            else:
+                df = self.load_pagos()
+                df.loc[df['Numero_Pago'] == numero_pago, 'EstadoVisualizacion'] = 'Visible'
+                df.to_csv(self.pagos_path, index=False)
+            return True
+        except Exception as e:
+            print(f"❌ Error mostrando pago: {e}")
+            return False
+
+    def agregar_cliente(self, nombre, password="0000"):
+        try:
             nombres_existentes = [c["nombre"].lower() for c in self.clients_data["clientes"]]
             if nombre.lower() in nombres_existentes:
                 return False, "El cliente ya existe"
-            
-            # Agregar nuevo cliente
-            nuevo_cliente = {
-                "nombre": nombre,
-                "password": password
-            }
-            
-            self.clients_data["clientes"].append(nuevo_cliente)
-            
-            # Guardar el archivo actualizado
-            with open(self.clients_path, 'w', encoding='utf-8') as f:
-                json.dump(self.clients_data, f, indent=2, ensure_ascii=False)
-            
+            if USE_SUPABASE:
+                _supabase.table("clientes").insert({"nombre": nombre, "password": password}).execute()
+            else:
+                self.clients_data["clientes"].append({"nombre": nombre, "password": password})
+                with open(self.clients_path, 'w', encoding='utf-8') as f:
+                    json.dump(self.clients_data, f, indent=2, ensure_ascii=False)
+            self._load_clients()
             return True, f"Cliente '{nombre}' agregado exitosamente"
-            
         except Exception as e:
             return False, str(e)
 
-    def agregar_producto(self, codigo, nombre_ingles, nombre_espanol="", precio_venta=0.0, peso=None):
-        """Agrega un nuevo producto al archivo mecatech_database.json."""
+    def agregar_producto(self, codigo, nombre_espanol="", final_cost_usa=0.0, peso=None, precio_venta=0.0, nombre_ingles=""):
         try:
-            # Verificar si el producto ya existe
             if codigo in self.products_data:
                 return False, f"El producto con código '{codigo}' ya existe"
-            
-            # Crear estructura del producto
             nuevo_producto = {
-                "name": nombre_ingles,
+                "name": nombre_ingles or nombre_espanol,
                 "espanol": nombre_espanol if nombre_espanol else None,
                 "qty_for_bag": 1,
                 "dealer_price": 0.0,
                 "consumer_price": 0.0,
                 "total_in_usa": 0.0,
                 "cost_in_usa_usd": 0.0,
-                "final_cost_usa": 0.0,
+                "final_cost_usa": final_cost_usa,
                 "ARG": {
                     "weight": peso,
                     "shipping_cost": 5.0,
@@ -470,50 +463,32 @@ class SalesManager:
                     "Reference_percent": 0.0
                 }
             }
-            
-            # Agregar el producto al diccionario
             self.products_data[codigo] = nuevo_producto
-            
-            # Guardar el archivo actualizado
             with open(self.products_path, 'w', encoding='utf-8') as f:
                 json.dump(self.products_data, f, indent=2, ensure_ascii=False)
-            
             return True, f"Producto '{codigo}' agregado exitosamente"
-            
         except Exception as e:
             return False, str(e)
 
     def obtener_estadisticas_administracion(self):
-        """Obtiene estadísticas para la sección de administración."""
         try:
             total_clientes = len(self.get_client_names())
             total_productos = len(self.products_data)
-            
-            # Productos con y sin nombre en español
             productos_con_espanol = sum(1 for p in self.products_data.values() if p.get('espanol'))
-            productos_sin_espanol = total_productos - productos_con_espanol
-            
             return {
                 "total_clientes": total_clientes,
                 "total_productos": total_productos,
                 "productos_con_espanol": productos_con_espanol,
-                "productos_sin_espanol": productos_sin_espanol
+                "productos_sin_espanol": total_productos - productos_con_espanol,
             }
-            
-        except Exception as e:
-            return {
-                "total_clientes": 0,
-                "total_productos": 0,
-                "productos_con_espanol": 0,
-                "productos_sin_espanol": 0
-            }
+        except:
+            return {"total_clientes": 0, "total_productos": 0, "productos_con_espanol": 0, "productos_sin_espanol": 0}
+
 
 def init_session_state():
     """Inicializa variables del estado de sesión."""
-    if 'sales_manager' not in st.session_state or 'force_reload' in st.session_state:
+    if 'sales_manager' not in st.session_state:
         st.session_state.sales_manager = SalesManager()
-        if 'force_reload' in st.session_state:
-            del st.session_state.force_reload
     
     if 'carrito_pedido' not in st.session_state:
         st.session_state.carrito_pedido = []
@@ -526,13 +501,6 @@ def init_session_state():
         
     if 'selected_product' not in st.session_state:
         st.session_state.selected_product = None
-    
-    # Verificar que SalesManager tenga los métodos necesarios
-    required_methods = ['agregar_producto_mejorado', 'actualizar_todos_precios']
-    for method in required_methods:
-        if not hasattr(st.session_state.sales_manager, method):
-            st.session_state.sales_manager = SalesManager()
-            break
 
 def search_products(search_term):
     """Búsqueda de productos y almacenamiento en session state."""
@@ -595,6 +563,10 @@ def main():
     
     # Sidebar con estadísticas
     with st.sidebar:
+        if USE_SUPABASE:
+            st.success("🟢 Supabase conectado")
+        else:
+            st.warning("🟡 Modo local (CSV/JSON)")
         st.subheader("📊 Estadísticas Generales")
         stats = st.session_state.sales_manager.get_statistics()
         
@@ -1199,15 +1171,10 @@ def main():
                                             st.error("❌ Error al ocultar pedido")
                                 else:
                                     if st.button(f"👁️ Mostrar", key=f"mostrar_pedido_{row['Numero_Pedido']}"):
-                                        # Función para mostrar (cambiar a Visible)
-                                        try:
-                                            df_temp = st.session_state.sales_manager.load_pedidos()
-                                            mask = df_temp['Numero_Pedido'] == row['Numero_Pedido']
-                                            df_temp.loc[mask, 'EstadoVisualizacion'] = 'Visible'
-                                            df_temp.to_csv(st.session_state.sales_manager.pedidos_path, index=False)
+                                        if st.session_state.sales_manager.mostrar_pedido(row['Numero_Pedido']):
                                             st.success("✅ Pedido visible nuevamente")
                                             st.rerun()
-                                        except:
+                                        else:
                                             st.error("❌ Error al mostrar pedido")
                             
                             with col_btn2:
@@ -1255,15 +1222,10 @@ def main():
                                             st.error("❌ Error al ocultar pago")
                                 else:
                                     if st.button(f"👁️ Mostrar", key=f"mostrar_pago_{row['Numero_Pago']}"):
-                                        # Función para mostrar (cambiar a Visible)
-                                        try:
-                                            df_temp = st.session_state.sales_manager.load_pagos()
-                                            mask = df_temp['Numero_Pago'] == row['Numero_Pago']
-                                            df_temp.loc[mask, 'EstadoVisualizacion'] = 'Visible'
-                                            df_temp.to_csv(st.session_state.sales_manager.pagos_path, index=False)
+                                        if st.session_state.sales_manager.mostrar_pago(row['Numero_Pago']):
                                             st.success("✅ Pago visible nuevamente")
                                             st.rerun()
-                                        except:
+                                        else:
                                             st.error("❌ Error al mostrar pago")
                             
                             with col_btn2:
