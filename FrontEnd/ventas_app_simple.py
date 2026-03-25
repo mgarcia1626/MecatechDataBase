@@ -926,7 +926,7 @@ def main():
         col_btn = st.columns([2, 1, 2])
         
         with col_btn[1]:
-            if st.button(f"✅ Registrar {tipo_operacion}", key="register_btn", type="primary", use_container_width=True):
+            if st.button(f"✅ Registrar {tipo_operacion}", key="register_btn", type="primary", width='stretch'):
                 # Validaciones comunes
                 if not cliente_seleccionado:
                     st.error("❌ Debe seleccionar un cliente")
@@ -1065,7 +1065,7 @@ def main():
                     
                     st.dataframe(
                         df_display_pedidos,
-                        use_container_width=True,
+                        width='stretch',
                         hide_index=True,
                         height=400
                     )
@@ -1101,7 +1101,7 @@ def main():
                     
                     st.dataframe(
                         df_display_pagos,
-                        use_container_width=True,
+                        width='stretch',
                         hide_index=True,
                         height=400
                     )
@@ -1302,7 +1302,7 @@ def main():
                 df_resultados = pd.DataFrame(data_resultados)
                 
                 # Mostrar tabla
-                st.dataframe(df_resultados, use_container_width=True, hide_index=True)
+                st.dataframe(df_resultados, width='stretch', hide_index=True)
                 
                 # Opción de descarga
                 if len(df_resultados) > 0:
@@ -1339,7 +1339,7 @@ def main():
                     })
                 
                 df_ejemplo = pd.DataFrame(data_ejemplo)
-                st.dataframe(df_ejemplo, use_container_width=True, hide_index=True)
+                st.dataframe(df_ejemplo, width='stretch', hide_index=True)
                 
                 st.info("💡 Esto es solo una muestra. Use el buscador para encontrar productos específicos.")
     
@@ -1385,7 +1385,7 @@ def main():
                     help="Contraseña por defecto es '0000'"
                 )
                 
-                submit_cliente = st.form_submit_button("✅ Agregar Cliente", type="primary", use_container_width=True)
+                submit_cliente = st.form_submit_button("✅ Agregar Cliente", type="primary", width='stretch')
                 
                 if submit_cliente:
                     if nombre_cliente.strip():
@@ -1505,10 +1505,10 @@ def main():
                 col_submit, col_update = st.columns([1, 1])
                 
                 with col_submit:
-                    submit_producto = st.form_submit_button("✅ Agregar Producto", type="primary", use_container_width=True)
+                    submit_producto = st.form_submit_button("✅ Agregar Producto", type="primary", width='stretch')
                 
                 with col_update:
-                    update_all = st.form_submit_button("🔄 Actualizar Todos los Precios", type="secondary", use_container_width=True)
+                    update_all = st.form_submit_button("🔄 Actualizar Todos los Precios", type="secondary", width='stretch')
                 
                 if submit_producto:
                     if codigo_producto.strip() and nombre_espanol.strip() and final_cost_usa > 0:
