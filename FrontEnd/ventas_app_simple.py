@@ -15,7 +15,7 @@ import json
 # Configurar paths para importación
 current_dir = Path(__file__).parent.resolve()
 parent_dir = current_dir.parent
-base_project_dir = Path("c:/Users/Matias Garcia/OneDrive - UTN.BA/Repo Nuevo/Mecatech_DataBase/MecatechDataBase")
+base_project_dir = parent_dir  # Relative path — works both locally and on Railway
 
 # Agregar paths al sistema
 paths_to_add = [
