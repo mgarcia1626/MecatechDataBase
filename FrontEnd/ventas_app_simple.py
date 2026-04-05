@@ -715,9 +715,9 @@ def main():
                         add_to_cart(codigo_custom, descripcion_custom.strip(), precio_custom, cantidad_custom)
                         st.success(f"✅ {descripcion_custom.strip()} agregado al carrito")
                         # Limpiar campos después de agregar
-                        st.session_state.descripcion_custom = ""
-                        st.session_state.precio_custom = 0.0
-                        st.session_state.cantidad_custom = 1
+                        del st.session_state["descripcion_custom"]
+                        del st.session_state["precio_custom"]
+                        del st.session_state["cantidad_custom"]
                         st.rerun()
                     else:
                         st.error("❌ Complete la descripción y el precio")
